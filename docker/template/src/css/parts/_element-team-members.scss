@@ -1,0 +1,75 @@
+.nk-team-member {
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: "";
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+
+    .nk-team-member-photo,
+    .nk-team-member-info {
+        position: relative;
+        float: left;
+    }
+
+    .nk-team-member-info {
+        width: 45%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: .7s transform ease;
+
+        .nk-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: .2s opacity;
+
+            &:hover,
+            &.hover {
+                opacity: .8;
+            }
+        }
+
+        &.nk-team-member-info-bottom {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .nk-team-member-photo {
+        width: 65%;
+        margin-right: -11%;
+        transition: .5s transform ease;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    // hover effect
+    &.hover .nk-team-member-photo {
+        transform: scale(.95);
+    }
+    &.hover .nk-team-member-info {
+        transform: translateY(7%) scale(1.05);
+    }
+    &.hover .nk-team-member-info.nk-team-member-info-bottom {
+        transform: translateY(-7%) scale(1.05);
+    }
+
+    // revert
+    &.nk-team-member-revert {
+        .nk-team-member-photo {
+            left: 35%;
+            margin-right: -100%;
+        }
+        .nk-team-member-info {
+            left: 0%;
+            text-align: right;
+        }
+    }
+}

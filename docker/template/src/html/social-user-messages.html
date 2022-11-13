@@ -1,0 +1,170 @@
+{% set header_title = 'Social Network - Messages' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-profile-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li class="active">
+                        <a href="social-user-messages.html">Inbox</a>
+                    </li>
+                    <li>
+                        <a href="social-user-messages-compose.html">Compose</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+                <form action="#" class="nk-social-sort">
+                    <input type="text" placeholder="Search Messages..." class="form-control">
+                    <button class="nk-btn link-effect-4">Search</button>
+                </form>
+                <div class="nk-gap"></div>
+
+                <!-- START: Messages -->
+                <div>
+                    <em>Viewing 1 - 4 of 4 messages</em>
+                </div>
+                <div class="nk-gap"></div>
+
+                <div class="table-responsive nk-social-messages">
+                    <table class="table table-bordered">
+                        <thead class="thead-default">
+                            <tr>
+                                <th class="nk-social-messages-bulk-select">
+                                    <input type="checkbox">
+                                </th>
+                                <th>
+                                    <div class="sr-only">Message</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="nk-social-messages-unread">
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-messages-description">
+                                    <div class="nk-social-messages-since">54 minutes ago</div>
+                                    <a href="#" class="nk-social-messages-remove"><span class="ion-trash-b"></span></a>
+                                    <a href="#" class="nk-social-messages-favorite"><span class="ion-android-star"></span></a>
+                                    <div class="nk-social-messages-from">
+                                        <a href="#"><img src="assets/images/avatar-2-sm.jpg" alt="John" title="John"></a>
+                                    </div>
+                                    <div class="nk-social-messages-subject">
+                                        <a href="social-user-messages-single.html">Hey, man!</a>
+                                    </div>
+                                    <div class="nk-social-messages-excerpt">
+                                        <a href="social-user-messages-single.html">Again all builder annoying enjoy anyone teachings rejects and can obtain those. Us, pursue laborious toil...</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-messages-description">
+                                    <div class="nk-social-messages-since">2 hours ago</div>
+                                    <a href="#" class="nk-social-messages-remove"><span class="ion-trash-b"></span></a>
+                                    <a href="#" class="nk-social-messages-favorite"><span class="ion-android-star-outline"></span></a>
+                                    <div class="nk-social-messages-from">
+                                        <a href="#"><img src="assets/images/avatar-3-sm.jpg" alt="Mary" title="Mary"></a>
+                                    </div>
+                                    <div class="nk-social-messages-subject">
+                                        <a href="social-user-messages-single.html">Explorer</a>
+                                    </div>
+                                    <div class="nk-social-messages-excerpt">
+                                        <a href="social-user-messages-single.html">Rationally this was no enjoy fault or trivial, teachings there has builder and laborious can there not pain. Is enjoy painful was it take, dislikes actual in from actual a give a desires...</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-messages-description">
+                                    <div class="nk-social-messages-since">18 days ago</div>
+                                    <a href="#" class="nk-social-messages-remove"><span class="ion-trash-b"></span></a>
+                                    <a href="#" class="nk-social-messages-favorite"><span class="ion-android-star"></span></a>
+                                    <div class="nk-social-messages-from">
+                                        <a href="#"><img src="assets/images/avatar-4-sm.jpg" alt="Luke" title="Luke"></a>
+                                    </div>
+                                    <div class="nk-social-messages-subject">
+                                        <a href="social-user-messages-single.html">Expound exercise</a>
+                                    </div>
+                                    <div class="nk-social-messages-excerpt">
+                                        <a href="social-user-messages-single.html">Yes!</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-messages-description">
+                                    <div class="nk-social-messages-since">2 years ago</div>
+                                    <a href="#" class="nk-social-messages-remove"><span class="ion-trash-b"></span></a>
+                                    <a href="#" class="nk-social-messages-favorite"><span class="ion-android-star-outline"></span></a>
+                                    <div class="nk-social-messages-from">
+                                        <a href="#"><img src="assets/images/avatar-5-sm.jpg" alt="Bob" title="Bob"></a>
+                                    </div>
+                                    <div class="nk-social-messages-subject">
+                                        <a href="social-user-messages-single.html">Rationally this was no enjoy</a>
+                                    </div>
+                                    <div class="nk-social-messages-excerpt">
+                                        <a href="social-user-messages-single.html">There account that how idea</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="nk-gap"></div>
+                <div class="nk-social-messages-options">
+                    <select class="form-control">
+                        <option value="" selected="selected">Bulk Actions</option>
+                        <option value="read">Mark read</option>
+                        <option value="unread">Mark unread</option>
+                        <option value="delete">Delete</option>
+                    </select>
+                    <button class="nk-btn link-effect-4">Apply</button>
+                </div>
+
+                <div class="nk-gap"></div>
+                <div>
+                    <em>Viewing 1 - 4 of 4 messages</em>
+                </div>
+                <!-- END: Messages -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% set header_title = 'Store' %}
+{% set header_show = false %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="nk-gap-4"></div>
+
+        <div class="nk-store">
+
+            <!-- START: Products List -->
+            <div class="row no-gutters">
+                {% for product in shop %}
+                    <div class="col-sm-6 col-lg-4">
+
+                        <!-- START: Product -->
+                        <div class="nk-product" data-mouse-parallax-z="2">
+                            <div>
+                                <div class="nk-carousel-3" data-size="1" data-mouse-parallax-z="3">
+                                    <div class="nk-carousel-inner nk-popup-gallery">
+                                        {% for photo in product.photos %}
+                                            <div><div>
+                                                <img class="nk-img-stretch" src="{{ photo.sm }}" alt="{{ product.title }}">
+                                            </div></div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <h2 class="nk-product-title h5" data-mouse-parallax-z="1"><a href="{{ product.url }}">{{ product.title }}</a></h2>
+
+                                {{ macros.rating(product.rating) }}
+
+                                <div class="nk-product-bottom">
+                                    <div>
+                                        <div class="nk-product-price">{{ product.price | safe }}</div>
+                                        <a href="#">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: Product -->
+
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- END: Products List -->
+
+            <div class="nk-gap-5"></div>
+
+            <!-- START: Pagination -->
+            <div class="nk-pagination nk-pagination-center">
+                <nav>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a class="nk-pagination-current-white" href="#">3</a>
+                    <a href="#">4</a>
+                    <span>...</span>
+                </nav>
+            </div>
+            <!-- END: Pagination -->
+        </div>
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+    </div>
+{% endblock %}

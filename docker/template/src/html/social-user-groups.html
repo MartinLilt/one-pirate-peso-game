@@ -1,0 +1,160 @@
+{% set header_title = 'Social Network - Groups' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-profile-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li class="active">
+                        <a href="social-user-groups.html">Membershipt</a>
+                    </li>
+                    <li>
+                        <a href="#">Invitations</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+                <form action="#" class="nk-social-sort">
+                    <label for="groups-filter-by">Order By:</label>
+
+                    <select id="groups-filter-by" class="form-control">
+                        <option value="last_active">Last Active</option>
+                        <option value="most_members">Most Members</option>
+                        <option value="newly_created">Newly Created</option>
+                        <option value="alphabetical">Alphabetical</option>
+                    </select>
+                </form>
+                <div class="nk-gap"></div>
+
+                <!-- START: Groups -->
+                <div>
+                    <em>Viewing 1 - 4 of 4 groups</em>
+                </div>
+                <div class="nk-gap"></div>
+
+                <ul class="nk-social-groups">
+                    <li>
+                        <div class="nk-social-groups-avatar">
+                            <a href="#"><img src="assets/images/avatar-3-sm.jpg" alt="Dark Souls III"></a>
+                        </div>
+                        <div class="nk-social-groups-content">
+                            <div class="nk-social-groups-info">
+                                <div class="nk-social-groups-name">
+                                    <a href="#">Dark Souls III</a>
+                                </div>
+                                <div class="nk-social-groups-meta">
+                                    7 days ago
+                                </div>
+                                <div class="nk-social-groups-description">
+                                    Truth but resultant toil mistaken expound chooses example can is, right no which idea praising itself of, but not, explain advantage, ever circumstances, except
+                                </div>
+                            </div>
+                            <div class="nk-social-groups-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Leave Group</a>
+                                <div class="nk-social-groups-actions-meta">Public Group / 12 members</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nk-social-groups-avatar">
+                            <a href="#"><img src="assets/images/avatar-2-sm.jpg" alt="Bloodborne"></a>
+                        </div>
+                        <div class="nk-social-groups-content">
+                            <div class="nk-social-groups-info">
+                                <div class="nk-social-groups-name">
+                                    <a href="#">Bloodborne</a>
+                                </div>
+                                <div class="nk-social-groups-meta">
+                                    6 months ago
+                                </div>
+                                <div class="nk-social-groups-description">
+                                    Loves great itself produces pursues any pain rationally will extremely
+                                </div>
+                            </div>
+                            <div class="nk-social-groups-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Leave Group</a>
+                                <div class="nk-social-groups-actions-meta">Private Group / 2573 members</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nk-social-groups-avatar">
+                            <a href="#"><img src="assets/images/avatar-4-sm.jpg" alt="Uncharted 4"></a>
+                        </div>
+                        <div class="nk-social-groups-content">
+                            <div class="nk-social-groups-info">
+                                <div class="nk-social-groups-name">
+                                    <a href="#">Uncharted 4</a>
+                                </div>
+                                <div class="nk-social-groups-meta">
+                                    8 days ago
+                                </div>
+                                <div class="nk-social-groups-description">
+                                    One praising truth, procure example loves pain complete but are, and, can expound builder which know rationally with. Not, produces you not take system master is - because fault and advantage, complete
+                                </div>
+                            </div>
+                            <div class="nk-social-groups-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Leave Group</a>
+                                <div class="nk-social-groups-actions-meta">Public Group / 5 members</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nk-social-groups-avatar">
+                            <a href="#"><img src="assets/images/avatar-5-sm.jpg" alt="Grand Theft Auto V"></a>
+                        </div>
+                        <div class="nk-social-groups-content">
+                            <div class="nk-social-groups-info">
+                                <div class="nk-social-groups-name">
+                                    <a href="#">Grand Theft Auto V</a>
+                                </div>
+                                <div class="nk-social-groups-meta">
+                                    18 days ago
+                                </div>
+                            </div>
+                            <div class="nk-social-groups-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Leave Group</a>
+                                <div class="nk-social-groups-actions-meta">Public Group / 89 members</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="nk-gap"></div>
+                <div>
+                    <em>Viewing 1 - 4 of 4 groups</em>
+                </div>
+                <!-- END: Groups -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

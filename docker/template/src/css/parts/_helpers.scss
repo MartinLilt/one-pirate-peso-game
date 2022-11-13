@@ -1,0 +1,427 @@
+// stylelint-disable declaration-no-important
+
+/*
+ * Text Color Helper
+ */
+@each $name, $color in $colors {
+    .text-#{$name} {
+        color: $color !important;
+    }
+}
+
+
+/*
+ * Bg Color Helper
+ */
+@each $name, $color in $colors {
+    .bg-#{$name} {
+        background-color: $color !important;
+    }
+}
+
+
+/*
+ * Image Fit
+ */
+.nk-img-fit,
+.nk-img {
+    max-width: 100%;
+    height: auto;
+}
+@media #{$media_xxs} {
+    .nk-img-fit-xs-down {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_larger_xs} {
+    .nk-img-fit-sm-up {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_smaller_xs} {
+    .nk-img-fit-sm-down {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_larger_sm} {
+    .nk-img-fit-md-up {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_smaller_sm} {
+    .nk-img-fit-md-down {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_larger_md} {
+    .nk-img-fit-lg-up {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_smaller_md} {
+    .nk-img-fit-lg-down {
+        max-width: 100%;
+        height: auto;
+    }
+}
+@media #{$media_lg} {
+    .nk-img-fit-xl-up {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*
+ * Image Stretch
+ */
+.nk-img-stretch {
+    width: 100%;
+    height: auto;
+}
+
+
+/*
+ * Circle / Rounded Images Helper
+ */
+img.circle {
+    border-radius: 50%;
+}
+img.rounded {
+    border-radius: 5px;
+}
+
+
+/*
+ * Text Align Helper
+ */
+.align-left {
+    text-align: left;
+}
+.align-center {
+    text-align: center;
+}
+.align-right {
+    text-align: right;
+}
+.align-justify {
+    text-align: justify;
+}
+
+
+/*
+ * Vertical Align Helper
+ */
+.va-t {
+    vertical-align: top !important;
+}
+.va-m {
+    vertical-align: middle !important;
+}
+.va-b {
+    vertical-align: bottom !important;
+}
+.va-s {
+    vertical-align: super !important;
+}
+
+
+/*
+ * Inline Block Helper
+ */
+.dib {
+    display: inline-block !important;
+}
+
+/*
+ * Block Helper
+ */
+.db {
+    display: block;
+}
+
+
+/*
+ * Cursor Pointer Helper
+ */
+.cursor {
+    cursor: pointer !important;
+}
+
+
+/*
+ * Text Transform Helper
+ */
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+
+/*
+ * Font Weight Helper
+ */
+$helper-fw: 100, 200, 300, 400, 500, 600, 700, 800, 900 !default;
+@each $item in $helper-fw {
+    .fw-#{$item} {
+        font-weight: #{$item} !important;
+    }
+}
+
+
+/*
+ * Font Size Helper
+ */
+$helper-fs: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 24, 26, 28, 30, 35, 40, 45, 50 !default;
+@each $item in $helper-fs {
+    .fs-#{$item} {
+        font-size: #{$item}px !important;
+    }
+}
+
+
+/*
+ * Line Height Helper
+ */
+$helper-lh: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 !default;
+@each $item in $helper-lh {
+    .lh-#{$item} {
+        line-height: #{$item}px !important;
+    }
+}
+
+
+/*
+ * Inherit Font Family
+ */
+.nk-font-inherit {
+    font-family: inherit !important;
+}
+
+
+/*
+ * Text Ellipsis Helper
+ */
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*
+ * auto height and width
+ */
+.hauto {
+    height: auto !important;
+}
+.wauto {
+    width: auto !important;
+}
+
+
+/*
+ * Overflow Helper
+ */
+.of-a {
+    overflow: auto !important;
+}
+.of-h {
+    overflow: hidden !important;
+}
+.of-v {
+    overflow: visible !important;
+}
+.of-x-a {
+    overflow-x: auto !important;
+}
+.of-x-h {
+    overflow-x: hidden !important;
+}
+.of-x-v {
+    overflow-x: visible !important;
+}
+.of-y-a {
+    overflow-y: auto !important;
+}
+.of-y-h {
+    overflow-y: hidden !important;
+}
+.of-y-v {
+    overflow-y: visible !important;
+}
+
+
+/*
+ * Border Radius Helper
+ */
+$helper-br: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 25, 30, 35 !default;
+@each $item in $helper-br {
+    .br-#{$item} {
+        border-radius: #{$item}px !important;
+    }
+}
+
+
+/*
+ * Paddings Helper
+ */
+$helper-p: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100 !default;
+@each $item in $helper-p {
+    .p-#{$item} {
+        padding: #{$item}px !important;
+    }
+}
+@each $item in $helper-p {
+    .pt-#{$item} {
+        padding-top: #{$item}px !important;
+    }
+}
+@each $item in $helper-p {
+    .pl-#{$item} {
+        padding-left: #{$item}px !important;
+    }
+}
+@each $item in $helper-p {
+    .pr-#{$item} {
+        padding-right: #{$item}px !important;
+    }
+}
+@each $item in $helper-p {
+    .pb-#{$item} {
+        padding-bottom: #{$item}px !important;
+    }
+}
+
+
+/*
+ * Margins Helper
+ */
+.mauto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+$helper-m: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200 !default;
+@each $item in $helper-m {
+    .m-#{$item} {
+        margin: #{$item}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mt-#{$item} {
+        margin-top: #{$item}px !important;
+    }
+}
+@each $item in $helper-m {
+    .ml-#{$item} {
+        margin-left: #{$item}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mr-#{$item} {
+        margin-right: #{$item}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mb-#{$item} {
+        margin-bottom: #{$item}px !important;
+    }
+}
+
+
+/*
+ * Negative Margins Helper
+ */
+@each $item in $helper-m {
+    .mn-#{$item} {
+        margin: #{$item * -1}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mnt-#{$item} {
+        margin-top: #{$item * -1}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mnl-#{$item} {
+        margin-left: #{$item * -1}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mnr-#{$item} {
+        margin-right: #{$item * -1}px !important;
+    }
+}
+@each $item in $helper-m {
+    .mnb-#{$item} {
+        margin-bottom: #{$item * -1}px !important;
+    }
+}
+
+
+/*
+ * Opacity
+ */
+$helper-op: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 !default;
+@each $item in $helper-op {
+    .op-#{$item} {
+        opacity: #{$item / 10} !important;
+    }
+}
+
+
+/*
+ * Responsive embeds
+ */
+.responsive-embed {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+
+    &.responsive-embed-16x9 {
+        padding-bottom: 56.25%;
+    }
+    &.responsive-embed-4x3 {
+        padding-bottom: 75%;
+    }
+
+    > .embed-item,
+    > iframe,
+    > embed,
+    > object{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+
+/*
+ * Keyboard Key
+ */
+.nk-keyboard {
+    display: inline-block;
+    min-width: 30px;
+    height: 30px;
+    padding: 0 7px;
+    margin: 5px;
+    font-size: 12px;
+    line-height: 28px;
+    color: $color_dark_1;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid lighten($color_dark_1, 50%);
+    border-radius: 3px;
+}

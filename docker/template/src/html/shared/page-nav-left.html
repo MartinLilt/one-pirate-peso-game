@@ -1,0 +1,104 @@
+{% macro submenu(nav) -%}
+    {% for file, item in nav -%}
+        <li class="{{ 'active' if isActiveMenuItem(file, item, filename) }} {{ 'nk-drop-item' if item.sub }}">
+            <a href="{{file | safe}}">
+                {{item.name | safe}}
+                {%- if item.description -%}
+                    <span class="nk-item-descr">{{item.description | safe}}</span>
+                {%- endif -%}
+            </a>
+            {%- if item.sub -%}
+                <ul class="dropdown">
+                    {{ submenu(item.sub) }}
+                </ul>
+            {%- endif %}
+        </li>
+    {%- endfor %}
+{%- endmacro %}
+
+<!--
+    START: Navbar
+
+    Additional Classes:
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+-->
+<nav class="nk-navbar nk-navbar-side nk-navbar-left nk-navbar-lg nk-navbar-align-{{ nav_left_align }} nk-navbar-overlay-content{{ ' nk-navbar-light' if nav_light }}" id="nk-navbar-left">
+    <div class="nano">
+        <div class="nano-content">
+            <div class="nk-nav-table">
+                <div class="nk-nav-row">
+                    {% if nav_logo %}
+                    <a href="index.html" class="nk-nav-logo">
+                        <img src="{{ nav_logo_light if nav_light else nav_logo }}" alt="" width="130">
+                    </a>
+                    {% endif %}
+                    <ul class="nk-nav-icons">
+                        {% if nav_search %}
+                        <li>
+                            <a href="#" class="nk-search-toggle no-link-effect">
+                                <span class="nk-icon-search"></span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if nav_cart %}
+                        <li>
+                            <a href="#" class="nk-cart-toggle no-link-effect">
+                                <span class="nk-icon-toggle">
+                                    <span class="nk-icon-toggle-front">
+                                        <span class="ion-android-cart"></span>
+                                        <span class="nk-badge">8</span>
+                                    </span>
+                                    <span class="nk-icon-toggle-back">
+                                        <span class="nk-icon-close"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if nav_sign %}
+                        <li>
+                            <a href="#" class="nk-sign-toggle no-link-effect">
+                                <span class="nk-icon-toggle">
+                                    <span class="nk-icon-toggle-front">
+                                        <span class="fa fa-sign-in"></span>
+                                    </span>
+                                    <span class="nk-icon-toggle-back">
+                                        <span class="nk-icon-close"></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                <!--
+                    START: Navigation
+
+                    Additional Classes:
+                        .nk-nav-row-top
+                        .nk-nav-row-center
+                        .nk-nav-row-bottom
+                -->
+                <div class="nk-nav-row nk-nav-row-full nk-nav-row-{{ nav_left_align_v }}">
+                    <ul class="nk-nav" data-nav-mobile="#nk-nav-mobile">
+                        {{ submenu(navigation) }}
+                    </ul>
+                </div>
+                <!--
+                    END: Navigation
+                -->
+                <div class="nk-nav-row">
+                    <div class="nk-nav-footer">
+                        &copy; 2020 nK Group Inc. Developed in association with LoremInc. IpsumCompany, SitAmmetGroup, CumSit and related logos are registered trademarks. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: Navbar -->

@@ -1,0 +1,124 @@
+{% set header_title = 'Pagination' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="nk-gap-4"></div>
+
+    <div class="container">
+
+        <!-- START: Pagination 1 -->
+        <div class="nk-pagination">
+            <a href="#" class="nk-pagination-prev">
+                <span class="nk-icon-arrow-left"></span>
+            </a>
+            <a href="#" class="nk-pagination-next">
+                <span class="nk-icon-arrow-right"></span>
+            </a>
+        </div>
+        <!-- END: Pagination 1 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 2 -->
+        <div class="nk-pagination nk-pagination-center">
+            <a href="#" class="nk-pagination-prev">
+                <span class="nk-icon-arrow-left"></span>
+            </a>
+            <a href="#" class="nk-pagination-next">
+                <span class="nk-icon-arrow-right"></span>
+            </a>
+        </div>
+        <!-- END: Pagination 2 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 3 -->
+        <div class="nk-pagination nk-pagination-center">
+            <a href="#" class="nk-pagination-prev">
+                <span class="nk-icon-arrow-left"></span>
+            </a>
+            <nav>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a class="nk-pagination-current-white" href="#">3</a>
+                <span>...</span>
+                <a href="#">14</a>
+            </nav>
+            <a href="#" class="nk-pagination-next">
+                <span class="nk-icon-arrow-right"></span>
+            </a>
+        </div>
+        <!-- END: Pagination 3 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 4 -->
+        <div class="nk-pagination nk-pagination-center">
+            <a href="#" class="nk-pagination-prev disabled">
+                <span class="nk-icon-arrow-left"></span>
+            </a>
+            <nav>
+                <a class="nk-pagination-current-white" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+            </nav>
+            <a href="#" class="nk-pagination-next">
+                <span class="nk-icon-arrow-right"></span>
+            </a>
+        </div>
+        <!-- END: Pagination 4 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 5 -->
+        <div class="nk-pagination nk-pagination-left">
+            <nav>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a class="nk-pagination-current-white" href="#">3</a>
+                <a href="#">4</a>
+            </nav>
+        </div>
+        <!-- END: Pagination 5 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 6 -->
+        <div class="nk-pagination nk-pagination-center">
+            <nav>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a class="nk-pagination-current-white" href="#">3</a>
+                <a href="#">4</a>
+            </nav>
+        </div>
+        <!-- END: Pagination 6 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 7 -->
+        <div class="nk-pagination nk-pagination-right">
+            <nav>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a class="nk-pagination-current-white" href="#">3</a>
+                <a href="#">4</a>
+            </nav>
+        </div>
+        <!-- END: Pagination 7 -->
+
+        <div class="nk-gap-3"></div>
+
+        <!-- START: Pagination 8 -->
+        <div class="nk-pagination nk-pagination-center">
+            <a href="#!" class="nk-btn nk-btn-lg nk-btn-circle link-effect-4">Load More ...</a>
+        </div>
+        <!-- END: Pagination 8 -->
+    </div>
+
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-4"></div>
+{% endblock %}

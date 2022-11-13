@@ -1,0 +1,221 @@
+{% set header_title = 'Main Game Discussions' %}
+{% set header_bottom_line = '
+<div class="nk-header-text-bottom">
+    <div class="nk-breadcrumbs text-center">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><span>Main Game Discussions</span></li>
+        </ul>
+    </div>
+</div>
+' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="nk-gap-4"></div>
+
+    <div class="container">
+
+        <!-- START: Pagination -->
+        <div class="row">
+            <div class="col-md-3 order-md-2 text-right">
+                <a href="#" class="nk-btn nk-btn-lg link-effect-4">New Topic</a>
+            </div>
+            <div class="col-md-9">
+                <div class="nk-pagination nk-pagination-left">
+                    <a href="#" class="nk-pagination-prev disabled">
+                        <span class="nk-icon-arrow-left"></span>
+                    </a>
+                    <nav>
+                        <a class="nk-pagination-current-white" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                    </nav>
+                    <a href="#" class="nk-pagination-next">
+                        <span class="nk-icon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END: Pagination -->
+
+        <div class="nk-gap-2"></div>
+
+        <!-- START: Forums List -->
+        <ul class="nk-forum">
+            <li>
+                <div class="nk-forum-icon">
+                    <span class="ion-pin"></span>
+                </div>
+                <div class="nk-forum-title">
+                    <h3><a href="forum-single-topic.html">Suggestions</a></h3>
+                    <div class="nk-forum-title-sub">Started by <a href="#">nK</a> on January 17, 2017</div>
+                </div>
+                <div class="nk-forum-count">
+                    178 posts
+                </div>
+                <div class="nk-forum-activity-avatar">
+                    <img src="{{ users[0].avatar_sm }}" alt="{{ users[0].name }}">
+                </div>
+                <div class="nk-forum-activity">
+                    <div class="nk-forum-activity-title" title="{{ users[0].name }}">
+                        <a href="#">{{ users[0].name }}</a>
+                    </div>
+                    <div class="nk-forum-activity-date">
+                        September 11, 2017
+                    </div>
+                </div>
+            </li>
+            <li class="nk-forum-locked">
+                <div class="nk-forum-icon">
+                    <span class="ion-locked"></span>
+                </div>
+                <div class="nk-forum-title">
+                    <h3><a href="forum-single-topic.html">Are you ready for 2.0 release?</a></h3>
+                    <div class="nk-forum-title-sub">Started by <a href="#">{{ users[0].name }}</a> on August 23, 2017</div>
+                </div>
+                <div class="nk-forum-count">
+                    3 posts
+                </div>
+                <div class="nk-forum-activity-avatar">
+                    <img src="{{ users[1].avatar_sm }}" alt="{{ users[1].name }}">
+                </div>
+                <div class="nk-forum-activity">
+                    <div class="nk-forum-activity-title" title="{{ users[1].name }}">
+                        <a href="#">{{ users[1].name }}</a>
+                    </div>
+                    <div class="nk-forum-activity-date">
+                        August 26, 2017
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-icon">
+                    <span class="ion-chatboxes"></span>
+                </div>
+                <div class="nk-forum-title">
+                    <h3><a href="forum-single-topic.html">When will be next closed beta?</a></h3>
+                    <div class="nk-forum-title-sub">Started by <a href="#">{{ users[3].name }}</a> on August 9, 2017</div>
+                </div>
+                <div class="nk-forum-count">
+                    4 posts
+                </div>
+                <div class="nk-forum-activity-avatar">
+                    <img src="{{ users[2].avatar_sm }}" alt="{{ users[2].name }}">
+                </div>
+                <div class="nk-forum-activity">
+                    <div class="nk-forum-activity-title" title="{{ users[2].name }}">
+                        <a href="#">{{ users[2].name }}</a>
+                    </div>
+                    <div class="nk-forum-activity-date">
+                        August 15, 2017
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-icon">
+                    <span class="ion-chatboxes"></span>
+                </div>
+                <div class="nk-forum-title">
+                    <h3><a href="forum-single-topic.html">Add new post types</a></h3>
+                    <div class="nk-forum-title-sub">Started by <a href="#">{{ users[1].name }}</a> on Jule 28, 2017</div>
+                </div>
+                <div class="nk-forum-count">
+                    1 post
+                </div>
+                <div class="nk-forum-activity-avatar">
+                    <img src="{{ users[1].avatar_sm }}" alt="{{ users[1].name }}">
+                </div>
+                <div class="nk-forum-activity">
+                    <div class="nk-forum-activity-title" title="{{ users[1].name }}">
+                        <a href="#">{{ users[1].name }}</a>
+                    </div>
+                    <div class="nk-forum-activity-date">
+                        Jule 28, 2017
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-icon">
+                    <span class="ion-chatboxes"></span>
+                </div>
+                <div class="nk-forum-title">
+                    <h3><a href="forum-single-topic.html">Clan Wars functionality</a></h3>
+                    <div class="nk-forum-title-sub">Started by <a href="#">{{ users[0].name }}</a> on June 17, 2017</div>
+                </div>
+                <div class="nk-forum-count">
+                    8 posts
+                </div>
+                <div class="nk-forum-activity-avatar">
+                    <img src="{{ users[3].avatar_sm }}" alt="{{ users[3].name }}">
+                </div>
+                <div class="nk-forum-activity">
+                    <div class="nk-forum-activity-title" title="{{ users[3].name }}">
+                        <a href="#">{{ users[3].name }}</a>
+                    </div>
+                    <div class="nk-forum-activity-date">
+                        Jule 6, 2017
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-icon">
+                    <span class="ion-chatboxes"></span>
+                </div>
+                <div class="nk-forum-title">
+                    <h3><a href="forum-single-topic.html">Some questions before start</a></h3>
+                    <div class="nk-forum-title-sub">Started by <a href="#">{{ users[0].name }}</a> on June 28, 2017</div>
+                </div>
+                <div class="nk-forum-count">
+                    1 post
+                </div>
+                <div class="nk-forum-activity-avatar">
+                    <img src="{{ users[0].avatar_sm }}" alt="{{ users[0].name }}">
+                </div>
+                <div class="nk-forum-activity">
+                    <div class="nk-forum-activity-title" title="{{ users[0].name }}">
+                        <a href="#">{{ users[0].name }}</a>
+                    </div>
+                    <div class="nk-forum-activity-date">
+                        June 28, 2017
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- END: Forums List -->
+
+        <div class="nk-gap-2"></div>
+
+        <!-- START: Pagination -->
+        <div class="row">
+            <div class="col-md-3 order-md-2 text-right">
+                <a href="#" class="nk-btn nk-btn-lg link-effect-4">New Topic</a>
+            </div>
+            <div class="col-md-9">
+                <div class="nk-pagination nk-pagination-left">
+                    <a href="#" class="nk-pagination-prev disabled">
+                        <span class="nk-icon-arrow-left"></span>
+                    </a>
+                    <nav>
+                        <a class="nk-pagination-current-white" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                    </nav>
+                    <a href="#" class="nk-pagination-next">
+                        <span class="nk-icon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END: Pagination -->
+    </div>
+
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-4"></div>
+{% endblock %}

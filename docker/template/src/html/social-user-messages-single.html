@@ -1,0 +1,103 @@
+{% set header_title = 'Social Network - Single Message' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-profile-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li>
+                        <a href="#">Inbox</a>
+                    </li>
+                    <li>
+                        <a href="#">Compose</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+                <!-- START: Messages -->
+                <h2>Hey, man!</h2>
+                <div>
+                    <em>Conversation between <a href="#">John</a> and you.</em>
+                    <a class="nk-btn nk-btn-xs float-right" href="#" title="Delete Conversation">Delete</a>
+                </div>
+
+                <div class="nk-social-messages-single">
+                    <div class="nk-social-messages-single-avatar">
+                        <a href="#"><img src="assets/images/avatar-1-sm.jpg" alt="nK"></a>
+                    </div>
+                    <div class="nk-social-messages-single-content">
+                        <div class="nk-social-messages-single-meta">
+                            <a href="#" class="nk-social-messages-single-meta-name">nK</a> Sent <a href="#" class="nk-social-messages-single-meta-time">6 days ago</a>
+                            <a href="#" class="nk-social-messages-single-meta-favorite"><span class="ion-android-star-outline"></span></a>
+                        </div>
+                        <div class="nk-social-messages-single-text">
+                            How are you?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-social-messages-single">
+                    <div class="nk-social-messages-single-avatar">
+                        <a href="#"><img src="assets/images/avatar-2-sm.jpg" alt="John"></a>
+                    </div>
+                    <div class="nk-social-messages-single-content">
+                        <div class="nk-social-messages-single-meta">
+                            <a href="#" class="nk-social-messages-single-meta-name">John</a> Sent <a href="#" class="nk-social-messages-single-meta-time">2 days ago</a>
+                            <a href="#" class="nk-social-messages-single-meta-favorite"><span class="ion-android-star"></span></a>
+                        </div>
+                        <div class="nk-social-messages-single-text">
+                            Again all builder annoying enjoy anyone teachings rejects and can obtain those. Us, pursue laborious toil wrong do point avoid by fruit learn or in death. So passage however besides invited comfort elderly be me. Walls began of child civil am heard hoped my. Satisfied pretended mr on do determine by. Old post took and ask seen fact rich. Man entrance settling believed eat joy. Money as drift begin on to. Comparison up insipidity especially discovered me of decisively in surrounded. Points six way enough she its father. Folly sex downs tears ham green forty.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="nk-social-messages-single">
+                    <div class="nk-social-messages-single-avatar">
+                        <a href="#"><img src="assets/images/avatar-1-sm.jpg" alt="nK"></a>
+                    </div>
+                    <div class="nk-social-messages-single-content">
+                        <div class="nk-social-messages-single-text">
+                            <form action="#">
+                                <textarea class="form-control" placeholder="Send a Reply" rows="4"></textarea>
+                                <div class="nk-gap"></div>
+                                <button class="nk-btn link-effect-4 float-right">Send Reply</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END: Messages -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

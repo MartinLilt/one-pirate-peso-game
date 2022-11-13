@@ -1,0 +1,45 @@
+<!-- START: Navigation Toggler -->
+<ul class="nk-nav-toggler-right">
+    {% if nav_full %}
+    <li>
+        <span class="nk-btn nk-btn-lg nk-btn-icon nk-navbar-full-toggle">
+            <span class="icon">
+                <span class="nk-icon-burger">
+                    <span class="nk-t-1"></span>
+                    <span class="nk-t-2"></span>
+                    <span class="nk-t-3"></span>
+                </span>
+            </span>
+        </span>
+    </li>
+    {% endif %}
+    {% if nav_side %}
+    <li>
+        <span class="nk-btn nk-btn-lg nk-btn-icon" data-nav-toggle="#nk-side">
+            <span class="icon">
+                <span class="nk-icon-burger">
+                    <span class="nk-t-1"></span>
+                    <span class="nk-t-2"></span>
+                    <span class="nk-t-3"></span>
+                </span>
+            </span>
+        </span>
+    </li>
+    {% endif %}
+</ul>
+{% if nav_mobile and nav and navigation %}
+<ul class="nk-nav-toggler-left">
+    <li class="d-lg-none">
+        <span class="nk-btn nk-btn-lg nk-btn-icon" data-nav-toggle="#nk-nav-mobile">
+            <span class="icon">
+                <span class="nk-icon-burger">
+                    <span class="nk-t-1"></span>
+                    <span class="nk-t-2"></span>
+                    <span class="nk-t-3"></span>
+                </span>
+            </span>
+        </span>
+    </li>
+</ul>
+{% endif %}
+<!-- END: Navigation Toggler -->

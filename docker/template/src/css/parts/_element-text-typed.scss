@@ -1,0 +1,22 @@
+.nk-typed {
+    > span {
+        position: absolute;
+        left: -9999px;
+    }
+    > span:first-child,
+    &.ready > span {
+        position: relative;
+        left: auto;
+    }
+}
+
+.typed-cursor{
+    font-weight: 400;
+    opacity: 1;
+    animation: .9s nk-typed-blink infinite;
+}
+@keyframes nk-typed-blink {
+    0% { opacity: 1; }
+    44% { opacity: 0; }
+    88% { opacity: 1; }
+}

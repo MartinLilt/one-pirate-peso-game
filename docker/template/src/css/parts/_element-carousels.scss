@@ -1,0 +1,407 @@
+.nk-carousel,
+.nk-carousel-2 {
+    position: relative;
+
+    .flickity-slider > div {
+        display: block;
+        width: 100%;
+        padding: 17px 0;
+    }
+}
+.flickity-page-dots {
+    bottom: -35px;
+}
+.nk-carousel[data-dots="true"],
+.nk-carousel-2[data-dots="true"],
+.nk-carousel-3[data-dots="true"] {
+    padding-bottom: 40px;
+}
+.flickity-page-dots .dot {
+    width: auto;
+    height: auto;
+    padding: 8px 4px;
+    margin: 0 1px;
+    background: none;
+    opacity: .4;
+    transition: .2s opacity;
+
+    &:hover {
+        opacity: .6;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: #cacaca;
+    }
+}
+.nk-flickity-arrow {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: .6;
+    transition: .3s opacity;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid;
+        border-radius: 4px;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &.nk-flickity-arrow-prev {
+        left: 30px;
+        padding-left: 15px;
+    }
+    &.nk-flickity-arrow-next {
+        right: 30px;
+        padding-right: 15px;
+    }
+
+    .nk-icon-arrow-right,
+    .nk-icon-arrow-left {
+        width: 16px;
+        margin-top: 3px;
+    }
+}
+
+// fix click event
+.flickity-viewport.is-dragging a {
+    pointer-events: none;
+}
+
+// add cursor
+.flickity-enabled.is-draggable .flickity-viewport,
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: url("../images/cursor-drag.svg") 24 24, pointer;
+}
+
+/* Style 1 */
+.nk-carousel {
+    .flickity-slider > div > div {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nk-carousel-prev,
+    .nk-carousel-next {
+        position: absolute;
+        top: 12%;
+        width: 25%;
+        min-height: 80px;
+        padding: 17px 0;
+        cursor: pointer;
+        user-select: none;
+        z-index: 1;
+
+        .nk-carousel-arrow-name {
+            overflow: hidden;
+            font-family: $font_headings;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .nk-icon-arrow-left,
+        .nk-icon-arrow-right {
+            position: absolute;
+            top: 28px;
+        }
+        .nk-icon-arrow-left {
+            left: 0;
+        }
+        .nk-icon-arrow-right {
+            right: 0;
+        }
+    }
+    .nk-carousel-prev {
+        left: 0;
+        padding-right: 20px;
+        padding-left: 45px;
+        text-align: left;
+    }
+    .nk-carousel-next {
+        right: 0;
+        padding-right: 45px;
+        padding-left: 20px;
+        text-align: right;
+    }
+
+    @media #{$media_smaller_sm} {
+        .flickity-slider > div > div {
+            width: 90%;
+        }
+        .nk-carousel-prev,
+        .nk-carousel-next {
+            position: relative;
+            display: inline-block;
+            top: auto;
+            width: 49%;
+        }
+    }
+    @media #{$media_xxs} {
+        .nk-carousel-prev,
+        .nk-carousel-next {
+            font-size: .8rem;
+            .nk-carousel-arrow-name {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+/* Style 2 */
+.nk-carousel-2 {
+    .flickity-slider > div {
+        width: 40%;
+        max-width: 600px;
+        margin: 0 20px;
+        opacity: .4;
+        transition: .3s opacity;
+
+        &.is-selected {
+            opacity: 1;
+        }
+
+        @media #{$media_smaller_md} {
+            width: 50%;
+            opacity: .6;
+        }
+        @media #{$media_xs} {
+            width: 70%;
+            margin: 0 20px;
+            opacity: 1;
+        }
+        @media #{$media_xxs} {
+            width: 90%;
+            margin: 0 20px;
+        }
+    }
+
+    // no margin
+    &.nk-carousel-no-margin .flickity-slider > div {
+        margin: 0 !important; // stylelint-disable-line
+    }
+
+    // all slides visible
+    &.nk-carousel-all-visible .flickity-slider > div {
+        opacity: 1 !important; // stylelint-disable-line
+    }
+
+    // x1 size
+    &.nk-carousel-x1 .flickity-slider > div {
+        width: 100%;
+        max-width: none;
+        @media #{$media_smaller_md} {
+            width: 100%;
+        }
+        @media #{$media_xs} {
+            width: 100%;
+        }
+        @media #{$media_xxs} {
+            width: 100%;
+        }
+    }
+    // x2 size
+    &.nk-carousel-x2 .flickity-slider > div {
+        width: 33.3334%;
+        @media #{$media_smaller_md} {
+            width: 33.3334%;
+        }
+        @media #{$media_xs} {
+            width: 50%;
+        }
+        @media #{$media_xxs} {
+            width: 100%;
+        }
+    }
+    // x3 size
+    &.nk-carousel-x3 .flickity-slider > div {
+        width: 25%;
+        @media #{$media_smaller_md} {
+            width: 33.3334%;
+        }
+        @media #{$media_xs} {
+            width: 50%;
+        }
+        @media #{$media_xxs} {
+            width: 100%;
+        }
+    }
+    // x4 size
+    &.nk-carousel-x4 .flickity-slider > div {
+        width: 20%;
+        @media #{$media_smaller_md} {
+            width: 25%;
+        }
+        @media #{$media_xs} {
+            width: 33.3334%;
+        }
+        @media #{$media_xxs} {
+            width: 50%;
+        }
+    }
+    // x5 size
+    &.nk-carousel-x5 .flickity-slider > div {
+        width: 14.285%;
+        @media #{$media_smaller_md} {
+            width: 20%;
+        }
+        @media #{$media_xs} {
+            width: 25%;
+        }
+        @media #{$media_xxs} {
+            width: 50%;
+        }
+    }
+}
+
+
+/* Wide Slider */
+.nk-carousel-3 {
+    position: relative;
+
+    // items
+    .flickity-slider > div {
+        display: block;
+        opacity: .4;
+        transition: .3s opacity;
+
+        &.is-selected {
+            opacity: 1;
+        }
+    }
+    .flickity-slider > div > div,
+    .flickity-slider > div > div img {
+        width: auto;
+        height: 100%;
+    }
+
+    // title
+    .nk-portfolio-title,
+    .nk-portfolio-sub-title {
+        display: none;
+    }
+
+    // arrows
+    .nk-carousel-prev,
+    .nk-carousel-next {
+        position: relative;
+        top: 12%;
+        width: 25%;
+        min-height: 80px;
+        padding: 17px 0;
+        cursor: pointer;
+        user-select: none;
+        z-index: 1;
+
+        .nk-carousel-arrow-name {
+            overflow: hidden;
+            font-family: $font_headings;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .nk-icon-arrow-left,
+        .nk-icon-arrow-right {
+            position: absolute;
+            top: 28px;
+        }
+        .nk-icon-arrow-left {
+            left: 0;
+        }
+        .nk-icon-arrow-right {
+            right: 0;
+        }
+    }
+    .nk-carousel-prev {
+        float: left;
+        left: 0;
+        padding-right: 20px;
+        padding-left: 45px;
+        text-align: left;
+    }
+    .nk-carousel-next {
+        float: right;
+        right: 0;
+        padding-right: 45px;
+        padding-left: 20px;
+        text-align: right;
+    }
+
+    // current item name and date
+    .nk-carousel-current {
+        display: block;
+        width: 50%;
+        padding: 17px;
+        margin: 0 auto;
+        text-align: center;
+
+        .nk-carousel-name a,
+        .nk-carousel-links a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .nk-carousel-name {
+            margin-bottom: .5rem;
+        }
+        .nk-carousel-links {
+            font-size: .9rem;
+
+            a {
+                opacity: .6;
+                transition: .3s opacity;
+            }
+            a:hover {
+                opacity: .9;
+            }
+        }
+    }
+
+    @media #{$media_smaller_sm} {
+        .nk-carousel-prev,
+        .nk-carousel-next {
+            position: relative;
+            top: auto;
+            width: 49%;
+        }
+        .nk-carousel-current {
+            width: 100%;
+        }
+    }
+    @media #{$media_xxs} {
+        .nk-carousel-prev,
+        .nk-carousel-next {
+            font-size: .8rem;
+            .nk-carousel-arrow-name {
+                font-size: 1rem;
+            }
+        }
+    }
+}

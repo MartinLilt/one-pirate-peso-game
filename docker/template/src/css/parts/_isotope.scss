@@ -1,0 +1,132 @@
+.nk-isotope {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    // with gap
+    &.nk-isotope-gap .nk-isotope-item {
+        padding: 15px;
+    }
+    &.nk-isotope-gap-small .nk-isotope-item {
+        padding: 10px;
+    }
+
+    // items
+    .nk-isotope-item {
+        display: block;
+        float: left;
+        width: 25%;
+
+        &.nk-isotope-item-x2 {
+            width: 50%;
+        }
+        &.nk-isotope-item-x3 {
+            width: 75%;
+        }
+        &.nk-isotope-item-x4 {
+            width: 100%;
+        }
+    }
+
+    // 3 columns
+    &.nk-isotope-3-cols {
+        .nk-isotope-item {
+            width: 33.332%;
+
+            &.nk-isotope-item-x2 {
+                width: 66.665%;
+            }
+            &.nk-isotope-item-x3 {
+                width: 100%;
+            }
+        }
+    }
+
+    // 2 columns
+    &.nk-isotope-2-cols {
+        .nk-isotope-item {
+            width: 50%;
+
+            &.nk-isotope-item-x2,
+            &.nk-isotope-item-x3 {
+                width: 100%;
+            }
+        }
+    }
+
+    @media #{$media_md} {
+        .nk-isotope-item,
+        &.nk-isotope-3-cols .nk-isotope-item {
+            width: 33.3334%;
+
+            &.nk-isotope-item-x2,
+            &.nk-isotope-item-x3 {
+                width: 100%;
+            }
+        }
+    }
+
+    @media #{$media_sm} {
+        .nk-isotope-item,
+        &.nk-isotope-3-cols .nk-isotope-item,
+        &.nk-isotope-2-cols .nk-isotope-item {
+            width: 50%;
+
+            &.nk-isotope-item-x2,
+            &.nk-isotope-item-x3 {
+                width: 100%;
+            }
+        }
+    }
+
+    @media #{$media_xs} {
+        .nk-isotope-item,
+        .nk-isotope-item.nk-isotope-item-x2,
+        .nk-isotope-item.nk-isotope-item-x3,
+        &.nk-isotope-3-cols .nk-isotope-item,
+        &.nk-isotope-2-cols .nk-isotope-item {
+            width: 100%;
+        }
+    }
+}
+
+// filter
+.nk-isotope-filter {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    list-style: none;
+
+    > li {
+        display: inline-block;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: .3s color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            right: 10px;
+            bottom: 5px;
+            left: 10px;
+            border-bottom: 1px solid;
+            opacity: 0;
+            transition: .3s opacity;
+        }
+
+        &.active {
+            position: relative;
+            color: $color_main_1;
+
+            &::after {
+                opacity: .5;
+            }
+        }
+        &:hover {
+            color: $color_main_1;
+        }
+    }
+}

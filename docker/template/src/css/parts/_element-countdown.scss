@@ -1,0 +1,26 @@
+.nk-countdown {
+    width: 100%;
+    text-align: center;
+
+    > div {
+        display: inline-block;
+        min-width: 140px;
+        padding: 10px 0;
+
+        > span {
+            display: block;
+            padding-bottom: 15px;
+            font-family: $font_headings;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        @media #{$media_xs} {
+            min-width: 85px;
+
+            > span {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+html {
+    font-size: $html_font_size;
+}
+
+body {
+    font-family: $font_body;
+    line-height: $body_line_height;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+blockquote {
+    margin-bottom: 1.7rem;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-bottom: 1rem;
+    font-family: $font_headings;
+    font-weight: 600;
+}
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+    font-family: $font_headings;
+    font-weight: 600;
+}
+.display-1 {
+    font-size: 4.7rem;
+}
+.display-2 {
+    font-size: 4.2rem;
+}
+.display-3 {
+    font-size: 3.7rem;
+}
+.display-4 {
+    font-size: 3.2rem;
+}
+
+/* Title */
+.nk-title {
+    position: relative;
+    z-index: 1;
+}
+
+/* Sub Title */
+.nk-sub-title {
+    position: relative;
+    font-family: $font_body;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: $color_main_1;
+    z-index: 1;
+
+    .nk-title + & {
+        margin-top: 1rem;
+    }
+}
+
+/* Back title */
+.nk-title-back {
+    margin-bottom: 0;
+    font-size: 6rem;
+    color: inherit;
+    opacity: .1;
+
+    + * {
+        position: relative;
+        margin-top: -40px;
+    }
+
+    + .nk-sub-title {
+        margin-top: -50px;
+    }
+}
+
+/* Title Separator */
+.nk-title-sep {
+    display: block;
+    margin: 30px auto;
+    line-height: 0;
+    color: inherit;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 80%;
+        max-width: 80px;
+        vertical-align: middle;
+        border-bottom: 1px dotted;
+        opacity: .4;
+    }
+}
+.nk-title-sep-icon {
+    display: block;
+    margin: 30px auto;
+    line-height: 0;
+    color: inherit;
+
+    .icon {
+        font-size: 1.9rem;
+        vertical-align: middle;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 60px;
+        vertical-align: middle;
+        border-bottom: 1px dotted;
+        opacity: .4;
+    }
+    &::before {
+        margin-right: 20px;
+    }
+    &::after {
+        margin-left: 20px;
+    }
+}
+
+/* mega menu titles */
+.nk-mega-item > .dropdown > ul li > label {
+    font-family: $font_headings;
+}

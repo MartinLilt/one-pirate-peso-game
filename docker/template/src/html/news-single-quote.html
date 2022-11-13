@@ -1,0 +1,100 @@
+{% set header_show = false %}
+{% set header_title = posts[2].title %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="nk-gap-3"></div>
+
+                <!-- START: Post -->
+                <div class="nk-blog-post nk-blog-post-single">
+                    <blockquote class="nk-blockquote nk-blockquote-styled mt-0 mb-0">
+                        <div class="bg-image op-6">
+                            <img src="{{ posts[2].thumb_lg }}" alt="" class="jarallax-img">
+                        </div>
+                        <a class="nk-blockquote-cont" href="{{ posts[2].url }}">
+                            <div class="nk-blockquote-icon">“</div>
+                            <em>{{ posts[2].excerpt | safe }}</em>
+                            <div class="nk-blockquote-author">{{ posts[2].quote_author }}</div>
+                        </a>
+                    </blockquote>
+
+                    <!-- START: Post Text -->
+                    <div class="nk-post-text mt-0">
+                        {% include "shared/blog-content.html" %}
+
+                        <!-- START: Post Meta -->
+                        <div class="nk-post-tags">
+                            Tags: &nbsp;
+                            <a href="#">Image</a>
+                            <a href="#">Demonstrate</a>
+                            <a href="#">Tags</a>
+                        </div>
+                        <!-- END: Post Meta -->
+                    </div>
+                    <!-- END: Post Text -->
+
+                    {% include "shared/blog-author.html" %}
+
+                    {% include "shared/blog-comments.html" %}
+                </div>
+                <!-- END: Post -->
+
+                <div class="nk-gap-4"></div>
+            </div>
+            <div class="col-lg-4">
+                <!--
+                    START: Sidebar
+
+                    Additional Classes:
+                        .nk-sidebar-left
+                        .nk-sidebar-right
+                        .nk-sidebar-sticky
+                -->
+                <aside class="nk-sidebar nk-sidebar-right nk-sidebar-sticky">
+                    <div class="nk-gap-5"></div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>Published:</strong> &nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ posts[2].date }}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Category:</strong> &nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ posts[2].cat | safe }}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Written by:</strong> &nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ posts[2].by | safe }}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Views:</strong> &nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ posts[2].views_count }}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Comments:</strong> &nbsp;&nbsp;&nbsp;</td>
+                                <td>{{ posts[2].comments_count }}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Likes:</strong> &nbsp;&nbsp;</td>
+                                <td>
+                                    <span class="nk-action-heart">
+                                        <span class="num">{{ posts[2].likes_count }}</span>
+                                        <span class="like-icon ion-android-favorite-outline"></span>
+                                        <span class="liked-icon ion-android-favorite"></span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {% include "shared/sidebar-blog.html" %}
+                </aside>
+                <!-- END: Sidebar -->
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+    </div>
+{% endblock %}

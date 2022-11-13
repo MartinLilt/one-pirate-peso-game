@@ -1,0 +1,61 @@
+<!--
+    START: Shopping Cart
+
+    Additional Classes:
+        .nk-cart-light
+-->
+<div class="nk-cart">
+    <div class="nk-gap-2"></div>
+    <div class="container">
+        <div class="nk-store nk-store-cart">
+            <div class="table-responsive">
+                <table class="table nk-store-cart-products">
+                    <tbody>
+                        {% for i in [1, 3] %}
+                            <tr>
+                                <td class="nk-product-cart-thumb">
+                                    <a href="{{ shop[i].url }}" class="nk-post-image">
+                                        <img src="{{ shop[i].photos[0].sm }}" alt="{{ shop[i].title }}" class="nk-img">
+                                    </a>
+                                </td>
+                                <td class="nk-product-cart-title" data-title="Product">
+                                    <h2 class="nk-post-title h5">
+                                        <a href="{{ shop[i].url }}">{{ shop[i].title }}</a>
+                                    </h2>
+                                </td>
+                                <td class="nk-product-cart-price" data-title="Price">
+                                    {{ shop[i].price | safe }}
+                                </td>
+                                <td class="nk-product-cart-quantity" data-title="Quantity">
+                                    {{ '1' if i == 1 else '2' }}
+                                </td>
+                                <td class="nk-product-cart-total" data-title="Total">
+                                    {{ shop[i].price if i == 1 else '$250.00' }}
+                                </td>
+                                <td class="nk-product-cart-remove"><a href="#"><span class="ion-trash-b"></span></a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="nk-gap-2"></div>
+            <div class="nk-cart-total">
+                Total <span>$317</span>
+            </div>
+
+            <div class="nk-gap-3"></div>
+            <div class="nk-cart-btns">
+                <a href="store-checkout.html" class="nk-btn nk-btn-lg nk-btn-color-main-1 link-effect-4">
+                    Go to Checkout
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="nk-btn nk-btn-lg link-effect-4 nk-cart-toggle">
+                    Continue Shopping
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="nk-gap-5"></div>
+</div>
+<!-- END: Shopping Cart -->

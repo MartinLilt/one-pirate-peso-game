@@ -1,0 +1,17 @@
+.nk-cookie-alert {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    max-width: 450px;
+    padding: 35px;
+    margin: 30px;
+    background-color: $color_dark_1;
+    z-index: 2000;
+
+    .nk-cookie-alert-close {
+        float: right;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+}

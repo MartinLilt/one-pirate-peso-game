@@ -1,0 +1,159 @@
+{% set header_title = 'Social Network - Notifications' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-profile-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li class="active">
+                        <a href="#">Unread</a>
+                    </li>
+                    <li>
+                        <a href="#">Read</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+                <form action="#" class="nk-social-sort">
+                    <label for="notifications-sort-order-list">Order By:</label>
+
+                    <select id="notifications-sort-order-list" class="form-control">
+                        <option value="DESC" selected="selected">Newest First</option>
+                        <option value="ASC">Oldest First</option>
+                    </select>
+                </form>
+                <div class="nk-gap"></div>
+
+                <!-- START: Notifications -->
+                <div>
+                    <em>Viewing 1 - 4 of 4 notifications</em>
+                </div>
+                <div class="nk-gap"></div>
+
+                <div class="table-responsive nk-social-notifications">
+                    <table class="table table-bordered">
+                        <thead class="thead-default">
+                            <tr>
+                                <th class="nk-social-notifications-bulk-select">
+                                    <input type="checkbox">
+                                </th>
+                                <th>
+                                    Notification
+                                </th>
+                                <th>
+                                    Date Received
+                                </th>
+                                <th>
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-notifications-description">
+                                    <a href="#">Mary commented on one of your updates</a>
+                                </td>
+                                <td class="nk-social-notifications-since">
+                                    54 minutes ago
+                                </td>
+                                <td class="nk-social-notifications-actions">
+                                    <a href="#"><span class="ion-eye"></span> Read</a> <a href="#"><span class="ion-trash-b"></span> Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-notifications-description">
+                                    <a href="#">John commented on one of your updates</a>
+                                </td>
+                                <td class="nk-social-notifications-since">
+                                    2 hours ago
+                                </td>
+                                <td class="nk-social-notifications-actions">
+                                    <a href="#"><span class="ion-eye"></span> Read</a> <a href="#"><span class="ion-trash-b"></span> Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-notifications-description">
+                                    <a href="#">Mary sent you a new private message</a>
+                                </td>
+                                <td class="nk-social-notifications-since">
+                                    1 day ago
+                                </td>
+                                <td class="nk-social-notifications-actions">
+                                    <a href="#"><span class="ion-eye"></span> Read</a> <a href="#"><span class="ion-trash-b"></span> Delete</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td class="nk-social-notifications-description">
+                                    <a href="#">Mary commented on one of your updates</a>
+                                </td>
+                                <td class="nk-social-notifications-since">
+                                    4 days ago
+                                </td>
+                                <td class="nk-social-notifications-actions">
+                                    <a href="#"><span class="ion-eye"></span> Read</a> <a href="#"><span class="ion-trash-b"></span> Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="nk-gap"></div>
+                <div class="nk-social-notifications-options">
+                    <select class="form-control">
+                        <option value="" selected="selected">Bulk Actions</option>
+                        <option value="read">Mark read</option>
+                        <option value="delete">Delete</option>
+                    </select>
+                    <button class="nk-btn link-effect-4">Apply</button>
+                </div>
+
+                <div class="nk-gap"></div>
+                <div>
+                    <em>Viewing 1 - 4 of 4 notifications</em>
+                </div>
+                <!-- END: Notifications -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,126 @@
+{% set header_title = posts[3].title %}
+{% set header_title_show = false %}
+{% set header_boxed = true %}
+{% set header_text = '
+<div class="row text-left">
+    <div class="col-lg-8">
+        <div class="nk-gap-5 d-none d-lg-block"></div>
+        <h1 class="nk-title">' + header_title + '</h1>
+        <div class="nk-gap-3 d-none d-lg-block"></div>
+        <div class="nk-gap-5 d-none d-lg-block"></div>
+    </div>
+    <div class="col-lg-4">
+        <aside class="nk-sidebar nk-sidebar-right">
+            <div class="nk-gap-5 d-none d-lg-block"></div>
+            <div class="nk-gap d-lg-none"></div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><strong>Published:</strong> &nbsp;&nbsp;&nbsp;</td>
+                        <td>' + posts[3].date + '</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Category:</strong> &nbsp;&nbsp;&nbsp;</td>
+                        <td>' + posts[3].cat + '</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Written by:</strong> &nbsp;&nbsp;&nbsp;</td>
+                        <td>' + posts[3].by + '</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Views:</strong> &nbsp;&nbsp;&nbsp;</td>
+                        <td>' + posts[3].views_count + '</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Comments:</strong> &nbsp;&nbsp;&nbsp;</td>
+                        <td>' + posts[3].comments_count + '</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Likes:</strong> &nbsp;&nbsp;</td>
+                        <td>
+                            <span class="nk-action-heart">
+                                <span class="num">' + posts[3].likes_count + '</span>
+                                <span class="like-icon ion-android-favorite-outline"></span>
+                                <span class="liked-icon ion-android-favorite"></span>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="nk-gap-5 d-lg-none"></div>
+        </aside>
+    </div>
+</div>
+' %}
+{% set header_image = posts[3].thumb_full %}
+{% set header_visible = 5 %}
+{% set header_size = 'md' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="nk-blog-container nk-blog-container-offset">
+                    <!-- START: Post -->
+                    <div class="nk-blog-post nk-blog-post-single">
+                        <div class="nk-post-audio">
+                            <img src="{{ posts[3].thumb_lg }}" alt="" class="nk-img-stretch">
+                            <div>
+                                <div class="nk-audio-plain nk-audio-plain-dark" data-src="assets/mp3/purpleplanetmusic-molten-alloy.mp3">
+                                    <div class="nk-audio-plain-title">
+                                        <strong>purpleplanetmusic</strong> - Molten Alloy
+                                        <div class="nk-audio-progress">
+                                            <div class="nk-audio-progress-current"></div>
+                                        </div>
+                                    </div>
+                                    <div class="nk-audio-plain-duration">
+                                        01:50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- START: Post Text -->
+                        <div class="nk-post-text mt-0">
+                            {% include "shared/blog-content.html" %}
+
+                            <!-- START: Post Meta -->
+                            <div class="nk-post-tags">
+                                Tags: &nbsp;
+                                <a href="#">Image</a>
+                                <a href="#">Demonstrate</a>
+                                <a href="#">Tags</a>
+                            </div>
+                            <!-- END: Post Meta -->
+                        </div>
+                        <!-- END: Post Text -->
+
+                        {% include "shared/blog-author.html" %}
+
+                        {% include "shared/blog-comments.html" %}
+                    </div>
+                    <!-- END: Post -->
+
+                    <div class="nk-gap-4"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!--
+                    START: Sidebar
+
+                    Additional Classes:
+                        .nk-sidebar-left
+                        .nk-sidebar-right
+                        .nk-sidebar-sticky
+                -->
+                <aside class="nk-sidebar nk-sidebar-right">
+                    {% include "shared/sidebar-blog.html" %}
+                </aside>
+                <!-- END: Sidebar -->
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+    </div>
+{% endblock %}

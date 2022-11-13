@@ -1,0 +1,29 @@
+<!--
+    START: Page Video Background
+
+    Additional Attributes:
+        data-video - Youtube/Vimeo/self-hosted video urls.
+            self-hosted video example:
+            data-video="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv"
+        data-video-loop - loop video (true/false)
+        data-video-mute - mute video music (true/false)
+        data-video-volume - volume of video music (0-100)
+        data-video-start-time - video start time in seconds
+        data-video-end-time - video end time in seconds
+        data-video-pause-on-page-leave - pause video when the page not in focus (true/false)
+-->
+<div class="nk-page-background op-{{ background.opacity }}{{ (' ' + background.color) | safe if background.color }}" data-video="{{ background.video }}" data-video-loop="true" data-video-mute="true" data-video-volume="0" data-video-start-time="0" data-video-end-time="0" data-video-pause-on-page-leave="true"{{ (' style="background-image: url(\'' + background.image + '\');"') | safe if background.image }}></div>
+<!-- END: Page Background -->
+
+<!--
+    START: Page Audio Background
+
+    Additional Attributes:
+        data-audio - URL to audio file
+        data-audio-volume - audio volume (0-100)
+        data-audio-autoplay - autoplay audio (true/false)
+        data-audio-loop - loop audio (true/false)
+        data-audio-pause-on-page-leave - pause video when the page not in focus (true/false)
+-->
+<div class="nk-page-background-audio d-none" data-audio="{{ background.audio }}" data-audio-volume="100" data-audio-autoplay="true" data-audio-loop="true" data-audio-pause-on-page-leave="true"></div>
+<!-- END: Page Background -->

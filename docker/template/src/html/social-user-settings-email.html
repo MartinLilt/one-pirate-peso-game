@@ -1,0 +1,182 @@
+{% set header_title = 'Social Network - Settings Email' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-profile-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li>
+                        <a href="social-user-settings.html">General</a>
+                    </li>
+                    <li class="active">
+                        <a href="social-user-settings-email.html">Email</a>
+                    </li>
+                    <li>
+                        <a href="#">Profile Visibility</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+
+                <!-- START: Settings -->
+                <form action="#">
+                    <p>Send an email notice when:</p>
+                    <div class="table-responsive nk-social-settings-table">
+                        <table class="table table-bordered">
+                            <thead class="thead-default">
+                                <tr>
+                                    <th class="nk-social-settings-table-title">Activity</th>
+                                    <th class="nk-social-settings-table-check">Yes</th>
+                                    <th class="nk-social-settings-table-check">No</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="nk-social-settings-table-title">A member mentions you in an update using "@nkdevv"</td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification1" value="yes" checked="checked">
+                                        </label>
+                                        <span class="sr-only">Yes, send email</span>
+                                    </td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification1" value="no">
+                                        </label>
+                                        <span class="sr-only">>No, do not send email</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nk-social-settings-table-title">A member replies to an update or comment you've posted</td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification2" value="yes" checked="checked">
+                                        </label>
+                                        <span class="sr-only">Yes, send email</span>
+                                    </td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification2" value="no">
+                                        </label>
+                                        <span class="sr-only">>No, do not send email</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="nk-gap"></div>
+                    <div class="table-responsive nk-social-settings-table">
+                        <table class="table table-bordered">
+                            <thead class="thead-default">
+                                <tr>
+                                    <th class="nk-social-settings-table-title">Messages</th>
+                                    <th class="nk-social-settings-table-check">Yes</th>
+                                    <th class="nk-social-settings-table-check">No</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="nk-social-settings-table-title">A member sends you a new message</td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification3" value="yes" checked="checked">
+                                        </label>
+                                        <span class="sr-only">Yes, send email</span>
+                                    </td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification3" value="no">
+                                        </label>
+                                        <span class="sr-only">>No, do not send email</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="nk-gap"></div>
+                    <div class="table-responsive nk-social-settings-table">
+                        <table class="table table-bordered">
+                            <thead class="thead-default">
+                                <tr>
+                                    <th class="nk-social-settings-table-title">Friends</th>
+                                    <th class="nk-social-settings-table-check">Yes</th>
+                                    <th class="nk-social-settings-table-check">No</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td class="nk-social-settings-table-title">A member sends you a friendship request</td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification4" value="yes" checked="checked">
+                                        </label>
+                                        <span class="sr-only">Yes, send email</span>
+                                    </td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification4" value="no">
+                                        </label>
+                                        <span class="sr-only">>No, do not send email</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nk-social-settings-table-title">A member accepts your friendship request</td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification5" value="yes" checked="checked">
+                                        </label>
+                                        <span class="sr-only">Yes, send email</span>
+                                    </td>
+                                    <td class="nk-social-settings-table-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="notification5" value="no">
+                                        </label>
+                                        <span class="sr-only">>No, do not send email</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="nk-gap-2"></div>
+                    <button class="nk-btn link-effect-4 float-right">Save Changes</button>
+                </form>
+                <!-- END: Settings -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

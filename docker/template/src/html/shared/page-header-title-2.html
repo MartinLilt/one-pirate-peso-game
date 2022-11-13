@@ -1,0 +1,21 @@
+{% if header_show and header_title %}
+<!-- START: Header Title -->
+<div class="nk-box{{ ' ' + header_class if header_class }}">
+    <div class="container">
+        <div class="nk-gap-5"></div>
+        {% if header_title %}
+            <h1 class="nk-title">{{ header_title }}</h1>
+        {% endif %}
+        {% if header_sub_title %}
+            <h2 class="nk-sub-title text-dark-4">{{ header_sub_title }}</h2>
+        {% endif %}
+        {% if header_text %}
+            <div class="nk-header-text">
+                {{ header_text | safe }}
+            </div>
+        {% endif %}
+        <div class="nk-gap-4"></div>
+    </div>
+</div>
+<!-- END: Header Title -->
+{% endif %}

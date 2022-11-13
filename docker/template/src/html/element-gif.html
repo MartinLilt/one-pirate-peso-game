@@ -1,0 +1,87 @@
+{% set header_title = 'GIF Animations' %}
+{% set header_sub_title = 'Play on mouse over, click and autoplay' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-2">
+                    <h2 class="nk-title">Autoplay GIF</h2>
+                </div>
+                <div class="col-md-3">
+                    <!-- START: Autoplay GIF -->
+                    <div class="nk-gif">
+                        <img src="assets/images/gif-2-s.gif" data-gif="assets/images/gif-2.gif" alt="">
+                    </div>
+                    <!-- END: Autoplay GIF -->
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box bg-dark-1 text-white">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-2">
+                    <h2 class="nk-title">Mouse Over GIF</h2>
+                </div>
+                <div class="col-md-3">
+                    <!-- START: Mouse Over GIF -->
+                    <div class="nk-gif nk-gif-hover">
+                        <img src="assets/images/gif-3-s.gif" data-gif="assets/images/gif-3.gif" alt="">
+                    </div>
+                    <!-- END: Mouse Over GIF -->
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-2">
+                    <h2 class="nk-title">Click GIF</h2>
+                </div>
+                <div class="col-md-3">
+                    <!-- START: Click GIF -->
+                    <div class="nk-gif nk-gif-click">
+                        <img src="assets/images/gif-1-s.gif" data-gif="assets/images/gif-1.gif" alt="">
+                    </div>
+                    <!-- END: Click GIF -->
+                </div>
+            </div>
+        </div>
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box bg-dark-1 text-white">
+        <div class="nk-gap-4"></div>
+
+        <div class="container">
+            <h2 class="nk-title text-center">Play in Viewport</h2>
+            <div class="nk-gap-2"></div>
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+
+                    <!-- START: Viewport GIF -->
+                    <div class="nk-gif nk-gif-viewport">
+                        <img src="assets/images/gif-4-s.gif" data-gif="assets/images/gif-4.gif" alt="">
+                    </div>
+                    <!-- END: Viewport GIF -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-4"></div>
+    </div>
+{% endblock %}

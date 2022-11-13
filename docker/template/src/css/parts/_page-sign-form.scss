@@ -1,0 +1,62 @@
+.nk-sign-form {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-color: $color_dark_1;
+    opacity: 0;
+    z-index: 999;
+
+    .nk-sign-form-container {
+        position: relative;
+    }
+
+    // toggle forms
+    .nk-sign-form-toggle {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            color: inherit;
+            text-decoration: none;
+            //transform-origin: 50% 80%;
+            opacity: .4;
+            transition: opacity .2s, transform .2s;
+            transform: scale(.7);
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+
+        .active {
+            opacity: 1;
+            transform: scale(1);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    // forms
+    .nk-sign-form-login,
+    .nk-sign-form-lost,
+    .nk-sign-form-register {
+        display: none;
+        width: 100%;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    // light form block
+    &.nk-sign-form-light {
+        color: $color_dark_1;
+        background-color: #fff;
+    }
+}

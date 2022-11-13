@@ -1,0 +1,78 @@
+.nk-side-buttons {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    transition: .2s transform ease-in-out, .3s margin-bottom;
+    transform: translateX(50px) translateY(60%);
+    z-index: 1000;
+    will-change: transform;
+
+    &.nk-side-buttons-left {
+        right: auto;
+        left: 0;
+        padding-right: 15px;
+        padding-left: 20px;
+    }
+
+    .nk-scroll-top {
+        transition: .2s transform ease-in-out;
+        transform: translateX(20px);
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        > li {
+            display: inline-block;
+            text-align: center;
+
+            > a,
+            > span {
+                display: block;
+                cursor: pointer;
+            }
+
+            + li {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    // show icons on hover
+    &.nk-side-buttons-visible,
+    &:hover,
+    &.hover {
+        transform: translateX(50px) translateY(0) translate3d(0, 0, 0);
+    }
+    @media #{$media_xs} {
+        transform: translateX(50px) translateY(0) translate3d(0, 0, 0);
+    }
+    &.nk-side-buttons-left,
+    &.nk-side-buttons-show-scroll-top {
+        transform: translateX(0) translateY(60%);
+        .nk-scroll-top {
+            transform: translateX(0);
+        }
+
+        &.nk-side-buttons-visible,
+        &:hover,
+        &.hover {
+            transform: translateX(0) translateY(0) translate3d(0, 0, 0);
+            .nk-scroll-top {
+                transform: translateX(0);
+            }
+        }
+        @media #{$media_xs} {
+            transform: translateX(0) translateY(0) translate3d(0, 0, 0);
+            .nk-scroll-top {
+                transform: translateX(0);
+            }
+        }
+    }
+}

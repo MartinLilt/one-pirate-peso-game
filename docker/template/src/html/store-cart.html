@@ -1,0 +1,126 @@
+{% set header_title = 'Shopping Cart' %}
+{% set header_show = false %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="nk-gap-4"></div>
+
+        <div class="nk-store nk-store-cart">
+            <div class="nk-box-3 bg-dark-1">
+                <div class="table-responsive">
+
+                    <!-- START: Products in Cart -->
+                    <table class="table nk-store-cart-products">
+                        <tbody>
+                            {% for i in [1, 3] %}
+                                <tr>
+                                    <td class="nk-product-cart-thumb">
+                                        <a href="{{ shop[i].url }}" class="nk-post-image">
+                                            <img src="{{ shop[i].photos[0].sm }}" alt="{{ shop[i].title }}" class="nk-img">
+                                        </a>
+                                    </td>
+                                    <td class="nk-product-cart-title" data-title="Product">
+                                        <h2 class="nk-post-title h5">
+                                            <a href="{{ shop[i].url }}">{{ shop[i].title }}</a>
+                                        </h2>
+                                    </td>
+                                    <td class="nk-product-cart-price" data-title="Price">
+                                        {{ shop[i].price | safe }}
+                                    </td>
+                                    <td class="nk-product-cart-quantity" data-title="Quantity">
+                                        <div class="nk-form-control-number">
+                                            <input type="number" min="1" max="14" name="quantity" value="{{ '1' if i == 1 else '2' }}" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td class="nk-product-cart-total" data-title="Total">
+                                        {{ shop[i].price if i == 1 else '$250.00' }}
+                                    </td>
+                                    <td class="nk-product-cart-remove"><a href="#"><span class="ion-trash-b"></span></a></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <!-- END: Products in Cart -->
+
+                </div>
+            </div>
+
+            <div class="nk-gap-3"></div>
+            <div class="row vertical-gap lg-gap">
+                <div class="col-md-6">
+
+                    <!-- START: Calculate Shipping -->
+                    <div class="nk-box-3 bg-dark-1">
+                        <h3 class="nk-title h4 text-center">Calculate Shipping</h3>
+                        <div class="nk-gap-2"></div>
+                        <form action="#" class="nk-form nk-form-style-1">
+                            <select name="country" class="form-control">
+                                <option value="">Select a country...</option>
+                            </select>
+
+                            <div class="nk-gap-2"></div>
+                            <div class="row vertical-gap">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="state" placeholder="State">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name="zip" placeholder="Zip">
+                                </div>
+                            </div>
+
+                            <div class="nk-gap-2"></div>
+                            <a class="nk-btn nk-btn-lg link-effect-4 float-right" href="#"><span class="icon"><span class="ion-refresh"></span></span> Update Totals</a>
+                        </form>
+                    </div>
+                    <!-- END: Calculate Shipping -->
+
+                </div>
+                <div class="col-md-6">
+                    <div class="nk-box-3 bg-dark-1">
+
+                        <!-- START: Cart Totals -->
+                        <h3 class="nk-title h4 text-center">Cart Totals</h3>
+                        <table class="table nk-store-cart-totals">
+                            <tbody>
+                                <tr class="nk-store-cart-totals-subtotal">
+                                    <td>
+                                        Subtotal
+                                    </td>
+                                    <td>
+                                        $317.00
+                                    </td>
+                                </tr>
+                                <tr class="nk-store-cart-totals-shipping">
+                                    <td>
+                                        Shipping
+                                    </td>
+                                    <td>
+                                        Free Shipping
+                                    </td>
+                                </tr>
+                                <tr class="nk-store-cart-totals-total">
+                                    <td>
+                                        Total
+                                    </td>
+                                    <td>
+                                        $317.00
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- END: Cart Totals -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="nk-gap-2"></div>
+            <a class="nk-btn nk-btn-lg link-effect-4 float-right" href="store-checkout.html">Proceed to Checkout</a>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+    </div>
+{% endblock %}

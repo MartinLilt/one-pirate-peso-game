@@ -1,0 +1,158 @@
+{% macro submenu(nav) -%}
+    {% for file, item in nav -%}
+        <li class="{{ 'active' if isActiveMenuItem(file, item, filename) }} {{ 'nk-mega-item' if item.mega }} {{ 'nk-drop-item' if item.sub }}">
+            <a href="{{file | safe}}">
+                {{item.name | safe}}
+                {%- if item.description -%}
+                    <span class="nk-item-descr">{{item.description | safe}}</span>
+                {%- endif -%}
+            </a>
+            {%- if item.sub -%}
+                {%- if item.mega -%}
+                    <div class="dropdown{{ ' ' + item.class if item.class}}">
+                        {%- if item.background and nav_light != true -%}
+                            <div class="bg-image">
+                                <img src="{{ item.background }}" alt="" class="jarallax-img">
+                            </div>
+                        {%- endif -%}
+                        <ul>
+                            {{ megamenu(item.sub) }}
+                        </ul>
+                    </div>
+                {%- else -%}
+                    <ul class="dropdown">
+                        {{ submenu(item.sub) }}
+                    </ul>
+                {%- endif -%}
+            {%- endif %}
+        </li>
+    {%- endfor %}
+{%- endmacro %}
+
+{% macro megamenu(nav) %}
+    {% for file, item in nav %}
+        <li>
+            {% if item.sub %}
+                <ul>
+                    {{ submenu(item.sub) }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+<!--
+    Additional Classes:
+        .nk-header-opaque
+-->
+<header class="nk-header{{ ' nk-header-opaque' if nav_opaque }}">
+
+    {% if nav_contacts %}
+    {% include "shared/page-nav-contacts.html" %}
+    {% endif %}
+
+    <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-sticky
+            .nk-navbar-transparent
+            .nk-navbar-autohide
+            .nk-navbar-light
+            .nk-navbar-no-link-effect
+    -->
+    <nav class="nk-navbar nk-navbar-top{{ ' nk-navbar-sticky' if nav_sticky }}{{ ' nk-navbar-transparent' if nav_transparent }}{{ ' nk-navbar-autohide' if nav_autohide and nav_sticky }}{{ ' nk-navbar-light' if nav_light }}">
+        <div class="container">
+            <div class="nk-nav-table">
+                {% if nav_logo %}
+                <a href="{{ nav_logo_url }}" class="nk-nav-logo">
+                    <img src="{{ nav_logo_light if nav_light else nav_logo }}" alt="" width="{{ nav_logo_size }}">
+                </a>
+                {% endif %}
+                {% if navigation %}
+                <ul class="nk-nav nk-nav-{{ nav_align }} d-none d-lg-block" data-nav-mobile="#nk-nav-mobile">
+                    {{ submenu(navigation) }}
+                </ul>
+                {% endif %}
+                <ul class="nk-nav nk-nav-right nk-nav-icons">
+                    {% if nav_mobile and navigation %}
+                        <li class="single-icon d-lg-none">
+                            <a href="#" class="no-link-effect" data-nav-toggle="#nk-nav-mobile">
+                                <span class="nk-icon-burger">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if nav_right_button %}
+                        <li>
+                            {{ nav_right_button | safe }}
+                        </li>
+                    {% endif %}
+                    {% if nav_search %}
+                    <li class="single-icon">
+                        <a href="#" class="nk-search-toggle no-link-effect">
+                            <span class="nk-icon-search"></span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if nav_cart %}
+                    <li class="single-icon">
+                        <a href="#" class="nk-cart-toggle no-link-effect">
+                            <span class="nk-icon-toggle">
+                                <span class="nk-icon-toggle-front">
+                                    <span class="ion-android-cart"></span>
+                                    <span class="nk-badge">8</span>
+                                </span>
+                                <span class="nk-icon-toggle-back">
+                                    <span class="nk-icon-close"></span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if nav_sign %}
+                    <li class="single-icon">
+                        <a href="#" class="nk-sign-toggle no-link-effect">
+                            <span class="nk-icon-toggle">
+                                <span class="nk-icon-toggle-front">
+                                    <span class="fa fa-sign-in"></span>
+                                </span>
+                                <span class="nk-icon-toggle-back">
+                                    <span class="nk-icon-close"></span>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if nav_full %}
+                    <li class="single-icon">
+                        <a href="#" class="nk-navbar-full-toggle no-link-effect">
+                            <span class="nk-icon-burger">
+                                <span class="nk-t-1"></span>
+                                <span class="nk-t-2"></span>
+                                <span class="nk-t-3"></span>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if nav_side %}
+                    <li class="single-icon">
+                        <a href="#" class="no-link-effect" data-nav-toggle="#nk-side">
+                            <span class="nk-icon-burger">
+                                <span class="nk-t-1"></span>
+                                <span class="nk-t-2"></span>
+                                <span class="nk-t-3"></span>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar -->
+
+</header>

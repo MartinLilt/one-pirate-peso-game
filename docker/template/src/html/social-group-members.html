@@ -1,0 +1,143 @@
+{% set header_title = 'Social Network - Group Members' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-group-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu-group.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-container">
+                <form action="#" class="nk-social-sort">
+                    <input type="text" placeholder="Search Members..." class="form-control">
+                    <button class="nk-btn link-effect-4">Search</button>
+                </form>
+                <div class="nk-gap-1"></div>
+
+                <form action="#" class="nk-social-sort">
+                    <label for="friends-filter-by">Order By:</label>
+
+                    <select id="friends-filter-by" class="form-control">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="group_activity">Group Activity</option>
+                        <option value="alphabetical">Alphabetical</option>
+                    </select>
+                </form>
+                <div class="nk-gap"></div>
+
+                <!-- START: Friends -->
+                <div>
+                    <em>Viewing 1 - 4 of 4 members</em>
+                </div>
+                <div class="nk-gap"></div>
+
+                <ul class="nk-social-friends">
+                    <li>
+                        <div class="nk-social-friends-avatar">
+                            <a href="#"><img src="assets/images/avatar-3-sm.jpg" alt="Mary"></a>
+                        </div>
+                        <div class="nk-social-friends-content">
+                            <div class="nk-social-friends-info">
+                                <div class="nk-social-friends-name">
+                                    <a href="#">Mary</a>
+                                </div>
+                                <div class="nk-social-friends-meta">
+                                    23 minutes ago
+                                </div>
+                            </div>
+                            <div class="nk-social-friends-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Cancel Membership</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nk-social-friends-avatar">
+                            <a href="#"><img src="assets/images/avatar-2-sm.jpg" alt="John"></a>
+                        </div>
+                        <div class="nk-social-friends-content">
+                            <div class="nk-social-friends-info">
+                                <div class="nk-social-friends-name">
+                                    <a href="#">John</a>
+                                </div>
+                                <div class="nk-social-friends-meta">
+                                    1 day ago
+                                </div>
+                            </div>
+                            <div class="nk-social-friends-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Add Member</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nk-social-friends-avatar">
+                            <a href="#"><img src="assets/images/avatar-4-sm.jpg" alt="Luke"></a>
+                        </div>
+                        <div class="nk-social-friends-content">
+                            <div class="nk-social-friends-info">
+                                <div class="nk-social-friends-name">
+                                    <a href="#">Luke</a>
+                                </div>
+                                <div class="nk-social-friends-meta">
+                                    10 minutes ago
+                                </div>
+                            </div>
+                            <div class="nk-social-friends-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Add Member</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nk-social-friends-avatar">
+                            <a href="#"><img src="assets/images/avatar-5-sm.jpg" alt="Bob"></a>
+                        </div>
+                        <div class="nk-social-friends-content">
+                            <div class="nk-social-friends-info">
+                                <div class="nk-social-friends-name">
+                                    <a href="#">Bob</a>
+                                </div>
+                                <div class="nk-social-friends-meta">
+                                    20 seconds ago
+                                </div>
+                            </div>
+                            <div class="nk-social-friends-actions">
+                                <a href="#" class="nk-btn nk-btn-xs link-effect-4">Cancel Membership</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="nk-gap"></div>
+                <div>
+                    <em>Viewing 1 - 4 of 4 members</em>
+                </div>
+                <!-- END: Friends -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

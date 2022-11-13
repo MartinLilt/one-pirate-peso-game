@@ -1,0 +1,109 @@
+
+/* FullScreen Video */
+.nk-video-fullscreen {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: $color_dark_1;
+    background-color: rgba($color_dark_1, .9);
+    z-index: 1200;
+
+    .nk-video-fullscreen-cont {
+        position: absolute;
+
+        > iframe {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .nk-video-fullscreen-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 40px;
+        color: #fff;
+        text-align: right;
+        cursor: url("../images/cursor-nav-close.svg") 24 24, pointer;
+        z-index: -1;
+    }
+}
+
+/* Toggle Video Button */
+.nk-video-fullscreen-toggle,
+.nk-video-plain-toggle {
+    display: inline-block;
+    cursor: pointer;
+
+    .nk-video-icon {
+        text-decoration: none;
+    }
+}
+
+/* toggle button on the right/left half of nk-box blocks */
+.nk-video-fullscreen-toggle-right,
+.nk-video-fullscreen-toggle-left {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+
+    > .nk-video-fullscreen-toggle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media #{$media_smaller_sm} {
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+    }
+}
+.nk-video-fullscreen-toggle-right {
+    right: 0;
+}
+.nk-video-fullscreen-toggle-left {
+    left: 0;
+}
+
+/* Plain Video */
+.nk-plain-video {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: 50% 50%;
+    background-size: cover;
+
+    > iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    > .nk-video-plain-toggle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+}

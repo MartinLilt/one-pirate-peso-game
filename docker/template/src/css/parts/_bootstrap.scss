@@ -1,0 +1,167 @@
+// grid system gaps
+// add position relative for all columns
+.row > [class*="col-"] {
+    position: relative;
+}
+
+// sticky sidebar support
+.nk-sidebar-sticky-parent {
+    display: flex;
+    flex-direction: column;
+
+    > .nk-sidebar {
+        flex: 1;
+    }
+}
+
+// vertical gap
+.row.vertical-gap > [class*="col-"] {
+    padding-top: 30px;
+}
+.row.vertical-gap {
+    margin-top: -30px;
+}
+
+// small gap
+.row.sm-gap {
+    margin-right: -7.5px;
+    margin-left: -7.5px;
+}
+.row.sm-gap > [class*="col-"] {
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+.row.sm-gap.vertical-gap > [class*="col-"] {
+    padding-top: 15px;
+}
+.row.sm-gap.vertical-gap {
+    margin-top: -15px;
+}
+
+// mid gap
+.row.md-gap {
+    margin-right: -22.5px;
+    margin-left: -22.5px;
+}
+.row.md-gap > [class*="col-"] {
+    padding-right: 22.5px;
+    padding-left: 22.5px;
+}
+.row.md-gap.vertical-gap > [class*="col-"] {
+    padding-top: 45px;
+}
+.row.md-gap.vertical-gap {
+    margin-top: -45px;
+}
+
+// large gap
+.row.lg-gap {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+.row.lg-gap > [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.row.lg-gap.vertical-gap > [class*="col-"] {
+    padding-top: 60px;
+}
+.row.lg-gap.vertical-gap {
+    margin-top: -60px;
+}
+
+// large gap
+.row.xl-gap {
+    margin-right: -35px;
+    margin-left: -35px;
+}
+.row.xl-gap > [class*="col-"] {
+    padding-right: 35px;
+    padding-left: 35px;
+}
+.row.xl-gap.vertical-gap > [class*="col-"] {
+    padding-top: 70px;
+}
+.row.xl-gap.vertical-gap {
+    margin-top: -70px;
+}
+
+
+// table
+.table {
+    color: inherit;
+}
+.thead-default th {
+    color: inherit;
+    background-color: $color_dark_3;
+}
+.table thead th,
+.table td,
+.table th {
+    border-color: $color_dark_3;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, .04);
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+
+// Modal
+// + style for default modal if there s Summernote
+.nk-modal,
+.nk-summernote-modal-style ~ .modal {
+    .modal-content {
+        background-color: $color_dark_1;
+        border: none;
+        border-radius: 0;
+    }
+    .modal-header,
+    .modal-footer {
+        padding: 25px 30px;
+        border-top-color: #000;
+        border-bottom-color: #000;
+
+        .close {
+            position: relative;
+            margin-top: 0;
+            z-index: 2;
+        }
+    }
+    .modal-body {
+        padding: 30px;
+    }
+
+    &.fade .modal-dialog {
+        transition: none;
+        transform: translate(0, 0);
+    }
+
+    .close,
+    .close:focus,
+    .close:hover {
+        color: inherit;
+        text-shadow: none;
+    }
+
+    @media #{$media_larger_xs} {
+        .modal-dialog {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+// code
+code {
+    padding: 4px 8px;
+    color: lighten($color_main_1, 25%);
+    background-color: #000;
+}
+
+// image thumb
+.img-thumbnail {
+    background-color: #000;
+    border: none;
+}

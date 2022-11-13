@@ -1,0 +1,58 @@
+{% if header_show and (header_title or header_video) %}
+<!-- START: Header Title -->
+<!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+        .nk-header-title-boxed
+-->
+<div class="nk-header-title{{ ' nk-header-title-' if header_size }}{{ header_size if header_size }}{{ ' nk-header-title-parallax' if header_parallax }}{{ ' nk-header-title-parallax-opacity' if header_parallax_opacity }}{{ ' nk-header-title-boxed' if header_boxed }}{{ ' ' + header_class if header_class }}">
+    <div class="bg-image{{ (' op-' + header_visible) if header_visible < 10 }}">
+        <img src="{{ header_image }}" alt="" class="jarallax-img">
+    </div>
+    <div class="nk-header-table">
+        <div class="nk-header-table-cell">
+            <div class="container">
+                {% if header_title_back and header_title_back_show %}
+                    <h2 class="nk-title-back op-{{ header_title_back_visible }}">{{ header_title_back | safe }}</h2>
+                {% endif %}
+                {% if header_title and header_title_show %}
+                    <h1 class="nk-title">{{ header_title | safe }}</h1>
+                {% endif %}
+                {% if header_sub_title and header_sub_title_show %}
+                    <h2 class="nk-sub-title">{{ header_sub_title | safe }}</h2>
+                {% endif %}
+                {% if header_text %}
+                    <div class="nk-header-text">
+                        {{ header_text | safe }}
+                    </div>
+                {% endif %}
+                {% if header_video %}
+                    {% if header_title or header_sub_title %}<div class="nk-gap-2"></div>{% endif %}
+                    {% if header_video_type == 'full' %}
+                        <a class="nk-video-fullscreen-toggle" href="{{ header_video }}">
+                            <span class="nk-video-icon"><i class="fa fa-play pl-5"></i></span>
+                        </a>
+                    {% endif %}
+                    {% if header_video_type == 'plain' %}
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <div class="nk-plain-video" data-video="{{ header_video }}"{{ (' data-video-thumb="' + header_video_thumb + '"') | safe if header_video_thumb }}></div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if header_bottom_line %}
+        {{ header_bottom_line | safe }}
+    {% endif %}
+</div>
+<!-- END: Header Title -->
+{% endif %}

@@ -1,0 +1,30 @@
+.nk-info-box {
+    position: relative;
+    display: block;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 70px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    color: #fff;
+    background-color: $color_dark_1;
+
+    &.nk-info-box-noicon {
+        padding-left: 40px;
+    }
+
+    .nk-info-box-icon {
+        position: absolute;
+        display: block;
+        margin-top: -3px;
+        margin-left: -45px;
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .nk-info-box-close-btn {
+        display: block;
+        float: right;
+        margin-right: -20px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,80 @@
+<div class="nk-gap-4"></div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Search</h4>
+    <div>
+        <form action="#" class="nk-form nk-form-style-1" novalidate="novalidate">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type something...">
+                <button class="nk-btn nk-btn-color-dark-1"><span class="ion-search"></span></button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Categories</h4>
+    <div>
+        <ul class="nk-widget-categories">
+            <li>
+                <a href="#">Men's Watches</a>
+            </li>
+            <li>
+                <a href="#">Ladies' Watches</a>
+            </li>
+            <li>
+                <a href="#">Unisex Watches</a>
+            </li>
+            <li>
+                <a href="#">Smart Watches</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Materials</h4>
+    <div>
+        <form action="#" class="nk-form nk-form-style-1">
+            <select class="form-control">
+                <option value="any">Any Material</option>
+                <option value="stainless-steel">Stainless Steel</option>
+                <option value="leather">Leather</option>
+                <option value="gold">Gold</option>
+                <option value="rubber">Rubber</option>
+            </select>
+        </form>
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Case Diameters</h4>
+    <div>
+        <ul class="nk-widget-categories">
+            <li>
+                <a href="#">40mm <span class="nk-widget-categories-count">(26)</span></a>
+            </li>
+            <li>
+                <a href="#">42mm <span class="nk-widget-categories-count">(21)</span></a>
+            </li>
+            <li>
+                <a href="#">36mm <span class="nk-widget-categories-count">(16)</span></a>
+            </li>
+            <li>
+                <a href="#">48mm <span class="nk-widget-categories-count">(12)</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Popular Products</h4>
+    <div>
+        {% for i in [0, 1, 2] %}
+            <div class="nk-widget-post">
+                <a href="{{ shop[i].url }}" class="nk-post-image">
+                    <img src="{{ shop[i].photos[0].sm }}" alt="{{ shop[i].title }}">
+                </a>
+                <h3 class="nk-post-title"><a href="{{ shop[i].url }}">{{ shop[i].title }}</a></h3>
+                {{ macros.rating(shop[i].rating) }}
+                <div class="nk-product-price">{{ shop[i].price }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="nk-gap-4"></div>

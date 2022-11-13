@@ -1,0 +1,77 @@
+{% import "macros/macros.html" as macros %}
+{% set nav_contacts = false %}
+{% set nav_side = false %}
+{% set nav_align = 'center' %}
+{% set nav_logo = false %}
+{% set nav_search = false %}
+
+{% include "layouts/_head.html" %}
+
+<!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+<body{{ ' class="nk-page-boxed"' | safe if page_boxed }}>
+    {% include "shared/page-preloader.html" %}
+    {% if background %}
+        {% include "shared/page-background.html" %}
+    {% endif %}
+    {% include "shared/page-border.html" %}
+    {% if nav == 'top' %}
+        {% include "shared/page-nav.html" %}
+    {% endif %}
+    {% if nav == 'left' %}
+        {% include "shared/page-nav-left.html" %}
+    {% endif %}
+    {% if nav == 'left' or nav == false %}
+        {% include "shared/page-nav-togglers.html" %}
+    {% endif %}
+    {% if nav_full %}
+        {% include "shared/page-nav-fullscreen.html" %}
+    {% endif %}
+    {% if nav_side %}
+        {% include "shared/page-nav-side.html" %}
+    {% endif %}
+    {% if nav_mobile and nav and navigation %}
+        {% include "shared/page-nav-mobile.html" %}
+    {% endif %}
+
+    <div class="nk-main">
+        {% if header_show != 1 and header_show != true and header_show != false %}
+            {% include "shared/page-header-title-" + header_show + ".html" %}
+        {% else %}
+            {% include "shared/page-header-title.html" %}
+        {% endif %}
+
+        {% block content %}{% endblock %}
+
+        {% if footer == 1 %}
+            {% include "shared/page-footer.html" %}
+        {% elif footer != false %}
+            {% include "shared/page-footer-" + footer + ".html" %}
+        {% endif %}
+    </div>
+
+    {% block after_content %}{% endblock %}
+
+    {% include "shared/page-share-buttons.html" %}
+
+    {% include "shared/page-side-buttons.html" %}
+
+    {% if nav_search %}
+        {% include "shared/page-search.html" %}
+    {% endif %}
+
+    {% if nav_cart %}
+        {% include "shared/page-cart.html" %}
+    {% endif %}
+
+    {% if nav_sign %}
+        {% include "shared/page-sign-form.html" %}
+    {% endif %}
+
+    {% include "layouts/_foot.html" %}
+
+    {% block javascript %}{% endblock %}
+</body>
+</html>

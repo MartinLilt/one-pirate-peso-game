@@ -1,0 +1,79 @@
+.nk-header-title {
+    position: relative;
+    display: flex; // fix for IE. All other browsers works fine with display: block.
+    flex-wrap: wrap;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background-color: $color_dark_1;
+
+    // we can use z-index: 1, but in Edge header will be above overlayed blocks, for example in new-single-video
+    // if we use z-index: 2, then in all browsers headers will overlay this blocks
+    // so, opacity will do the trick.
+    opacity: .9999;
+
+    // boxed
+    &.nk-header-title-boxed {
+        max-width: 1250px;
+    }
+
+    // size default
+    .nk-header-table {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 450px;
+        padding-top: 75px;
+    }
+
+    // size small
+    &.nk-header-title-sm .nk-header-table {
+        min-height: 350px;
+    }
+
+    // size mid
+    &.nk-header-title-md .nk-header-table {
+        min-height: 550px;
+    }
+
+    // size large
+    &.nk-header-title-lg .nk-header-table {
+        min-height: 650px;
+    }
+
+    // size x-large
+    &.nk-header-title-xl .nk-header-table {
+        min-height: 750px;
+    }
+
+    // size full
+    &.nk-header-title-full .nk-header-table {
+        min-height: 100vh;
+    }
+
+    .nk-header-table-cell {
+        flex: 1;
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    // sub title
+    .nk-sub-title {
+        color: inherit;
+    }
+
+    // text bottom
+    .nk-header-text-bottom {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgba($color_dark_1, .4);
+    }
+    &.nk-header-title-full .nk-header-text-bottom {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

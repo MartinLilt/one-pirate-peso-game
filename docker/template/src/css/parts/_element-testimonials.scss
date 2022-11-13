@@ -1,0 +1,83 @@
+/* Style 1 */
+.nk-testimonial {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+
+    .nk-testimonial-name {
+        margin-bottom: 0;
+    }
+    .nk-testimonial-source {
+        margin-top: 10px;
+        font-style: italic;
+        opacity: .6;
+    }
+    .nk-testimonial-body {
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+
+    @media #{$media_xxs} {
+        .nk-testimonial-photo {
+            display: none;
+        }
+        .nk-testimonial-name,
+        .nk-testimonial-source,
+        .nk-testimonial-body {
+            margin-left: 0;
+        }
+    }
+}
+
+/* Style 2 */
+.nk-testimonial-2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    background-color: $color_dark_1;
+
+    .nk-testimonial-photo {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        overflow: hidden;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 50px;
+    }
+
+    .nk-testimonial-source {
+        margin-top: 10px;
+        font-style: italic;
+        opacity: .6;
+    }
+    .nk-testimonial-body {
+        position: relative;
+        margin-top: 45px;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+        z-index: 1;
+
+        &::before {
+            content: "\201C";
+            position: absolute;
+            top: -35px;
+            left: -15px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 150px;
+            font-weight: 600;
+            line-height: 135px;
+            opacity: .08;
+            z-index: -1;
+        }
+    }
+}

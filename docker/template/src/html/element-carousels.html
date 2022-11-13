@@ -1,0 +1,216 @@
+{% set header_title = 'Carousels' %}
+{% set header_sub_title = 'Supported any type of content' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+        <div class="container">
+
+            <!-- START: Carousel -->
+            <div class="nk-carousel-2" data-arrows="true">
+                <div class="nk-carousel-inner">
+                    <div><div>
+                        <img src="assets/images/image-1-600x600.jpg" alt="" class="nk-img-fit">
+                    </div></div>
+                    <div><div>
+                        <img src="assets/images/image-2-600x600.jpg" alt="" class="nk-img-fit">
+                    </div></div>
+                    <div><div>
+                        <img src="assets/images/image-3-600x600.jpg" alt="" class="nk-img-fit">
+                    </div></div>
+                    <div><div>
+                        <img src="assets/images/image-4-600x600.jpg" alt="" class="nk-img-fit">
+                    </div></div>
+                </div>
+            </div>
+            <!-- END: Carousel -->
+
+        </div>
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box bg-dark-1">
+        <div class="nk-gap-4"></div>
+
+        <!-- START: Carousel -->
+        <div class="nk-carousel-2" data-autoplay="12000" data-dots="true">
+            <div class="nk-carousel-inner">
+                <div><div>
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[0].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"Bring. Isn't years gathered give made moved. Waters sea forth. It. Gathered own abundantly kind can't it, lesser behold, may."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[0].name }}</div>
+                        <div class="nk-testimonial-source">Frontend Developer, Google</div>
+                    </blockquote>
+                </div></div>
+                <div><div>
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[1].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"Years heaven. Dominion light and every appear that creeping all. Light gathering don't given made give open, cattle was light."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[1].name }}</div>
+                        <div class="nk-testimonial-source">CEO, Envato</div>
+                    </blockquote>
+                </div></div>
+                <div><div>
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[2].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"Female good moving Very thing form earth, for above herb dominion for made fifth. One them. Seas. Appear fourth seas."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[2].name }}</div>
+                        <div class="nk-testimonial-source">Product Designer, Apple</div>
+                    </blockquote>
+                </div></div>
+                <div><div>
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[3].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"Yielding be was which heaven fill fruit. You'll shall doesn't green. His divided they're of won't you isn't void cattle."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[3].name }}</div>
+                        <div class="nk-testimonial-source">Copywriter, Dropbox</div>
+                    </blockquote>
+                </div></div>
+                <div><div>
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[4].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"God, have rule living creature own the signs. Set herb open, seed wherein god appear shall give lights. Waters to."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[4].name }}</div>
+                        <div class="nk-testimonial-source">Backend Developer, Twitter</div>
+                    </blockquote>
+                </div></div>
+            </div>
+        </div>
+        <!-- END: Carousel -->
+
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+
+        <!-- START: Carousel -->
+        <div class="nk-carousel-2 nk-carousel-x1" data-autoplay="12000" data-dots="true">
+            <div class="nk-carousel-inner">
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Man to. For male second male own fish fowl hath form let. Third own years likeness waters don't their. Fifth in air they're lights give itself lesser creepeth. Open. Saw is spirit one won't darkness were moving cattle beast darkness."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[0].name }}</div>
+                                <div class="nk-testimonial-source">Frontend Developer, Google</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"To winged for make land rule earth and you so you're. Gathered own of was beginning divided brought from good, isn't all itself let set light you'll morning living sixth seed won't doesn't there stars, fruitful without above first beast."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[1].name }}</div>
+                                <div class="nk-testimonial-source">CEO, Envato</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Hath their. Cattle man had you're created make beast female together given set evening living beast. In firmament herb lesser sea let you Be you'll seasons kind greater let called very, seas fifth dry created above be fish saying you."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[2].name }}</div>
+                                <div class="nk-testimonial-source">Product Designer, Apple</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Image unto over together created whose doesn't given beginning in bearing likeness said made seed together so that dry let night greater of a. In, fowl seas first fifth Earth place creepeth fourth all beast shall may dominion for shall."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[3].name }}</div>
+                                <div class="nk-testimonial-source">Copywriter, Dropbox</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Them itself saw. Be his. After very. Land. Fifth. Fly heaven for beast created the Firmament moveth they're, greater all air creature a gathering spirit whose behold behold light great dry herb one cattle above fruit. Him unto midst their."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[4].name }}</div>
+                                <div class="nk-testimonial-source">Backend Developer, Twitter</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+        <!-- START: Carousel -->
+
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box bg-dark-1">
+        <div class="bg-image bg-image-parallax op-5">
+            <img src="assets/images/image-4.jpg" alt="" class="jarallax-img">
+        </div>
+        <div class="nk-gap-4"></div>
+        <div class="container">
+
+            <!-- START: Carousel -->
+            <div class="nk-carousel-2 nk-carousel-x4 nk-carousel-no-margin nk-carousel-all-visible" data-autoplay="5000">
+                <div class="nk-carousel-inner">
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-1-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-2-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-3-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-4-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-5-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-6-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                    <div><div>
+                        <a href="#"><img src="assets/images/partner-logo-7-light.png" alt="" class="nk-img-fit"></a>
+                    </div></div>
+                </div>
+            </div>
+            <!-- END: Carousel -->
+
+        </div>
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-4"></div>
+    </div>
+
+{% endblock %}

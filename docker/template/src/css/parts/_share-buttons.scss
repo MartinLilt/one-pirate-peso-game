@@ -1,0 +1,114 @@
+.nk-share-buttons {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    text-align: right;
+    pointer-events: none;
+    opacity: 1;
+    transition: .3s opacity;
+    z-index: 999;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        pointer-events: auto;
+
+        > li {
+            position: relative;
+        }
+        > li::after {
+            content: "";
+            display: table;
+            width: 100%;
+            clear: both;
+        }
+    }
+
+    .nk-share-icon,
+    .nk-share-name {
+        display: inline-block;
+    }
+
+    .nk-share-icon {
+        position: relative;
+        float: right;
+        width: 90px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-left: -30px;
+        text-align: center;
+        cursor: pointer;
+        opacity: .7;
+        transition: .2s opacity;
+        z-index: 1;
+
+        &:hover,
+        &.hover {
+            opacity: 1;
+
+            ~ .nk-share-name {
+                visibility: visible;
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    }
+    .nk-share-name {
+        position: absolute;
+        top: 0;
+        right: 60px;
+        padding: 18px;
+        white-space: nowrap;
+        visibility: hidden;
+        opacity: 0;
+        transition: .2s opacity, .2s visibility, .2s transform;
+        transform: translateX(-10px);
+        z-index: 0;
+    }
+
+    // left
+    &.nk-share-buttons-left {
+        right: auto;
+        left: 0;
+
+        .nk-share-icon {
+            float: left;
+            margin-right: -30px;
+            margin-left: 0;
+        }
+        .nk-share-name {
+            right: auto;
+            left: 60px;
+        }
+
+        .nk-navbar-left ~ & {
+            left: 300px;
+
+            @media #{$media_smaller_sm} {
+                left: 0;
+            }
+        }
+    }
+
+    @media #{$media_xxs} {
+        .nk-share-icon {
+            width: 60px;
+        }
+        .nk-share-name {
+            display: none;
+        }
+    }
+
+    @media screen and (max-height: 500px) {
+        display: none;
+    }
+}
+body.nk-body-overflow .nk-share-buttons {
+    opacity: 0;
+}

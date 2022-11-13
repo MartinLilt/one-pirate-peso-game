@@ -1,0 +1,54 @@
+.pswp__button--arrow--left {
+    left: 65px;
+}
+.pswp__button--arrow--right {
+    right: 65px;
+}
+.pswp__button--arrow--left::before,
+.pswp__button--arrow--right::before {
+    top: 24px;
+    width: 55px;
+    height: 55px;
+    background-color: $color_dark_1;
+}
+.pswp__button--arrow--left::before {
+    left: 8px;
+    background-position: -126px -32px;
+}
+.pswp__button--arrow--right::before {
+    right: 8px;
+    background-position: -83px -32px;
+}
+.pswp__top-bar {
+    top: 25px;
+    right: 65px;
+    left: 65px;
+    width: auto;
+}
+
+@media #{$media_xxs} {
+    .pswp__button--arrow--left {
+        left: 25px;
+    }
+    .pswp__button--arrow--right {
+        right: 25px;
+    }
+    .pswp__top-bar {
+        top: 15px;
+        right: 25px;
+        left: 25px;
+    }
+}
+.photoswipe-description {
+    position: absolute;
+    left: -100000px;
+    visibility: hidden;
+    opacity: .01;
+}
+
+.pswp__caption__center {
+    max-width: 520px;
+    padding: 40px;
+    font-size: inherit;
+    line-height: inherit;
+}

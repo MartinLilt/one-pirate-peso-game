@@ -1,0 +1,98 @@
+.nk-search {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background: $color_dark_1;
+    opacity: 0;
+    z-index: 999;
+
+    // search field
+    .nk-search-field {
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 130px;
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 124px;
+            margin: 0;
+            font-size: 4rem;
+            line-height: 124px;
+            transition: .3s color;
+            will-change: color;
+        }
+        input {
+            width: 93%;
+            width: calc(100% - 70px);
+            // fix for the latest Bootstrap
+            height: auto;
+            padding: 1rem 1rem;
+            margin-left: 70px;
+            font-size: 5rem;
+            color: inherit;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(#fff, .3);
+            border-radius: 0;
+            transition: .3s border, .3s box-shadow;
+            will-change: border, box-shadow;
+
+            &:focus,
+            &.focus {
+                border-bottom-color: rgba(#fff, .8);
+                box-shadow: 0 1px 0 0 rgba(#fff, .8);
+            }
+        }
+
+        @media #{$media_xs} {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            label {
+                height: 106px;
+                font-size: 3rem;
+                line-height: 106px;
+            }
+            input {
+                width: calc(100% - 50px);
+                margin-left: 50px;
+                font-size: 4rem;
+            }
+        }
+        @media #{$media_xxs} {
+            label {
+                height: 68px;
+                font-size: 2rem;
+                line-height: 68px;
+            }
+            input {
+                width: calc(100% - 40px);
+                margin-left: 40px;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // light search
+    &.nk-search-light {
+        color: $color_dark_1;
+        background: #fff;
+
+        .nk-search-field {
+            input {
+                border-bottom: 1px solid rgba($color_dark_1, .3);
+
+                &:focus,
+                &.focus {
+                    border-bottom-color: rgba($color_dark_1, .8);
+                    box-shadow: 0 1px 0 0 rgba($color_dark_1, .8);
+                }
+            }
+        }
+    }
+}

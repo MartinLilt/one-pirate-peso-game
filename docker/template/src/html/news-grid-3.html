@@ -1,0 +1,70 @@
+{% set header_title = 'Blog Grid 3 Columns' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="nk-gap-4"></div>
+
+        <!-- START: Posts List -->
+        <div class="nk-blog-grid-3">
+
+            {% for post in posts %}
+                <!-- START: Post -->
+                <div class="nk-blog-post">
+                    <div class="nk-post-thumb">
+                        {% if post.type == 'image' %}
+                            <div class="nk-post-type"><span class="ion-image"></span></div>
+                        {% elif post.type == 'video' %}
+                            <div class="nk-post-type"><span class="ion-videocamera"></span></div>
+                        {% elif post.type == 'audio' %}
+                            <div class="nk-post-type"><span class="ion-music-note"></span></div>
+                        {% elif post.type == 'gallery' %}
+                            <div class="nk-post-type"><span class="ion-images"></span></div>
+                        {% elif post.type == 'quote' %}
+                            <div class="nk-post-type"><span class="ion-quote"></span></div>
+                        {% endif %}
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.thumb_lg }}" alt="" class="nk-img-stretch">
+                        </a>
+                    </div>
+                    <div class="nk-post-content">
+                        <h2 class="nk-post-title h4">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </h2>
+                        <div class="nk-post-date">
+                            {{ post.date }}
+                        </div>
+                        <div class="nk-post-text">
+                            {{ post.excerpt_sm | safe }}
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Post -->
+            {% endfor %}
+        </div>
+
+        <!-- START: Pagination -->
+        <div class="nk-pagination nk-pagination-center">
+            <a href="#" class="nk-pagination-prev">
+                <span class="nk-icon-arrow-left"></span>
+            </a>
+            <nav>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a class="nk-pagination-current-white" href="#">3</a>
+                <span>...</span>
+                <a href="#">14</a>
+            </nav>
+            <a href="#" class="nk-pagination-next">
+                <span class="nk-icon-arrow-right"></span>
+            </a>
+        </div>
+        <!-- END: Pagination -->
+
+        <!-- END: Posts List -->
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+    </div>
+{% endblock %}

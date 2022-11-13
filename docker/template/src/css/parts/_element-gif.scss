@@ -1,0 +1,56 @@
+.nk-gif {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nk-gif-toggle,
+    .nk-loading-spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        transition: .3s opacity, .3s visibility;
+        transform: translate(-50%, -50%);
+    }
+
+    .nk-loading-spinner {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    // hide play toggle
+    &.nk-gif-playing .nk-gif-toggle,
+    &.nk-gif-loading .nk-gif-toggle {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    // show loading spinner
+    &.nk-gif-loading .nk-loading-spinner {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    // hover and click gif
+    &.nk-gif-hover,
+    &.nk-gif-click {
+        // hide loading if no hovered
+        &.nk-gif-loading .nk-loading-spinner,
+        &.nk-gif-loading.hover .nk-gif-toggle {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        &.nk-gif-loading.hover .nk-loading-spinner,
+        &.nk-gif-loading .nk-gif-toggle {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

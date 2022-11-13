@@ -1,0 +1,68 @@
+{% macro submenu(nav) -%}
+    {% for file, item in nav -%}
+        <li class="{{ 'active' if isActiveMenuItem(file, item, filename) }} {{ 'nk-drop-item' if item.sub }}">
+            <a href="{{file | safe}}">
+                {{item.name | safe}}
+                {%- if item.description -%}
+                    <span class="nk-item-descr">{{item.description | safe}}</span>
+                {%- endif -%}
+            </a>
+            {%- if item.sub -%}
+                <ul class="dropdown">
+                    {{ submenu(item.sub) }}
+                </ul>
+            {%- endif %}
+        </li>
+    {%- endfor %}
+{%- endmacro %}
+
+<!--
+    START: Right Navbar
+
+    Additional Classes:
+        .nk-navbar-right-side
+        .nk-navbar-left-side
+        .nk-navbar-lg
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-overlay-content
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+-->
+{% if navigation_side == 'from navigation' %}
+    {% set navigation_side = navigation %}
+{% endif %}
+<nav class="nk-navbar nk-navbar-side nk-navbar-right-side nk-navbar-lg nk-navbar-align-center nk-navbar-overlay-content{{ ' nk-navbar-light' if nav_side_light }}" id="nk-side">
+    {% if nav_side_bg %}
+    <div class="nk-navbar-bg">
+        <div class="bg-image">
+            <img src="{{ nav_side_bg }}" alt="" class="jarallax-img">
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="nano">
+        <div class="nano-content">
+            <div class="nk-nav-table">
+                {% if nav_side_logo %}
+                <div class="nk-nav-row">
+                    <a href="{{ nav_logo_url }}" class="nk-nav-logo">
+                        <img src="{{ nav_side_logo_light if nav_side_light else nav_side_logo }}" alt="" width="150">
+                    </a>
+                </div>
+                {% endif %}
+                <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                    <ul class="nk-nav">
+                        {{ submenu(navigation_side) }}
+                    </ul>
+                </div>
+                <div class="nk-nav-row">
+                    <div class="nk-nav-footer">
+                        &copy; 2020 nK Group Inc. Developed in association with LoremInc. IpsumCompany, SitAmmetGroup, CumSit and related logos are registered trademarks. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: Right Navbar -->

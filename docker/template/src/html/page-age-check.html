@@ -1,0 +1,76 @@
+{% set header_title = 'Enter Your Date of Birth' %}
+{% set header_title_show = false %}
+{% set header_size = 'full' %}
+{% set header_image = 'assets/images/image-2.jpg' %}
+{% set header_visible = 8 %}
+{% set header_text = '
+    <div class="nk-gap-4"></div>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="nk-title">Enter Your Date of Birth</h1>
+            <div class="nk-gap-3"></div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="row vertical-gap">
+                        <div class="col-md-4">
+                            <select name="month" class="form-control">
+                                <option disabled selected>Month</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="day" class="form-control">
+                                <option disabled selected>Day</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="year" class="form-control">
+                                <option disabled selected>Year</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="nk-gap-2"></div>
+                    <a href="#" class="nk-btn nk-btn-lg link-effect-4">Enter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block javascript %}
+<script>
+    /* Add months, days and years in date of birth form */
+    (function ($) {
+        var $month = $('select[name=month]');
+        var $day = $('select[name=day]');
+        var $year = $('select[name=year]');
+
+        function addOpts ($item, from, to) {
+            var result = '';
+            if($.isArray(from)) {
+                for(var k = 0; k < from.length; k++) {
+                    result += '<option value="' + from[k] + '">' + from[k] + '</option>';
+                }
+            } else if (from && to) {
+                if(from > to) {
+                    for(var k = from; k >= to; k--) {
+                        result += '<option value="' + k + '">' + k + '</option>';
+                    }
+                } else {
+                    for(var k = from; k <= to; k++) {
+                        result += '<option value="' + k + '">' + k + '</option>';
+                    }
+                }
+            }
+            $item.append(result);
+        }
+
+        addOpts($month, ['January', 'February', 'March', 'April', 'May', 'June', 'Jule', 'August', 'September', 'October', 'November', 'December']);
+        addOpts($day, 1, 31);
+        addOpts($year, 2013, 1900);
+    }(jQuery));
+</script>
+{% endblock %}

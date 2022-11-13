@@ -1,0 +1,50 @@
+<div class="nk-gap-4"></div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Recent Posts</h4>
+    <div>
+        {% for i in [0, 1, 2] %}
+            <div class="nk-widget-post">
+                <a href="{{ posts[i].url }}" class="nk-image-box-1 nk-post-image">
+                    <img src="{{ posts[i].thumb_sm }}" alt="">
+                </a>
+                <h3 class="nk-post-title"><a href="{{ posts[i].url }}">{{ posts[i].title }}</a></h3>
+                <div class="nk-post-meta-date">{{ posts[i].date }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Categories</h4>
+    <div>
+        <ul class="nk-widget-categories">
+            <li>
+                <a href="#">Business</a>
+            </li>
+            <li>
+                <a href="#">Live News</a>
+            </li>
+            <li>
+                <a href="#">Lifestyle</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Tags</h4>
+    <div>
+        <div class="nk-widget-tags">
+            <a href="#">Creative</a>
+            <a href="#">Responsive</a>
+            <a href="#">Design</a>
+            <a href="#">Bootstrap</a>
+            <a href="#">Multi-Concept</a>
+        </div>
+    </div>
+</div>
+<div class="nk-widget">
+    <h4 class="nk-widget-title">Twitter</h4>
+    <div>
+        <div class="nk-twitter-list" data-twitter-count="2"></div>
+    </div>
+</div>
+<div class="nk-gap-4"></div>

@@ -1,0 +1,46 @@
+.nk-counter,
+.nk-counter-2,
+.nk-counter-3 {
+    position: relative;
+
+    .nk-count {
+        font-family: $font_headings;
+        font-weight: 600;
+    }
+}
+
+/* Style 1 */
+.nk-counter {
+    .nk-count {
+        margin-bottom: 30px;
+        font-size: 4rem;
+    }
+}
+
+/* Style 2 */
+.nk-counter-2 {
+    .nk-count {
+        margin-bottom: 10px;
+        font-size: 4rem;
+        line-height: 1;
+        color: $color_main_1;
+    }
+}
+
+/* Style 3 */
+.nk-counter-3 {
+    .nk-counter-icon {
+        font-size: 3rem;
+        line-height: 1;
+        color: $color_main_1;
+    }
+    .nk-count {
+        font-size: 3rem;
+        line-height: 3;
+    }
+    .nk-counter-title {
+        font-family: $font_body;
+        font-weight: 400;
+        line-height: 1;
+    }
+}

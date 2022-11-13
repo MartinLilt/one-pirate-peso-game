@@ -1,0 +1,347 @@
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+$escaped_color_dark_1: str-replace("" + $color_dark_1, "#", "%23") !default;
+
+/* Placeholders */
+::placeholder,
+.form-control::placeholder {
+    color: inherit;
+    opacity: .5;
+}
+
+
+/* Ratings */
+.nk-rating {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.2rem;
+
+    input {
+        display: none;
+
+        &:checked ~ label {
+            span:first-child {
+                display: none;
+            }
+            span:last-child {
+                display: block;
+            }
+        }
+    }
+    label {
+        position: relative;
+        display: block;
+        float: right;
+        padding-right: 2px;
+        padding-left: 2px;
+        margin: 0;
+        clear: none;
+        line-height: 1;
+        cursor: default;
+        cursor: pointer;
+
+        span:first-child {
+            display: none;
+            display: block;
+        }
+        span:last-child {
+            display: none;
+        }
+
+        &::after,
+        &::before {
+            content: none;
+            display: none;
+        }
+
+        &:hover,
+        &:hover ~ label {
+            span:first-child {
+                display: none;
+            }
+            span:last-child {
+                display: block;
+            }
+        }
+    }
+}
+
+/* Size Selector */
+.nk-size-selector {
+    &::after {
+        content: "";
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+
+    input {
+        position: absolute;
+        left: -100000px;
+        opacity: .01;
+    }
+    label {
+        position: relative;
+        display: block;
+        float: left;
+        min-width: 60px;
+        padding: 5px 25px;
+        text-align: center;
+        cursor: pointer;
+        background-color: $color_dark_1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: 1px solid;
+            opacity: .1;
+            transition: .15s opacity;
+        }
+
+        &:hover::after,
+        &.hover::after {
+            opacity: .5;
+            z-index: 1;
+        }
+    }
+    input:checked + label::after {
+        opacity: 1;
+        z-index: 1;
+    }
+    label ~ label {
+        margin-left: -1px;
+    }
+}
+
+/* Color Selector */
+.nk-color-selector {
+    &::after {
+        content: "";
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+
+    input {
+        position: absolute;
+        left: -100000px;
+        opacity: .01;
+    }
+    label {
+        position: relative;
+        display: block;
+        float: left;
+        width: 22px;
+        height: 22px;
+        margin-top: 6px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        margin-left: 6px;
+        font-size: 0;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 11px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: -5px;
+            right: -5px;
+            bottom: -5px;
+            left: -5px;
+            border: 1px solid;
+            border-radius: 16px;
+            opacity: 0;
+            transition: .3s opacity;
+        }
+    }
+    input:checked + label::after {
+        opacity: 1;
+        z-index: 1;
+    }
+    label ~ label {
+        margin-left: 16px;
+    }
+}
+
+/* From Style 1 */
+.form-control {
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #404040;
+    border-radius: 0;
+    transition: .3s border, .3s color;
+
+    &:focus,
+    &.focus,
+    &:active {
+        color: inherit;
+        background: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+input.form-control {
+    height: auto;
+}
+select.form-control {
+    padding: 6px 20px;
+}
+select.form-control option {
+    color: #000;
+}
+@-moz-document url-prefix("") {
+    select.form-control option {
+        color: inherit;
+    }
+}
+select.form-control[multiple] option {
+    color: inherit;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: transparent;
+    opacity: .4;
+}
+
+
+/* Custom Checkbox */
+.custom-control-label::before {
+    background-color: $color_dark_2;
+    border-color: $color_dark_4;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: $color_dark_1;
+    background-color: #fff;
+    border-color: #fff;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$escaped_color_dark_1}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M4 8.5L6.5 11l6-6'/></svg>");
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 .2rem rgba(#fff, .15);
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #fff;
+}
+
+/* Input Number */
+.nk-form-control-number {
+    padding: 4px;
+    white-space: nowrap;
+    background-color: $color_dark_1;
+    border-radius: 2px;
+
+    > * {
+        display: inline-block;
+        width: auto;
+        padding: 11px 15px;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.2;
+        vertical-align: middle;
+        border: 1px solid #fff;
+    }
+
+    .nk-form-control-number-down,
+    .nk-form-control-number-up {
+        min-width: 27px;
+        padding: 11px 8px;
+        font-family: sans-serif;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        transition: .3s background-color;
+
+        &:hover {
+            background-color: $color_dark_4;
+        }
+    }
+    .nk-form-control-number-down {
+        &::after {
+            content: "-";
+        }
+        border-right: none;
+    }
+    .nk-form-control-number-up {
+        &::after {
+            content: "+";
+        }
+        border-left: none;
+    }
+
+    input {
+        text-align: center;
+        -moz-appearance: textfield; // stylelint-disable-line
+
+        &:focus,
+        &.focus,
+        &:active {
+            border-color: #fff;
+        }
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        margin: 0;
+        -webkit-appearance: none; // stylelint-disable-line
+    }
+}
+
+
+/* Validation */
+div.nk-error {
+    padding: 0;
+    margin: 5px 0;
+    font-weight: 400;
+    color: $color_danger;
+    background-color: transparent;
+    z-index: 1;
+}
+.form-control.nk-error,
+.nk-form-style-1 .form-control.nk-error {
+    border-bottom: 1px solid $color_danger;
+}
+
+.nk-form-response-success {
+    display: none;
+    margin-bottom: 10px;
+    color: $color_success;
+}
+.nk-form-response-error {
+    display: none;
+    margin-bottom: 10px;
+    color: $color_danger;
+}

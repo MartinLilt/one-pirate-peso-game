@@ -1,0 +1,42 @@
+.nk-breadcrumbs {
+    padding: 30px 0;
+    background-color: $color_dark_1;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        > li {
+            position: relative;
+            display: inline-block;
+
+            > span,
+            > a {
+                padding: 0 15px;
+                transition: .2s opacity;
+            }
+            > span,
+            > a,
+            > a:hover,
+            > a:focus,
+            > a:active {
+                color: inherit;
+                text-decoration: none;
+            }
+            > a:hover,
+            > a.hover {
+                opacity: .8;
+            }
+
+            + li::before {
+                content: " / ";
+                opacity: .6;
+            }
+        }
+    }
+}
+.nk-header-text-bottom .nk-breadcrumbs {
+    padding: 0;
+    background-color: transparent;
+}

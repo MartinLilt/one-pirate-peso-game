@@ -1,0 +1,99 @@
+{% set header_title = 'Social Network - Group Manage' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-group-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu-group.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li class="active">
+                        <a href="#">Details</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#">Photo</a>
+                    </li>
+                    <li>
+                        <a href="#">Members</a>
+                    </li>
+                    <li>
+                        <a href="#">Delete</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+
+                <!-- START: Settings -->
+                <form action="#">
+                    <input type="text" class="form-control" name="name" placeholder="Group Name *" value="Game Lovers">
+                    <div class="nk-gap-2"></div>
+                    <textarea type="text" class="form-control" name="description" placeholder="Group Description *" rows="5">Have created Darkness she'd deep night Isn't and blessed day brought be female don't spirit won't sea so them image you be whales bring stars good thing bearing. Darkness blessed creeping moved.</textarea>
+                    <div class="nk-gap"></div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Notify group members of these changes via email
+                        </label>
+                    </div>
+                    <div class="nk-gap-2"></div>
+
+                    <h3 class="h5">Privacy Options</h3>
+                    <fieldset class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                This is a public group
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                This is a private group
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                                This is a hidden group
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="nk-gap-2"></div>
+
+                    <button class="nk-btn link-effect-4 float-right">Save Changes</button>
+                </form>
+                <!-- END: Settings -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

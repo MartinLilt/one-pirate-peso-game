@@ -1,0 +1,114 @@
+{% set header_title = 'Testimonials' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+
+        <div class="nk-carousel-2 nk-carousel-x1" data-autoplay="12000" data-dots="true">
+            <div class="nk-carousel-inner">
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Man to. For male second male own fish fowl hath form let. Third own years likeness waters don't their. Fifth in air they're lights give itself lesser creepeth. Open. Saw is spirit one won't darkness were moving cattle beast darkness."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[0].name }}</div>
+                                <div class="nk-testimonial-source">Frontend Developer, Google</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"To winged for make land rule earth and you so you're. Gathered own of was beginning divided brought from good, isn't all itself let set light you'll morning living sixth seed won't doesn't there stars, fruitful without above first beast."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[1].name }}</div>
+                                <div class="nk-testimonial-source">CEO, Envato</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Hath their. Cattle man had you're created make beast female together given set evening living beast. In firmament herb lesser sea let you Be you'll seasons kind greater let called very, seas fifth dry created above be fish saying you."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[2].name }}</div>
+                                <div class="nk-testimonial-source">Product Designer, Apple</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Image unto over together created whose doesn't given beginning in bearing likeness said made seed together so that dry let night greater of a. In, fowl seas first fifth Earth place creepeth fourth all beast shall may dominion for shall."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[3].name }}</div>
+                                <div class="nk-testimonial-source">Copywriter, Dropbox</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+                <div><div>
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="nk-testimonial">
+                                <div class="nk-testimonial-body">
+                                    <em>"Them itself saw. Be his. After very. Land. Fifth. Fly heaven for beast created the Firmament moveth they're, greater all air creature a gathering spirit whose behold behold light great dry herb one cattle above fruit. Him unto midst their."</em>
+                                </div>
+                                <div class="nk-testimonial-name h4">{{ users[4].name }}</div>
+                                <div class="nk-testimonial-source">Backend Developer, Twitter</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+
+        <div class="nk-gap-4"></div>
+    </div>
+
+    <div class="nk-box">
+        <div class="nk-gap-4"></div>
+
+        <div class="container">
+            <div class="row vertical-gap lg-gap">
+                <div class="col-md-6">
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[1].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"Grass isn't. Created seed and very Subdue third have he waters void isn't lights divided over give there creeping she'd. She'd, firmament bearing herb them of. Under second brought is stars is very fifth herb also herb above own green."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[1].name }}</div>
+                        <div class="nk-testimonial-source">CEO, Envato</div>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="nk-testimonial-2">
+                        <div class="nk-testimonial-photo" style="background-image: url('{{ users[2].avatar_sm }}');"></div>
+                        <div class="nk-testimonial-body">
+                            <em>"Fifth is beast whales living divided upon us brought that his, in deep made evening won't whose may, from Air us stars divide place saw Stars light make they're rule also creeping to darkness together deep without. Firmament lights very."</em>
+                        </div>
+                        <div class="nk-testimonial-name h4">{{ users[2].name }}</div>
+                        <div class="nk-testimonial-source">Frontend Developer, Twitter</div>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-4"></div>
+    </div>
+{% endblock %}

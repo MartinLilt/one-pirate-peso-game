@@ -1,0 +1,100 @@
+.nk-progress {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+
+    .nk-progress-line {
+        width: 100%;
+        height: 5px;
+        background-color: $color_dark_3;
+
+        > div {
+            height: 100%;
+            text-align: right;
+            background-color: #e6e6e6;
+        }
+    }
+
+    .nk-progress-title {
+        margin-bottom: 5px;
+        font-family: $font_headings;
+    }
+
+    .nk-progress-percent {
+        display: inline-block;
+        margin-top: 5px;
+        font-size: .7rem;
+        vertical-align: top;
+    }
+    &.nk-progress-percent-static {
+        padding-right: 30px;
+
+        .nk-progress-line {
+            position: relative;
+        }
+        .nk-progress-percent {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-top: 2px;
+            margin-left: 10px;
+        }
+    }
+
+    // sizes
+    &.nk-progress-xs {
+        .nk-progress-line {
+            height: 1px;
+        }
+        .nk-progress-percent {
+            margin-top: 1px;
+        }
+        &.nk-progress-percent-static .nk-progress-percent {
+            margin-top: -1px;
+        }
+    }
+    &.nk-progress-sm {
+        .nk-progress-line {
+            height: 3px;
+        }
+        .nk-progress-percent {
+            margin-top: 3px;
+        }
+        &.nk-progress-percent-static .nk-progress-percent {
+            margin-top: 1px;
+        }
+    }
+    &.nk-progress-md {
+        .nk-progress-line {
+            height: 8px;
+        }
+        .nk-progress-percent {
+            margin-top: 8px;
+        }
+        &.nk-progress-percent-static .nk-progress-percent {
+            margin-top: 7px;
+        }
+    }
+    &.nk-progress-lg {
+        .nk-progress-line {
+            height: 12px;
+        }
+        .nk-progress-percent {
+            margin-top: 12px;
+        }
+        &.nk-progress-percent-static .nk-progress-percent {
+            margin-top: 12px;
+        }
+    }
+    &.nk-progress-xlg {
+        .nk-progress-line {
+            height: 16px;
+        }
+        .nk-progress-percent {
+            margin-top: 16px;
+        }
+        &.nk-progress-percent-static .nk-progress-percent {
+            margin-top: 15px;
+        }
+    }
+}

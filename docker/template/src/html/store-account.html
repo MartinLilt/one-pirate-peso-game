@@ -1,0 +1,73 @@
+{% set header_title = 'Account' %}
+{% set header_show = 2 %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-3">
+                <!--
+                    START: Sidebar
+
+                    Additional Classes:
+                        .nk-sidebar-left
+                        .nk-sidebar-right
+                        .nk-sidebar-sticky
+                -->
+                <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                    <div class="nk-store-account-links">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li class="active"><a href="#">Orders</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <li><a href="#">Addresses</a></li>
+                            <li><a href="#">Account Details</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- END: Sidebar -->
+            </div>
+            <div class="col-lg-9">
+                <div class="nk-box-3 bg-dark-1">
+                    <h2 class="nk-title">Orders</h2>
+                    <div class="nk-gap-1"></div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Total</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="order">
+                                    <td><a href="#">#24</a></td>
+                                    <td><time datetime="2017-07-23">23 July 2017</time></td>
+                                    <td>Processing</td>
+                                    <td>$104.99</td>
+                                    <td><a href="#" class="nk-btn link-effect-4">View</a></td>
+                                </tr>
+                                <tr class="order">
+                                    <td><a href="#">#18</a></td>
+                                    <td><time datetime="2017-07-23">16 July 2017</time></td>
+                                    <td>Shipped</td>
+                                    <td>$250.00</td>
+                                    <td><a href="#" class="nk-btn link-effect-4">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+    </div>
+{% endblock %}

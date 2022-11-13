@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{{ headerComment | safe }}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="_nK">
+    <title>GODLIKE{{ ' | ' + header_title if header_title }}</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- START: Styles -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700%7cMarcellus+SC" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <script defer src="assets/vendor/fontawesome-free/js/all.js"></script>
+    <script defer src="assets/vendor/fontawesome-free/js/v4-shims.js"></script>
+
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="assets/vendor/ionicons/css/ionicons.min.css">
+
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="assets/vendor/revolution/css/settings.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/css/layers.css">
+    <link rel="stylesheet" href="assets/vendor/revolution/css/navigation.css">
+
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css">
+
+    <!-- Photoswipe -->
+    <link rel="stylesheet" href="assets/vendor/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="assets/vendor/photoswipe/dist/default-skin/default-skin.css">
+
+    <!-- DateTimePicker -->
+    <link rel="stylesheet" href="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+
+    <!-- Summernote -->
+    <link rel="stylesheet" href="assets/vendor/summernote/dist/summernote-bs4.css">
+
+    <!-- GODLIKE -->
+    <link rel="stylesheet" href="assets/css/godlike{{ '.min' if ENV == 'production' }}.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    {% if custom_css %}<link rel="stylesheet" href="{{ custom_css }}">{% endif %}
+    <!-- END: Styles -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    {% block head %}{% endblock %}
+    {% if custom_styles %}
+    <style>{{ custom_styles }}</style>
+    {% endif %}
+</head>

@@ -19,7 +19,6 @@ const Home = () => {
       </Head>
       {/* Hero section below this */}
       <section className="layout default">
-        fpfpfp
         <HomeHeroContent />
       </section>
       {/* Wiki-preview section below this */}

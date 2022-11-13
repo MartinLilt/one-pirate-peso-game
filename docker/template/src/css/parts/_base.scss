@@ -1,0 +1,346 @@
+body {
+    color: #fff;
+    word-wrap: break-word;
+    background-color: $color_dark_1;
+}
+.nk-main {
+    overflow: hidden;
+}
+
+// boxed
+body.nk-page-boxed {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Links
+a {
+    color: $color_main_1;
+}
+a:focus,
+a:hover {
+    color: darken($color_main_1, 10%);
+}
+
+// selection color
+::selection {
+    color: $color_dark_4;
+    background: rgba(#fff, .9);
+}
+
+
+// block for any content (most case of use - parallax and image backgrounds)
+.nk-block {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+
+    &::after,
+    &::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// bg image
+.bg-image,
+.bg-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+
+    > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: "object-fit: cover;"; // stylelint-disable-line
+        z-index: -1;
+        object-fit: cover;
+    }
+}
+.bg-image-row,
+.bg-video-row,
+.bg-map-row {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    > div {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    @media #{$media_smaller_sm} {
+        position: relative;
+        > div {
+            padding-top: 56.25%;
+            > div {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}
+.bg-map-row {
+    z-index: auto;
+    .nk-gmaps {
+        height: 100%;
+        z-index: 1;
+    }
+    @media #{$media_smaller_sm} {
+        position: relative;
+        > div {
+            padding-top: 0;
+            > div {
+                position: relative;
+            }
+        }
+        .nk-gmaps {
+            height: 300px;
+        }
+        .nk-gmaps-sm {
+            height: 250px;
+        }
+        .nk-gmaps-md {
+            height: 450px;
+        }
+        .nk-gmaps-lg {
+            height: 550px;
+        }
+        .nk-gmaps-full {
+            height: 700px;
+            height: 100vh;
+            min-height: 700px;
+        }
+    }
+}
+
+// page bg video
+.nk-page-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: -1;
+
+    video,
+    iframe {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &.nk-page-background-loaded {
+        video,
+        iframe {
+            opacity: 1;
+        }
+    }
+}
+
+// background color box
+.bg-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color_dark_1;
+    z-index: -1;
+}
+
+// gaps
+.nk-gap,
+.nk-gap-1,
+.nk-gap-2,
+.nk-gap-3,
+.nk-gap-4,
+.nk-gap-5,
+.nk-gap-6 {
+    display: block;
+    height: 20px;
+    &::after,
+    &::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.nk-gap-1 {
+    height: 30px;
+}
+.nk-gap-2 {
+    height: 40px;
+}
+.nk-gap-3 {
+    height: 60px;
+}
+.nk-gap-4 {
+    height: 80px;
+}
+.nk-gap-5 {
+    height: 100px;
+}
+.nk-gap-6 {
+    height: 120px;
+}
+
+// body scrollbar checker
+.nk-body-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+// gmaps
+.nk-gmaps {
+    width: 100%;
+    height: 300px;
+}
+.nk-gmaps-sm {
+    height: 250px;
+}
+.nk-gmaps-md {
+    height: 450px;
+}
+.nk-gmaps-lg {
+    height: 550px;
+}
+.nk-gmaps-full {
+    height: 700px;
+    height: 100vh;
+    min-height: 700px;
+}
+
+// badges
+.nk-badge {
+    display: inline-block;
+    min-width: 15px;
+    height: 15px;
+    padding: 0 4px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    background-color: $color_main_1;
+    border-radius: 7.5px;
+
+    .nk-navbar li > a & {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        pointer-events: none;
+        user-select: none;
+    }
+    .nk-navbar li > a .nk-icon-toggle & {
+        right: -3px;
+    }
+}
+
+.nk-scroll-top {
+    cursor: pointer;
+}
+
+// code
+pre {
+    position: relative;
+    max-height: 500px;
+    padding: 25px;
+    line-height: 1.3;
+    color: #fff;
+    background-color: $color_dark_3;
+
+    .tag {
+        display: inline-block;
+        padding: 0;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        text-align: inherit;
+        white-space: inherit;
+        vertical-align: inherit;
+        border-radius: 0;
+    }
+}
+pre[class*="language-"] {
+    margin: 0;
+}
+
+
+/* DEPRECATED, added for back compatibility */
+// vertical center block (use Bootstrap 4 flexboxes)
+.nk-vertical-center,
+.nk-vertical-bottom,
+.nk-vertical-top {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.nk-vertical-bottom > div {
+    vertical-align: bottom;
+}
+.nk-vertical-top > div {
+    vertical-align: top;
+}
+// no-gap, use bootstrap .no-gutters
+.row.no-gap {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gap > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+// text align
+.text-xs-center {
+    text-align: center;
+}
+.text-xs-left {
+    text-align: left;
+}
+.text-xs-right {
+    text-align: right;
+}
+// float
+.pull-xs-right {
+    float: right;
+}
+.pull-xs-left {
+    float: left;
+}
+.pull-xs-none {
+    float: none;
+}

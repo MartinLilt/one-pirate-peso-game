@@ -1,0 +1,808 @@
+{
+    "custom_styles": false,
+    "custom_css": false,
+    "page_boxed": false,
+    "page_border": true,
+    "page_share_left": true,
+    "header_visible": 10,
+    "header_show": true,
+    "header_boxed": false,
+    "header_parallax": true,
+    "header_parallax_opacity": true,
+    "header_title_back": false,
+    "header_title_back_show": true,
+    "header_title_back_visible": "1",
+    "header_title": false,
+    "header_title_show": true,
+    "header_sub_title": false,
+    "header_sub_title_show": true,
+    "header_text": false,
+    "header_bottom_line": false,
+    "header_image": "assets/images/image-1.jpg",
+    "header_video": false,
+    "header_video_thumb": false,
+    "header_video_type": "full",
+    "header_size": "md",
+    "header_class": false,
+    "nav": "top",
+    "nav_opaque": true,
+    "nav_left_align": "center",
+    "nav_left_align_v": "center",
+    "nav_contacts": true,
+    "nav_contacts_light": false,
+    "nav_light": false,
+    "nav_logo": "assets/images/logo.svg",
+    "nav_logo_light": "assets/images/logo-light.png",
+    "nav_logo_top_light": false,
+    "nav_logo_url": "index.html",
+    "nav_logo_size": 90,
+    "nav_fixed": false,
+    "nav_sticky": true,
+    "nav_autohide": true,
+    "nav_transparent": false,
+    "nav_mobile": true,
+    "nav_align": "right",
+    "nav_sign": true,
+    "nav_cart": true,
+    "nav_search": true,
+    "nav_search_light": false,
+    "nav_side": true,
+    "nav_side_light": false,
+    "nav_side_bg": "assets/images/bg-nav-side.jpg",
+    "nav_side_logo": "assets/images/logo.svg",
+    "nav_side_logo_light": "assets/images/logo-light.png",
+    "nav_full": false,
+    "nav_full_light": false,
+    "nav_right_button": false,
+    "footer": true,
+    "footer_logo": "assets/images/logo-3.png",
+    "footer_bg": false,
+    "footer_parallax": true,
+    "footer_parallax_opacity": true,
+    "side_buttons_visible": true,
+    "background": {
+        "video": "https://youtu.be/UkeDo1LhUqQ",
+        "image": "assets/images/page-background.jpg",
+        "opacity": 5,
+        "color": false,
+        "audio": "assets/mp3/purpleplanetmusic-desolation.mp3"
+    },
+    "navigation": {
+        "index.html": {
+            "name": "Home",
+            "sub": {
+                "index.html": {
+                    "name": "Landing"
+                },
+                "index-main.html": {
+                    "name": "Main"
+                },
+                "index-game-promo.html": {
+                    "name": "Game Promo"
+                }
+            }
+        },
+        "page-contact.html": {
+            "name": "Features",
+            "sub": {
+                "page-contact.html": {
+                    "name": "Pages",
+                    "sub": {
+                        "forum.html": {
+                            "name": "Forum"
+                        },
+                        "page-contact.html": {
+                            "name": "Contact"
+                        },
+                        "page-coming-soon.html": {
+                            "name": "Coming Soon"
+                        },
+                        "page-404.html": {
+                            "name": "404"
+                        },
+                        "page-age-check.html": {
+                            "name": "Age Check"
+                        }
+                    }
+                },
+                "layout-nav-default.html": {
+                    "name": "Navigations",
+                    "sub": {
+                        "layout-nav-default.html": {
+                            "name": "Default"
+                        },
+                        "layout-nav-default-transparent.html": {
+                            "name": "Default Transparent"
+                        },
+                        "layout-nav-main-top.html": {
+                            "name": "Main Top Only"
+                        },
+                        "layout-nav-main-side.html": {
+                            "name": "Main Side"
+                        },
+                        "layout-nav-main-top-fullscreen.html": {
+                            "name": "Main Top + Fullscreen"
+                        },
+                        "layout-nav-fullscreen-side.html": {
+                            "name": "Fullscreen + Side"
+                        }
+                    }
+                },
+                "layout-page-header.html": {
+                    "name": "Headers",
+                    "sub": {
+                        "layout-header.html": {
+                            "name": "Size Default"
+                        },
+                        "layout-header-sm.html": {
+                            "name": "Size Small"
+                        },
+                        "layout-header-md.html": {
+                            "name": "Size Mid"
+                        },
+                        "layout-header-lg.html": {
+                            "name": "Size Large"
+                        },
+                        "layout-header-full.html": {
+                            "name": "Size Full"
+                        },
+                        "layout-header-video.html": {
+                            "name": "Video"
+                        },
+                        "layout-header-video-plain.html": {
+                            "name": "Video Plain"
+                        },
+                        "layout-header-no.html": {
+                            "name": "NO Header"
+                        }
+                    }
+                },
+                "widgets.html": {
+                    "name": "Widgets"
+                },
+                "https://nkdev.info/docs/godlike-html/": {
+                    "name": "Documentation"
+                }
+            }
+        },
+        "#": {
+            "name": "Elements",
+            "mega": true,
+            "background": "assets/images/bg-menu.jpg",
+            "sub": {
+                "element-carousels.html": {
+                    "name": "Column 1",
+                    "sub": {
+                        "element-carousels.html": {
+                            "name": "Carousels"
+                        },
+                        "element-image-boxes.html": {
+                            "name": "Image Boxes"
+                        },
+                        "element-icon-boxes.html": {
+                            "name": "Icon Boxes"
+                        },
+                        "element-counters.html": {
+                            "name": "Counters"
+                        },
+                        "element-blockquotes.html": {
+                            "name": "Block Quotes"
+                        },
+                        "element-testimonials.html": {
+                            "name": "Testimonials"
+                        },
+                        "element-team-members.html": {
+                            "name": "Team Members"
+                        }
+                    }
+                },
+                "element-video-blocks.html": {
+                    "name": "Column 2",
+                    "sub": {
+                        "element-video-blocks.html": {
+                            "name": "Video Blocks"
+                        },
+                        "element-gif.html": {
+                            "name": "Gif Animations"
+                        },
+                        "element-forms.html": {
+                            "name": "AJAX Forms"
+                        },
+                        "element-countdown.html": {
+                            "name": "Countdown"
+                        },
+                        "element-text-typed.html": {
+                            "name": "Typed Text"
+                        },
+                        "element-tabs.html": {
+                            "name": "Tabs"
+                        },
+                        "element-accordions.html": {
+                            "name": "Accordions"
+                        }
+                    }
+                },
+                "element-info-boxes.html": {
+                    "name": "Column 3",
+                    "sub": {
+                        "element-info-boxes.html": {
+                            "name": "Info Boxes / Alerts"
+                        },
+                        "element-call-to-action.html": {
+                            "name": "Call to Action Blocks"
+                        },
+                        "element-progress.html": {
+                            "name": "Progress Bars"
+                        },
+                        "element-pagination.html": {
+                            "name": "Pagination"
+                        },
+                        "element-pricing-tables.html": {
+                            "name": "Pricing Tables"
+                        },
+                        "element-modals.html": {
+                            "name": "Modals"
+                        }
+                    }
+                },
+                "element-typography.html": {
+                    "name": "Column 4",
+                    "sub": {
+                        "element-typography.html": {
+                            "name": "Typography"
+                        },
+                        "element-titles.html": {
+                            "name": "Titles [headings]"
+                        },
+                        "element-dropcaps.html": {
+                            "name": "Dropcaps"
+                        },
+                        "element-colors.html": {
+                            "name": "Colors"
+                        },
+                        "element-buttons.html": {
+                            "name": "Buttons"
+                        },
+                        "element-breadcrumbs.html": {
+                            "name": "Breadcrumbs"
+                        }
+                    }
+                }
+            }
+        },
+        "news-list.html": {
+            "name": "News",
+            "sub": {
+                "news-list.html": {
+                    "name": "List"
+                },
+                "news-list-classic.html": {
+                    "name": "Classic List"
+                },
+                "news-grid-2.html": {
+                    "name": "Grid 2 Columns"
+                },
+                "news-grid-3.html": {
+                    "name": "Grid 3 Columns"
+                },
+                "news-single-image.html": {
+                    "name": "Single Post",
+                    "sub": {
+                        "news-single-image.html": {
+                            "name": "Single Image"
+                        },
+                        "news-single-video.html": {
+                            "name": "Single Video"
+                        },
+                        "news-single-audio.html": {
+                            "name": "Single Audio"
+                        },
+                        "news-single-gallery.html": {
+                            "name": "Single Gallery"
+                        },
+                        "news-single-quote.html": {
+                            "name": "Single Block Quote"
+                        },
+                        "news-single-standard.html": {
+                            "name": "Single Standard"
+                        },
+                        "news-single-big-content.html": {
+                            "name": "Single Big Content Example"
+                        }
+                    }
+                }
+            }
+        },
+        "social-user-activity.html": {
+            "name": "Social",
+            "sub": {
+                "social-user-activity.html": {
+                    "name": "User",
+                    "sub": {
+                        "social-user-activity.html": {
+                            "name": "Activity"
+                        },
+                        "social-user-notifications.html": {
+                            "name": "Notifications"
+                        },
+                        "social-user-messages.html": {
+                            "name": "Messages"
+                        },
+                        "social-user-messages-single.html": {
+                            "name": "Messages Single"
+                        },
+                        "social-user-messages-compose.html": {
+                            "name": "Messages Compose"
+                        },
+                        "social-user-friends.html": {
+                            "name": "Friends"
+                        },
+                        "social-user-settings.html": {
+                            "name": "Settings"
+                        },
+                        "social-user-settings-email.html": {
+                            "name": "Settings Email"
+                        }
+                    }
+                },
+                "social-group-activity.html": {
+                    "name": "Group",
+                    "sub": {
+                        "social-group-activity.html": {
+                            "name": "Activity"
+                        },
+                        "social-group-members.html": {
+                            "name": "Members"
+                        },
+                        "social-group-manage.html": {
+                            "name": "Manage"
+                        }
+                    }
+                }
+            }
+        },
+        "store.html": {
+            "name": "Store",
+            "sub": {
+                "store.html": {
+                    "name": "Store"
+                },
+                "store-product.html": {
+                    "name": "Single Product"
+                },
+                "store-cart.html": {
+                    "name": "Cart"
+                },
+                "store-checkout.html": {
+                    "name": "Checkout"
+                },
+                "store-account.html": {
+                    "name": "Account"
+                }
+            }
+        },
+        "gallery.html": {
+            "name": "Media",
+            "sub": {
+                "gallery.html": {
+                    "name": "Gallery 1 Column"
+                },
+                "gallery-2-col.html": {
+                    "name": "Gallery 2 Columns"
+                },
+                "gallery-3-col.html": {
+                    "name": "Gallery 3 Columns"
+                },
+                "videos.html": {
+                    "name": "Videos 1 Column"
+                },
+                "videos-2-col.html": {
+                    "name": "Videos 2 Columns"
+                }
+            }
+        }
+    },
+    "navigation_side": {
+        "page-contact.html": {
+            "name": "Contact"
+        },
+        "page-coming-soon.html": {
+            "name": "Coming Soon"
+        },
+        "page-404.html": {
+            "name": "404"
+        },
+        "page-age-check.html": {
+            "name": "Age Check"
+        },
+        "#": {
+            "name": "Sub Menu Example",
+            "sub": {
+                "#1": {
+                    "name": "Sub Item 1"
+                },
+                "#2": {
+                    "name": "Sub Item 2",
+                    "sub": {
+                        "#1": {
+                            "name": "Sub Item 1"
+                        },
+                        "#2": {
+                            "name": "Sub Item 2"
+                        }
+                    }
+                },
+                "#3": {
+                    "name": "Sub Item 3",
+                    "sub": {
+                        "#": {
+                            "name": "Sub Item"
+                        }
+                    }
+                },
+                "#4": {
+                    "name": "Sub Item 4",
+                    "sub": {
+                        "#": {
+                            "name": "Sub Item"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "navigation_full": {
+        "page-contact.html": {
+            "name": "Contact"
+        },
+        "page-coming-soon.html": {
+            "name": "Coming Soon"
+        },
+        "page-404.html": {
+            "name": "404"
+        },
+        "page-age-check.html": {
+            "name": "Age Check"
+        },
+        "#": {
+            "name": "Sub Menu Example",
+            "sub": {
+                "#1": {
+                    "name": "Sub Item 1"
+                },
+                "#2": {
+                    "name": "Sub Item 2",
+                    "sub": {
+                        "#1": {
+                            "name": "Sub Item 1"
+                        },
+                        "#2": {
+                            "name": "Sub Item 2"
+                        }
+                    }
+                },
+                "#3": {
+                    "name": "Sub Item 3",
+                    "sub": {
+                        "#": {
+                            "name": "Sub Item"
+                        }
+                    }
+                },
+                "#4": {
+                    "name": "Sub Item 4",
+                    "sub": {
+                        "#": {
+                            "name": "Sub Item"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "navigation_social": {
+        "social-user-activity.html": {
+            "name": "Activity"
+        },
+        "social-user-notifications.html": {
+            "name": "Notifications"
+        },
+        "social-user-messages.html": {
+            "name": "Messages",
+            "count": 192
+        },
+        "social-user-friends.html": {
+            "name": "Friends",
+            "count": 19
+        },
+        "social-user-groups.html": {
+            "name": "Groups",
+            "count": 2
+        },
+        "forum.html": {
+            "name": "Forum"
+        },
+        "social-user-settings.html": {
+            "name": "Settings"
+        }
+    },
+    "navigation_social_group": {
+        "social-group-activity.html": {
+            "name": "Activity"
+        },
+        "forum.html": {
+            "name": "Forum"
+        },
+        "social-group-members.html": {
+            "name": "Members",
+            "count": 129
+        },
+        "social-group-manage.html": {
+            "name": "Manage"
+        }
+    },
+
+    "users": [
+        {
+            "name": "Lesa Cruz",
+            "url": "#",
+            "avatar": "assets/images/avatar-1.jpg",
+            "avatar_sm": "assets/images/avatar-1-sm.jpg"
+        }, {
+            "name": "Kurt Tucker",
+            "url": "#",
+            "avatar": "assets/images/avatar-2.jpg",
+            "avatar_sm": "assets/images/avatar-2-sm.jpg"
+        }, {
+            "name": "Katie Anderson",
+            "url": "#",
+            "avatar": "assets/images/avatar-3.jpg",
+            "avatar_sm": "assets/images/avatar-3-sm.jpg"
+        }, {
+            "name": "Luke Fuller",
+            "url": "#",
+            "avatar": "assets/images/avatar-4.jpg",
+            "avatar_sm": "assets/images/avatar-4-sm.jpg"
+        }, {
+            "name": "Felicia Meyer",
+            "url": "#",
+            "avatar": "assets/images/avatar-5.jpg",
+            "avatar_sm": "assets/images/avatar-5-sm.jpg"
+        }
+    ],
+
+    "posts": [
+        {
+            "title": "Image Blog Post",
+            "type": "image",
+            "thumb_full": "assets/images/post-1.jpg",
+            "thumb_lg": "assets/images/post-1-mid.jpg",
+            "thumb_sm": "assets/images/post-1-sm.jpg",
+            "date": "September 18, 2016",
+            "by": "<a href=\"#\">nK</a>",
+            "url": "news-single-image.html",
+            "cat": "<a href=\"#\">News</a>",
+            "excerpt": "<p>Rhoncus felis phasellus eget elit ipsum litora, mus posuere porta semper fringilla tempor ultricies lacinia nec id torquent hac etiam tempus, porttitor. Suscipit nostra laoreet in pulvinar primis molestie mattis. Lobortis felis.</p><p>Vel egestas tortor porta rutrum sit nisi luctus blandit accumsan vel eu pharetra fusce auctor congue phasellus non.</p>",
+            "excerpt_sm": "<p>Rhoncus felis phasellus eget elit ipsum litora, mus posuere porta semper fringilla tempor ultricies lacinia nec id torquent hac etiam tempus, porttitor. Suscipit nostra laoreet in pulvinar primis molestie mattis. Lobortis felis.</p>",
+            "comments_count": 4,
+            "likes_count": 17,
+            "views_count": 589
+        }, {
+            "title": "Video Blog Post",
+            "type": "video",
+            "video": "https://www.youtube.com/watch?v=0J4u1FD87FM",
+            "thumb_full": "assets/images/post-2.jpg",
+            "thumb_lg": "assets/images/post-2-mid.jpg",
+            "thumb_sm": "assets/images/post-2-sm.jpg",
+            "date": "September 5, 2016",
+            "by": "<a href=\"#\">nK</a>",
+            "url": "news-single-video.html",
+            "cat": "<a href=\"#\">Release</a>",
+            "excerpt": "<p>Mus pulvinar nisl ad nisl nostra conubia facilisi dictum lacus vitae lorem conubia conubia. Primis rhoncus, primis pulvinar. Ligula pharetra nonummy. Eget ultrices gravida enim, class mauris nam maecenas pulvinar senectus.</p><p>Nunc, eu placerat nisl euismod curae; nam libero sed at facilisis. Elementum eleifend eros sociis sagittis sociis dignissim vehicula pharetra. Felis curae; phasellus conubia. Inceptos est magna. Hac, praesent. Hymenaeos enim.</p><p>Felis fermentum sit quam volutpat aptent. Feugiat posuere duis potenti inceptos potenti ridiculus ad, dui tristique felis torquent.</p>",
+            "excerpt_sm": "<p>Mus pulvinar nisl ad nisl nostra conubia facilisi dictum lacus vitae lorem conubia conubia. Primis rhoncus, primis pulvinar. Ligula pharetra nonummy. Eget ultrices gravida enim, class mauris nam maecenas pulvinar senectus.</p>",
+            "comments_count": 7,
+            "likes_count": 9,
+            "views_count": 875
+        }, {
+            "title": "Blockquote Blog Post",
+            "type": "quote",
+            "thumb_full": "assets/images/post-3.jpg",
+            "thumb_lg": "assets/images/post-3-mid.jpg",
+            "thumb_sm": "assets/images/post-3-sm.jpg",
+            "date": "August 27, 2016",
+            "by": "<a href=\"#\">nK</a>",
+            "url": "news-single-quote.html",
+            "cat": "<a href=\"#\">Beta Test</a>",
+            "excerpt": "The clearest way into the Universe is through a forest wilderness.",
+            "excerpt_sm": "The clearest way into the Universe is through a forest wilderness.",
+            "quote_author": "John Muir",
+            "comments_count": 7,
+            "likes_count": 9,
+            "views_count": 1290
+        }, {
+            "title": "Audio Blog Post",
+            "type": "audio",
+            "audio": "",
+            "thumb_full": "assets/images/post-4.jpg",
+            "thumb_lg": "assets/images/post-4-mid.jpg",
+            "thumb_sm": "assets/images/post-4-sm.jpg",
+            "date": "August 14, 2016",
+            "by": "<a href=\"#\">nK</a>",
+            "url": "news-single-audio.html",
+            "cat": "<a href=\"#\">Release</a>",
+            "excerpt": "<p>Etiam cursus. Leo nulla sapien dignissim magnis taciti rutrum tempus ut. Quam lacinia cras varius nullam non condimentum ut euismod integer. Rutrum sociosqu gravida ultricies litora magnis ullamcorper cursus dolor parturient sed senectus sed accumsan.</p>",
+            "excerpt_sm": "<p>Etiam cursus. Leo nulla sapien dignissim magnis taciti rutrum tempus ut. Quam lacinia cras varius nullam non condimentum ut euismod integer. Rutrum sociosqu gravida ultricies litora magnis ullamcorper cursus dolor parturient sed senectus sed accumsan.</p>",
+            "comments_count": 23,
+            "likes_count": 46,
+            "views_count": 1682
+        }, {
+            "title": "Gallery Blog Post",
+            "type": "gallery",
+            "gallery": [
+                {
+                    "thumb": "assets/images/post-5-mid.jpg",
+                    "full": "assets/images/post-5.jpg",
+                    "size": "1920x1280"
+                }, {
+                    "thumb": "assets/images/post-6-mid.jpg",
+                    "full": "assets/images/post-6.jpg",
+                    "size": "1920x1280"
+                }, {
+                    "thumb": "assets/images/post-7-mid.jpg",
+                    "full": "assets/images/post-7.jpg",
+                    "size": "1920x1280"
+                }
+            ],
+            "thumb_full": "assets/images/post-5.jpg",
+            "thumb_lg": "assets/images/post-5-mid.jpg",
+            "thumb_sm": "assets/images/post-5-sm.jpg",
+            "date": "Jule 23, 2016",
+            "by": "<a href=\"#\">nK</a>",
+            "url": "news-single-gallery.html",
+            "cat": "<a href=\"#\">News</a>",
+            "excerpt": "<p>Dictumst eu integer, luctus rutrum ut. Sociis mus integer ultrices velit volutpat ultrices semper volutpat tortor tincidunt porttitor lobortis orci odio. Ornare dapibus mollis quis. Nisi, tincidunt aliquam imperdiet blandit porttitor. Mauris senectus elit tellus proin bibendum ligula fames torquent posuere faucibus egestas integer et Sit fames aptent congue Cum. Consectetuer quis. Magnis. Consequat.</p><p>Euismod, pulvinar. Nonummy amet sociosqu libero dictum aptent nisi lobortis porttitor imperdiet, nunc tristique quisque posuere non torquent duis id sem Mauris fringilla torquent nulla vitae.</p>",
+            "excerpt_sm": "<p>Dictumst eu integer, luctus rutrum ut. Sociis mus integer ultrices velit volutpat ultrices semper volutpat tortor tincidunt porttitor lobortis orci odio. Ornare dapibus mollis quis. Nisi, tincidunt aliquam imperdiet blandit porttitor. Mauris senectus elit tellus proin.</p>",
+            "comments_count": 13,
+            "likes_count": 0,
+            "views_count": 1122
+        }, {
+            "title": "Standard Blog Post",
+            "type": "standard",
+            "thumb_full": "assets/images/post-7.jpg",
+            "thumb_lg": "assets/images/post-7-mid.jpg",
+            "thumb_sm": "assets/images/post-7-sm.jpg",
+            "date": "Jule 3, 2016",
+            "by": "<a href=\"#\">nK</a>",
+            "url": "news-single-standard.html",
+            "cat": "<a href=\"#\">Release</a>",
+            "excerpt": "<p>Quisque. Molestie purus ridiculus tristique sed consectetuer vestibulum odio, interdum, nostra Sollicitudin lacinia convallis erat risus ante nulla porta hac aliquam luctus sociis aenean facilisi est libero natoque felis, mus laoreet gravida torquent consectetuer, nunc, taciti, dui tincidunt.</p><p>Dolor dis Class eros dapibus imperdiet lobortis dis consequat habitant sociis posuere est viverra quis natoque luctus fermentum mollis morbi, suspendisse consectetuer senectus adipiscing ridiculus congue metus curae; quam auctor ante blandit hac. Phasellus nisi. Aliquam duis ultrices. Cubilia.</p><p>Consequat a ad sagittis elit neque quisque. Dolor porta fames nam eget auctor pulvinar odio justo a taciti cursus nisl non malesuada nulla sed. Praesent, nascetur consequat at Posuere ac ultricies ornare gravida duis, fames dui id. A.</p>",
+            "excerpt_sm": "<p>Quisque. Molestie purus ridiculus tristique sed consectetuer vestibulum odio, interdum, nostra Sollicitudin lacinia convallis erat risus ante nulla porta hac aliquam luctus sociis aenean facilisi est libero natoque felis, mus laoreet gravida torquent consectetuer, nunc, taciti, dui tincidunt.</p>",
+            "comments_count": 0,
+            "likes_count": 78,
+            "views_count": 4592
+        }
+    ],
+
+    "shop": [
+        {
+            "title": "Women Tshirt",
+            "price": "$67.00",
+            "photos": [
+                {
+                    "full": "assets/images/product-1.png",
+                    "sm": "assets/images/product-1-sm.png"
+                }, {
+                    "full": "assets/images/product-1-blue.png",
+                    "sm": "assets/images/product-1-blue-sm.png"
+                }, {
+                    "full": "assets/images/product-1-green.png",
+                    "sm": "assets/images/product-1-green-sm.png"
+                }, {
+                    "full": "assets/images/product-1-orange.png",
+                    "sm": "assets/images/product-1-orange-sm.png"
+                }
+            ],
+            "url": "store-product.html",
+            "rating": "90%"
+        }, {
+            "title": "Men Tshirt",
+            "price": "$67.00",
+            "photos": [
+                {
+                    "full": "assets/images/product-2.png",
+                    "sm": "assets/images/product-2-sm.png"
+                }, {
+                    "full": "assets/images/product-2-blue.png",
+                    "sm": "assets/images/product-2-blue-sm.png"
+                }, {
+                    "full": "assets/images/product-2-green.png",
+                    "sm": "assets/images/product-2-green-sm.png"
+                }, {
+                    "full": "assets/images/product-2-orange.png",
+                    "sm": "assets/images/product-2-orange-sm.png"
+                }
+            ],
+            "url": "store-product.html",
+            "rating": "50%"
+        }, {
+            "title": "Women Hoodie",
+            "price": "$125.00",
+            "photos": [
+                {
+                    "full": "assets/images/product-3.png",
+                    "sm": "assets/images/product-3-sm.png"
+                }, {
+                    "full": "assets/images/product-3-blue.png",
+                    "sm": "assets/images/product-3-blue-sm.png"
+                }, {
+                    "full": "assets/images/product-3-green.png",
+                    "sm": "assets/images/product-3-green-sm.png"
+                }, {
+                    "full": "assets/images/product-3-orange.png",
+                    "sm": "assets/images/product-3-orange-sm.png"
+                }
+            ],
+            "url": "store-product.html",
+            "rating": "100%"
+        }, {
+            "title": "Men Hoodie",
+            "price": "$125.00 <del>$145.00</del>",
+            "photos": [
+                {
+                    "full": "assets/images/product-4.png",
+                    "sm": "assets/images/product-4-sm.png"
+                }, {
+                    "full": "assets/images/product-4-blue.png",
+                    "sm": "assets/images/product-4-blue-sm.png"
+                }, {
+                    "full": "assets/images/product-4-green.png",
+                    "sm": "assets/images/product-4-green-sm.png"
+                }, {
+                    "full": "assets/images/product-4-orange.png",
+                    "sm": "assets/images/product-4-orange-sm.png"
+                }
+            ],
+            "url": "store-product.html"
+        }, {
+            "title": "Women Cap",
+            "price": "$25.99",
+            "photos": [
+                {
+                    "full": "assets/images/product-5.png",
+                    "sm": "assets/images/product-5-sm.png"
+                }, {
+                    "full": "assets/images/product-5-blue.png",
+                    "sm": "assets/images/product-5-blue-sm.png"
+                }, {
+                    "full": "assets/images/product-5-green.png",
+                    "sm": "assets/images/product-5-green-sm.png"
+                }, {
+                    "full": "assets/images/product-5-orange.png",
+                    "sm": "assets/images/product-5-orange-sm.png"
+                }
+            ],
+            "url": "store-product.html",
+            "rating": "80%"
+        }, {
+            "title": "Men Cap",
+            "price": "$25.99",
+            "photos": [
+                {
+                    "full": "assets/images/product-6.png",
+                    "sm": "assets/images/product-6-sm.png"
+                }, {
+                    "full": "assets/images/product-6-blue.png",
+                    "sm": "assets/images/product-6-blue-sm.png"
+                }, {
+                    "full": "assets/images/product-6-green.png",
+                    "sm": "assets/images/product-6-green-sm.png"
+                }, {
+                    "full": "assets/images/product-6-orange.png",
+                    "sm": "assets/images/product-6-orange-sm.png"
+                }
+            ],
+            "url": "store-product.html",
+            "rating": "60%"
+        }
+    ]
+}

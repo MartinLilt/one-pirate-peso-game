@@ -1,0 +1,491 @@
+// burger icon
+.nk-icon-burger {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    transition: .3s transform;
+
+    > span {
+        position: absolute;
+        display: block;
+        top: 50%;
+        width: 3px;
+        height: 3px;
+        margin-top: -1.5px;
+        background-color: #fff;
+        border-radius: 1.5px;
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 6px;
+            width: 3px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 1.5px;
+        }
+        &::after {
+            left: 400%;
+        }
+
+        &,
+        &::before,
+        &::after {
+            transition: .3s transform, .3s width, .3s height, .3s border-radius;
+        }
+    }
+
+    // light navbar
+    .nk-navbar-light & > span {
+        background-color: $color_dark_1;
+
+        &::after,
+        &::before {
+            background-color: $color_dark_1;
+        }
+    }
+
+    .nk-t-1 {
+        margin-top: -7.5px;
+    }
+    .nk-t-3 {
+        margin-top: 4.5px;
+    }
+
+    // hover animation
+    &:hover,
+    &.hover,
+    a:hover > &,
+    a.hover > &,
+    span:hover > &,
+    span.hover > & {
+        .nk-t-1 {
+            animation: nk-icon-burger-hover-1 .5s;
+        }
+        .nk-t-1::before {
+            animation: nk-icon-burger-hover-2 .5s;
+        }
+        .nk-t-1::after {
+            animation: nk-icon-burger-hover-3 .5s;
+        }
+        .nk-t-2 {
+            animation: nk-icon-burger-hover-4 .5s;
+        }
+        .nk-t-2::before {
+            animation: nk-icon-burger-hover-5 .5s;
+        }
+        .nk-t-2::after {
+            animation: nk-icon-burger-hover-6 .5s;
+        }
+        .nk-t-3 {
+            animation: nk-icon-burger-hover-7 .5s;
+        }
+        .nk-t-3::before {
+            animation: nk-icon-burger-hover-8 .5s;
+        }
+        .nk-t-3::after {
+            animation: nk-icon-burger-hover-9 .5s;
+        }
+    }
+
+    // active state
+    &.active,
+    .active &,
+    a.active:hover > &,
+    a.active.hover > &,
+    span.active:hover > &,
+    span.active.hover > &,
+    a:hover > &.active,
+    a.hover > &.active,
+    span:hover > &.active,
+    span.hover > &.active {
+        transform: rotate(135deg);
+
+        > span {
+            transition: .3s width, .3s opacity, .3s transform;
+        }
+        .nk-t-1,
+        .nk-t-2,
+        .nk-t-3 {
+            &,
+            &::after,
+            &::before {
+                border-radius: 0;
+                animation: none;
+            }
+        }
+        .nk-t-1 {
+            height: 2px;
+            transform: translateX(3px) translateY(6px);
+        }
+        .nk-t-1::before {
+            width: 2px;
+            height: 4px;
+            transform: translateX(-3px) translateY(-7px);
+        }
+        .nk-t-1::after {
+            width: 2px;
+            transform: translateX(-9px) translateY(-3px);
+        }
+        .nk-t-2 {
+            width: 4px;
+            height: 2px;
+            transform: translateX(-1px);
+        }
+        .nk-t-2::before {
+            width: 2px;
+            height: 2px;
+            transform: translateX(1px);
+        }
+        .nk-t-2::after {
+            width: 4px;
+            height: 2px;
+            transform: translateX(-4px);
+        }
+        .nk-t-3 {
+            width: 2px;
+            transform: translateX(6px) translateY(-4px);
+        }
+        .nk-t-3::before {
+            width: 2px;
+            height: 4px;
+            transform: translateX(-6px) translateY(3px);
+        }
+        .nk-t-3::after {
+            height: 2px;
+            transform: translateX(-6px) translateY(-2px);
+        }
+    }
+}
+$burger_offset: 1.5px !default;
+@keyframes nk-icon-burger-hover-1 {
+    50% {
+        transform: translateX(-$burger_offset) translateY(-$burger_offset);
+    }
+}
+@keyframes nk-icon-burger-hover-2 {
+    50% {
+        transform: translateX($burger_offset);
+    }
+}
+@keyframes nk-icon-burger-hover-3 {
+    50% {
+        transform: translateX($burger_offset * 2);
+    }
+}
+@keyframes nk-icon-burger-hover-4 {
+    50% {
+        transform: translateX(-$burger_offset);
+    }
+}
+@keyframes nk-icon-burger-hover-5 {
+    50% {
+        transform: translateX($burger_offset);
+    }
+}
+@keyframes nk-icon-burger-hover-6 {
+    50% {
+        transform: translateX($burger_offset * 2);
+    }
+}
+@keyframes nk-icon-burger-hover-7 {
+    50% {
+        transform: translateX(-$burger_offset) translateY($burger_offset);
+    }
+}
+@keyframes nk-icon-burger-hover-8 {
+    50% {
+        transform: translateX($burger_offset);
+    }
+}
+@keyframes nk-icon-burger-hover-9 {
+    50% {
+        transform: translateX($burger_offset * 2);
+    }
+}
+
+// close icon
+.nk-icon-close {
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 32px;
+    line-height: 32px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 2px;
+        width: 16px;
+        height: 0;
+        margin-top: -1px;
+        border-bottom: 2px solid;
+        transition: .3s width, .3s opacity, .3s transform;
+        transform-origin: 50% 50%;
+        will-change: width, opacity, transform;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+// search icon
+.nk-icon-search {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 24px;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        transition: .3s;
+        transform: rotate(-45deg);
+        transform-style: preserve-3d;
+    }
+    &::before {
+        width: 12px;
+        height: 12px;
+        margin-top: -7px;
+        margin-left: 3px;
+        border: 2px solid;
+        border-radius: 6px;
+    }
+    &::after {
+        width: 0;
+        height: 6px;
+        margin-top: 3px;
+        margin-left: 12px;
+        border-right: 2px solid;
+        transform-origin: 1px 0;
+    }
+
+    // hover animation
+    &:hover,
+    a:hover > & {
+        &::before {
+            transform: rotate(-45deg) scale(1.2);
+        }
+        &::after {
+            transform: rotate(-40deg) translateX(-1px) translateY(1px);
+        }
+    }
+
+    // active state
+    &.active,
+    .active &,
+    a.active:hover > & {
+        &::before,
+        &::after {
+            width: 1px;
+            height: 16px;
+        }
+        &::before {
+            width: 2px;
+            height: 17px;
+            margin-top: -8px;
+            margin-left: 9px;
+            border-width: 1px;
+            transform: rotate(45deg);
+        }
+        &::after {
+            width: 0;
+            margin-top: -5px;
+            margin-left: 3px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// arrow icons
+.nk-icon-arrow {
+    &-right,
+    &-left {
+        position: relative;
+        display: inline-block;
+        width: 18px;
+        height: 12px;
+        margin-bottom: 12px;
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: -1px;
+            left: 0;
+            width: 50%;
+            height: 2px;
+            background-color: currentColor;
+            transition: .2s transform;
+            transform-origin: .93px 1px;
+            will-change: transform;
+        }
+        &::after {
+            transform: rotate(40deg);
+        }
+        &::before {
+            transform: rotate(-40deg);
+        }
+
+        &:hover,
+        &.hover,
+        :hover > &,
+        .hover > & {
+            &::after {
+                transform: rotate(48deg);
+            }
+            &::before {
+                transform: rotate(-48deg);
+            }
+        }
+    }
+    &-right {
+        &::after,
+        &::before {
+            right: 0;
+            left: auto;
+            transform-origin: calc(100% - .93px) 1px;
+        }
+    }
+}
+
+// video and gif icons
+.nk-video-icon,
+.nk-video-icon-light,
+.nk-gif-icon,
+.nk-gif-icon-light {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    z-index: 0;
+
+    > * {
+        display: block;
+        margin-left: -2px;
+        font-size: 1.3rem;
+        line-height: 51px;
+        color: inherit;
+        text-align: center;
+        transition: .3s transform ease-in-out;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        transform-style: preserve-3d;
+    }
+    &::after {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        transition: .3s transform ease-in-out;
+        transform: rotate(45deg);
+    }
+    &:hover,
+    &.hover {
+        > * {
+            transform: scale(1.1);
+        }
+        &::after {
+            transition: .3s transform ease-in-out;
+            transform: rotate(45deg) scale(.93);
+        }
+    }
+}
+
+// loading spinner
+$loadingSpinnerSize: 80px !default;
+$loadingSpinnerSizeInner: $loadingSpinnerSize * .35 !default;
+$loadingSpinnerWeight: 2px !default;
+.nk-loading-spinner,
+.nk-loading-spinner-light {
+    position: relative;
+    display: inline-block;
+    width: $loadingSpinnerSize;
+    height: $loadingSpinnerSize;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 $loadingSpinnerWeight $color_dark_1;
+
+    i {
+        position: absolute;
+        display: block;
+        width: $loadingSpinnerSizeInner;
+        height: $loadingSpinnerSizeInner;
+        overflow: hidden;
+        transform-origin: $loadingSpinnerSize / 2 $loadingSpinnerSize / 2;
+        animation: nk-loading-spinner .7s infinite linear;
+
+        &::after {
+            content: "";
+            display: block;
+            width: $loadingSpinnerSize;
+            height: $loadingSpinnerSize;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0 $loadingSpinnerWeight rgba(#fff, .8);
+        }
+    }
+}
+.nk-loading-spinner-light {
+    box-shadow: inset 0 0 0 $loadingSpinnerWeight #fff;
+    i::after {
+        box-shadow: inset 0 0 0 $loadingSpinnerWeight rgba($color_dark_1, .8);
+    }
+}
+@keyframes nk-loading-spinner {
+    100% { transform: rotate(360deg); }
+}
+
+
+// toggle icons (see in navbar cart icon)
+.nk-icon-toggle {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    transition: .3s transform;
+    transform-style: preserve-3d;
+
+    .nk-icon-toggle-front {
+        display: inline-block;
+        width: 100%;
+        transform: rotateY(0deg);
+        backface-visibility: hidden;
+    }
+    .nk-icon-toggle-back {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+    }
+
+    a.active > &,
+    span.active > &,
+    &.active {
+        transform: rotateY(180deg);
+    }
+}

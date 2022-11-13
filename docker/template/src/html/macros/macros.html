@@ -1,0 +1,18 @@
+{% macro rating(value = '100%', class = '') %}
+    <span class="nk-product-rating{{ (' ' + class) if class }}">
+        <span class="nk-product-rating-front" style="width: {{ value | escape }};">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </span>
+        <span class="nk-product-rating-back">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </span>
+    </span>
+{% endmacro %}

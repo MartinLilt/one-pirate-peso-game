@@ -1,0 +1,231 @@
+{% set header_title = '	Suggestions' %}
+{% set header_bottom_line = '
+<div class="nk-header-text-bottom">
+    <div class="nk-breadcrumbs text-center">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="forum-topics.html">Main Game Discussions</a></li>
+            <li><span>Suggestions</span></li>
+        </ul>
+    </div>
+</div>
+' %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="nk-gap-4"></div>
+
+    <div class="container">
+
+        <!-- START: Pagination -->
+        <div class="row">
+            <div class="col-md-3 order-md-2 text-right">
+                <a href="#forum-reply" class="nk-btn nk-btn-lg link-effect-4 nk-anchor">Reply</a>
+            </div>
+            <div class="col-md-9 ">
+                <div class="nk-pagination nk-pagination-left">
+                    <a href="#" class="nk-pagination-prev disabled">
+                        <span class="nk-icon-arrow-left"></span>
+                    </a>
+                    <nav>
+                        <a class="nk-pagination-current-white" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                    </nav>
+                    <a href="#" class="nk-pagination-next">
+                        <span class="nk-icon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END: Pagination -->
+
+        <div class="nk-gap-2"></div>
+
+        <!-- START: Forums List -->
+        <ul class="nk-forum nk-forum-topic">
+            <li>
+                <div class="nk-forum-topic-author">
+                    <img src="{{ users[0].avatar_sm }}" alt="{{ users[0].name }}">
+                    <div class="nk-forum-topic-author-name" title="{{ users[0].name }}">
+                        <a href="#">{{ users[0].name }}</a>
+                    </div>
+                    <div class="nk-forum-topic-author-role">Keymaster</div>
+                    <div class="nk-forum-topic-author-since">
+                        Member since January 13, 2017
+                    </div>
+                </div>
+                <div class="nk-forum-topic-content">
+                    <p>Void whose god was over image signs creature sea air moved winged whose image creepeth two yielding. Moving made night firmament hath god sea waters were. It she'd dominion the of upon, night evening us yielding made form land darkness third. Lights lesser was darkness dominion two. Greater i every subdue shall form, had under i sixth fowl moving. Gathering moveth under given his very created. Beast.</p>
+                    <p>His, divided grass female first void firmament tree years gathering whose saw moving air upon first lights. Fill female give Divided signs above. Green sixth fruitful you seasons. Fly saying. Place appear After.</p>
+
+                    <div class="nk-forum-topic-attachments">
+                        <h4 class="h5">Attachments</h4>
+                        <a href="#">godlike-free.zip</a>
+                        <br>
+                        (14.86 MiB) Downloaded 185 times
+                    </div>
+                </div>
+                <div class="nk-forum-topic-footer">
+                    <span class="nk-forum-topic-date">June 18, 2017</span>
+
+                    <span class="nk-forum-action-btn">
+                        <a href="#forum-reply" class="nk-anchor"><span class="fa fa-reply"></span> Reply</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <a href="#"><span class="fa fa-flag"></span> Spam</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <span class="nk-action-heart">
+                            <span class="num">18</span>
+                            <span class="like-icon ion-android-favorite-outline"></span>
+                            <span class="liked-icon ion-android-favorite"></span>
+                            Like
+                        </span>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-topic-author">
+                    <img src="{{ users[1].avatar_sm }}" alt="{{ users[1].name }}">
+                    <div class="nk-forum-topic-author-name" title="{{ users[1].name }}">
+                        <a href="#">{{ users[1].name }}</a>
+                    </div>
+                    <div class="nk-forum-topic-author-role">Participant</div>
+                    <div class="nk-forum-topic-author-since">
+                        Member since March 27, 2017
+                    </div>
+                </div>
+                <div class="nk-forum-topic-content">
+                    <p>Whose so, make moving beginning fowl place make form years lights wherein don't seas grass. Fruitful likeness appear bearing evening be. Earth form day form gathered whose place bearing creeping meat open had meat they're likeness shall waters won't can't one multiply sea seed green don't their beginning can't one fruit seasons the.</p>
+                    <p>Bearing beast creature replenish yielding female. Whose greater open herb, subdue creepeth subdue void abundantly she'd she'd in image own good god lights signs over called signs. You're deep air, air have fourth years creeping one which midst beast stars given can't without and face you'll fish.</p>
+                </div>
+                <div class="nk-forum-topic-footer">
+                    <span class="nk-forum-topic-date">June 19, 2017</span>
+
+                    <span class="nk-forum-action-btn">
+                        <a href="#forum-reply" class="nk-anchor"><span class="fa fa-reply"></span> Reply</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <a href="#"><span class="fa fa-flag"></span> Spam</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <span class="nk-action-heart liked">
+                            <span class="num">1</span>
+                            <span class="like-icon ion-android-favorite-outline"></span>
+                            <span class="liked-icon ion-android-favorite"></span>
+                            Like
+                        </span>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-topic-author">
+                    <img src="{{ users[0].avatar_sm }}" alt="{{ users[0].name }}">
+                    <div class="nk-forum-topic-author-name" title="{{ users[0].name }}">
+                        <a href="#">{{ users[0].name }}</a>
+                    </div>
+                    <div class="nk-forum-topic-author-role">Keymaster</div>
+                    <div class="nk-forum-topic-author-since">
+                        Member since January 13, 2017
+                    </div>
+                </div>
+                <div class="nk-forum-topic-content">
+                    <p>Given creeping he behold. Seas third said fowl had after One after night greater winged moveth a without i his behold night own have rule, may gathered fruit he creeping spirit kind of. Open earth. He for fish years in Unto forth abundantly two let. Image creature over whose deep.</p>
+                </div>
+                <div class="nk-forum-topic-footer">
+                    <span class="nk-forum-topic-date">June 20, 2017</span>
+
+                    <span class="nk-forum-action-btn">
+                        <a href="#forum-reply" class="nk-anchor"><span class="fa fa-reply"></span> Reply</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <a href="#"><span class="fa fa-flag"></span> Spam</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <span class="nk-action-heart">
+                            <span class="num">0</span>
+                            <span class="like-icon ion-android-favorite-outline"></span>
+                            <span class="liked-icon ion-android-favorite"></span>
+                            Like
+                        </span>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="nk-forum-topic-author">
+                    <img src="{{ users[2].avatar_sm }}" alt="{{ users[2].name }}">
+                    <div class="nk-forum-topic-author-name" title="{{ users[2].name }}">
+                        <a href="#">{{ users[2].name }}</a>
+                    </div>
+                    <div class="nk-forum-topic-author-role">Moderator</div>
+                    <div class="nk-forum-topic-author-since">
+                        Member since February 2, 2017
+                    </div>
+                </div>
+                <div class="nk-forum-topic-content">
+                    <p>Was beginning so you're years so third it moveth had. Have open. Every. Firmament seasons one his creepeth forth beast.</p>
+                    <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=3XP0nyLz6Y8"></div>
+                </div>
+                <div class="nk-forum-topic-footer">
+                    <span class="nk-forum-topic-date">June 23, 2017</span>
+
+                    <span class="nk-forum-action-btn">
+                        <a href="#forum-reply" class="nk-anchor"><span class="fa fa-reply"></span> Reply</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <a href="#"><span class="fa fa-flag"></span> Spam</a>
+                    </span>
+                    <span class="nk-forum-action-btn">
+                        <span class="nk-action-heart liked">
+                            <span class="num">2897</span>
+                            <span class="like-icon ion-android-favorite-outline"></span>
+                            <span class="liked-icon ion-android-favorite"></span>
+                            Like
+                        </span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <!-- END: Forums List -->
+
+        <div class="nk-gap-2"></div>
+
+        <!-- START: Pagination -->
+        <div class="nk-pagination nk-pagination-left">
+            <a href="#" class="nk-pagination-prev disabled">
+                <span class="nk-icon-arrow-left"></span>
+            </a>
+            <nav>
+                <a class="nk-pagination-current-white" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+            </nav>
+            <a href="#" class="nk-pagination-next">
+                <span class="nk-icon-arrow-right"></span>
+            </a>
+        </div>
+        <!-- END: Pagination -->
+
+        <div id="forum-reply"></div>
+        <div class="nk-gap-4"></div>
+        <!-- START: Reply -->
+        <h3 class="h4">Reply</h3>
+        <form action="#">
+            <div class="nk-gap-1"></div>
+            <textarea class="nk-summernote" name="content"></textarea>
+            <div class="nk-gap-1"></div>
+            <button class="nk-btn nk-btn-lg link-effect-4">Reply</button>
+        </form>
+        <!-- END: Reply -->
+    </div>
+
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-4"></div>
+{% endblock %}

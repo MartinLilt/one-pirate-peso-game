@@ -1,0 +1,134 @@
+.nk-navbar-full {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
+    background: $color_dark_1;
+    opacity: 0;
+    z-index: 999;
+
+    // navigation
+    .nano {
+        display: table-cell;
+        height: 100%;
+        overflow-y: auto;
+
+        // fix for IE
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: block;
+        }
+    }
+    .nk-nav {
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+
+        // item descriptions
+        li > a .nk-item-descr {
+            font-size: .5em;
+        }
+
+        .dropdown > li,
+        > li {
+            position: static;
+            display: block;
+            max-width: 350px;
+            margin: 0 auto;
+
+            > a {
+                padding: 12px 40px;
+                font-size: 2rem;
+            }
+        }
+
+        // drop item icon
+        .nk-drop-item > a,
+        > .nk-drop-item > a,
+        .bropdown-back > a {
+            position: relative;
+        }
+        .nk-drop-item > a::after,
+        .nk-drop-item .nk-drop-item > a::after,
+        > .nk-drop-item > a::after {
+            right: 22px;
+            bottom: 50%;
+            left: auto;
+            margin-bottom: -1px;
+        }
+    }
+
+    // dropdown
+    .nk-nav .dropdown {
+        display: block;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+
+        &::before {
+            content: none;
+        }
+
+        > li > a {
+            display: none;
+        }
+    }
+    .nk-nav .nk-drop-item .dropdown,
+    .nk-nav .nk-drop-item .nk-drop-item .dropdown {
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    // back icon
+    .dropdown > .bropdown-back > a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 50%;
+        left: 22px;
+        width: 3px;
+        height: 3px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+        border-radius: 1.5px;
+        box-shadow: 5px 0 0 0, -5px 0 0 0, inset 0 0 0 3px;
+        opacity: .4;
+        transition: .2s opacity;
+    }
+    .dropdown > .bropdown-back > a:hover::after,
+    .dropdown > .bropdown-back > a.hover::after {
+        opacity: .8;
+    }
+
+
+    // footer
+    .nk-nav-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: #999;
+    }
+
+    // light navbar
+    &.nk-navbar-light {
+        background: #fff;
+
+        .nk-nav {
+            .dropdown > li,
+            > li {
+                > a {
+                    color: rgba($color_dark_4, .85);
+                }
+            }
+            .dropdown {
+                background-color: transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.nk-preloader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 3000;
+
+    // background animation
+    .nk-preloader-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-size: cover;
+    }
+
+    // content
+    .nk-preloader-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        > div {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+        }
+    }
+
+    // skip
+    .nk-preloader-skip {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 25px;
+        font-size: .95rem;
+        line-height: 1;
+        cursor: pointer;
+        animation: nk-preloader-skip 6s linear;
+        z-index: 1;
+    }
+}
+
+@keyframes nk-preloader-skip {
+    0%,
+    90% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+// preloader animation
+.nk-preloader-animation {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    opacity: .7;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+    }
+    &,
+    &::after,
+    &::before {
+        width: 4px;
+        height: 4px;
+        background-color: rgba(#fff, .3);
+        border-radius: 2px;
+    }
+
+    animation: nk-preloader-animation 1.2s linear infinite .4s;
+    &::before {
+        left: -20px;
+        animation: nk-preloader-animation 1.2s linear infinite 0s;
+    }
+    &::after {
+        right: -20px;
+        animation: nk-preloader-animation 1.2s linear infinite .8s;
+    }
+}
+
+@keyframes nk-preloader-animation {
+    0%,
+    60%,
+    100% {
+        background-color: rgba(#fff, .3);
+    }
+    30% {
+        background-color: #fff;
+    }
+}

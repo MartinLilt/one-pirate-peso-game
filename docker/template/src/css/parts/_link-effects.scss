@@ -1,0 +1,181 @@
+/* All Links */
+.link-effect {
+    padding: 5px;
+    font-family: serif;
+    font-style: italic;
+    background-image: linear-gradient(to bottom, transparent 0, $color_dark_1 0), linear-gradient(to top, #fff 0, #fff 1px, transparent 1.0001px, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 0 1.4em, 100% 1.4em;
+    transition: .3s background-size;
+
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:hover,
+    &.hover {
+        background-position: left center;
+        background-size: 100% 1.4em, 100% 1.4em;
+    }
+}
+
+/* Link Effect 1 (rotate all letters) */
+.link-effect-1 {
+    > span {
+        position: relative;
+        display: inline-block;
+        transition: transform .3s;
+        transform: perspective(1000px) rotateY(0deg);
+        will-change: transform;
+    }
+    > span.active {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+/* Link Effect 2 and 3 (color for letters from left to right and from top to bottom) */
+.link-effect-2,
+.link-effect-3 {
+    > span {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        color: $color_main_1;
+        vertical-align: middle;
+    }
+    .link-effect-shade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        overflow: hidden;
+        color: lighten($color_main_1, 10%);
+        white-space: nowrap;
+        transition: width .3s;
+        z-index: 2;
+        will-change: width;
+    }
+    &:hover .link-effect-shade {
+        width: 100%;
+    }
+}
+.link-effect-3 {
+    .link-effect-shade {
+        width: auto;
+        height: 0%;
+        transition: height .3s;
+        will-change: height;
+    }
+    &:hover .link-effect-shade {
+        width: auto;
+        height: 100%;
+    }
+}
+
+// Link Effect 4 (cut words)
+.link-effect-4 {
+    .link-effect-inner {
+        position: relative;
+        display: inline-block;
+        // overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: -10px;
+            left: -10px;
+            border-bottom: 1px solid;
+            opacity: .5;
+            transition: .2s transform;
+            transform: scaleX(0);
+            transform-origin: 100% 0;
+        }
+
+        .link-effect-shade {
+            opacity: 0;
+        }
+        .link-effect-l,
+        .link-effect-r {
+            position: absolute;
+            top: -50%;
+            overflow: hidden;
+            transition: .2s transform;
+
+            > span {
+                display: inline-block;
+                transform: translateY(50%);
+            }
+        }
+        .link-effect-r {
+            top: 50%;
+            > span {
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &:hover .link-effect-inner,
+    &.hover .link-effect-inner {
+        &::after {
+            transform: scaleX(1);
+            transform-origin: 0 0;
+        }
+        .link-effect-l {
+            transform: translateX(-2px);
+        }
+        .link-effect-r {
+            transform: translateX(2px);
+        }
+    }
+}
+
+// link effects for navbar
+.nk-navbar {
+    // hover effects
+    .dropdown > li > .link-effect-2,
+    .dropdown > li > .link-effect-3 {
+        opacity: 1;
+    }
+    .link-effect-2 > span,
+    .link-effect-3 > span {
+        color: inherit;
+    }
+    .dropdown .link-effect-2,
+    .dropdown .link-effect-3 {
+        color: rgba(#fff, .7);
+    }
+    .link-effect-2,
+    .link-effect-3,
+    .link-effect-2 .link-effect-shade,
+    .link-effect-3 .link-effect-shade,
+    .active > .link-effect-2,
+    .active > .link-effect-3 {
+        color: #fff;
+    }
+    .active > .link-effect-2 .link-effect-shade {
+        width: 100%;
+    }
+    .active > .link-effect-3 .link-effect-shade {
+        height: 100%;
+    }
+}
+.nk-navbar-light {
+    .dropdown .link-effect-2,
+    .dropdown .link-effect-3 {
+        color: rgba($color_dark_4, .85);
+    }
+    .link-effect-2,
+    .link-effect-3,
+    .link-effect-2 .link-effect-shade,
+    .link-effect-3 .link-effect-shade,
+    .active > .link-effect-2,
+    .active > .link-effect-3 {
+        color: $color_dark_4;
+    }
+}

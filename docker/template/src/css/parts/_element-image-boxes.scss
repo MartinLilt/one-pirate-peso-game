@@ -1,0 +1,334 @@
+.nk-image-box,
+.nk-image-box-1,
+.nk-image-box-1-a,
+.nk-image-box-2,
+.nk-image-box-3,
+.nk-image-box-4 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    & a,
+    & a:hover,
+    & a:focus,
+    & a:active {
+        text-decoration: none;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .7s transform;
+        will-change: transform;
+    }
+
+    &:not(.nk-no-effect):hover,
+    &:not(.nk-no-effect).hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+// alignment for overlay
+.nk-image-box-overlay {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+
+    > * {
+        width: 100%;
+    }
+
+    &.nk-image-box-center {
+        align-items: center;
+    }
+    &.nk-image-box-bottom {
+        align-items: flex-end;
+    }
+}
+
+.nk-image-box-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+// info under image box
+.nk-image-box-bottom-info {
+    padding: 20px 0;
+
+    .nk-image-box-title,
+    .nk-image-box-sub-title {
+        margin-bottom: .5rem;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    .nk-image-box-links {
+        font-size: .9rem;
+        color: #888;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover,
+            &.hover,
+            &:focus,
+            &:active {
+                color: #555;
+            }
+        }
+    }
+}
+
+// big icon
+.nk-image-box-icon {
+    font-size: 40px;
+}
+
+// icon button
+.nk-image-box-icon-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 6px 4px;
+    font-size: 1.15rem;
+    line-height: 50px;
+    color: inherit;
+    border: 2px solid;
+    border-radius: 25px;
+    transition: .3s color, .3s background-color, .3s border;
+    will-change: color, background-color, border;
+
+    .svg-inline--fa {
+        vertical-align: 0;
+    }
+
+    &:hover,
+    &.hover {
+        color: $color_dark_1;
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+
+// big title
+.nk-image-box-big-title {
+    font-size: 3.5rem;
+    font-weight: 400;
+
+    @media #{$media_xxs} {
+        font-size: 2.5rem;
+    }
+}
+
+/* Style 0 */
+.nk-image-box {
+    .nk-image-box-overlay {
+        top: 45px;
+        right: 45px;
+        bottom: 45px;
+        left: 45px;
+    }
+    .nk-image-box-title,
+    .nk-image-box-sub-title {
+        width: 100%;
+        margin: 0;
+    }
+    .nk-image-box-sub-title {
+        display: block;
+        top: 50%;
+        bottom: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Style 1 */
+.nk-image-box-1,
+.nk-image-box-1-a {
+    .nk-image-box-overlay {
+        top: 30px;
+        right: 30px;
+        bottom: 30px;
+        left: 30px;
+        color: #fff;
+        text-align: center;
+        background-color: rgba($color_dark_1, .75);
+        opacity: 0;
+        transition: .4s opacity;
+        transform-style: preserve-3d;
+
+        > * {
+            padding: 30px;
+        }
+    }
+    &:hover .nk-image-box-overlay,
+    &.hover .nk-image-box-overlay {
+        opacity: 1;
+    }
+
+    .nk-image-box-title,
+    .nk-image-box-sub-title {
+        width: 100%;
+        margin: 0;
+    }
+    .nk-image-box-sub-title {
+        display: block;
+        top: 50%;
+        bottom: auto;
+        margin-top: 10px;
+    }
+}
+.nk-image-box-1-a {
+    .nk-image-box-overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: .4s opacity, .4s transform;
+        transform: scale(1.1);
+    }
+    &:hover .nk-image-box-overlay,
+    &.hover .nk-image-box-overlay {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Style 2 */
+.nk-image-box-2 {
+    .nk-image-box-overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        background-color: rgba($color_dark_1, .2);
+        opacity: 1;
+        transition: .4s opacity;
+        transform-style: preserve-3d;
+
+        > * {
+            padding: 30px;
+            transition: .4s transform;
+            transform: translateY(0);
+        }
+    }
+    &:hover .nk-image-box-overlay,
+    &.hover .nk-image-box-overlay {
+        opacity: 0;
+
+        > * {
+            transform: translateY(7px);
+        }
+    }
+    &.hover:hover .nk-image-box-overlay {
+        opacity: 1;
+
+        > * {
+            transform: translateY(0);
+        }
+    }
+
+    .nk-image-box-title,
+    .nk-image-box-sub-title {
+        width: 100%;
+        margin: 0;
+    }
+    .nk-image-box-sub-title {
+        display: block;
+        top: 50%;
+        bottom: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Style 3 */
+.nk-image-box-3 {
+    .nk-image-box-overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        background: linear-gradient(to top, rgba($color_dark_1, .75) 0%, rgba($color_dark_1, 0) 40%);
+        transform-style: preserve-3d;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba($color_dark_1, .2);
+            transition: .4s opacity;
+            z-index: -1;
+        }
+
+        > * {
+            padding: 30px;
+        }
+    }
+    &:hover .nk-image-box-overlay::after,
+    &.hover .nk-image-box-overlay::after {
+        opacity: 0;
+    }
+    &.hover:hover .nk-image-box-overlay::after {
+        opacity: 1;
+    }
+
+    .nk-image-box-title,
+    .nk-image-box-sub-title {
+        width: 100%;
+        margin: 0;
+    }
+    .nk-image-box-sub-title {
+        display: block;
+        top: 50%;
+        bottom: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Style 4 */
+.nk-image-box-4 {
+    .nk-image-box-overlay {
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        text-align: center;
+        background-color: rgba($color_dark_1, .75);
+
+        > * {
+            padding: 30px;
+        }
+    }
+
+    .nk-image-box-title,
+    .nk-image-box-sub-title {
+        width: 100%;
+        margin: 0;
+    }
+    .nk-image-box-sub-title {
+        display: block;
+        top: 50%;
+        bottom: auto;
+        margin-top: 10px;
+    }
+}

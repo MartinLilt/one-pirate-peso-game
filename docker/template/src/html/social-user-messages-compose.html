@@ -1,0 +1,65 @@
+{% set header_title = 'Social Network - Compose Message' %}
+{% set header_title_show = false %}
+{% set header_image = 'assets/images/image-5.jpg' %}
+{% set header_visible = 5 %}
+{% set header_size = 'sm' %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="container">
+    {% include "shared/social-profile-container.html" %}
+
+    <div class="row vertical-gap">
+        <div class="col-lg-3">
+            <!--
+                START: Sidebar
+
+                Additional Classes:
+                    .nk-sidebar-left
+                    .nk-sidebar-right
+                    .nk-sidebar-sticky
+            -->
+            <aside class="nk-sidebar nk-sidebar-left nk-sidebar-sticky">
+                <div class="nk-gap-2"></div>
+                {% include "shared/social-menu.html" %}
+                <div class="nk-gap-4 d-none d-lg-block"></div>
+            </aside>
+            <!-- END: Sidebar -->
+        </div>
+        <div class="col-lg-9">
+            <div class="nk-gap-2 d-none d-lg-block"></div>
+            <div class="nk-social-menu-inline">
+                <ul>
+                    <li>
+                        <a href="social-user-messages.html">Inbox</a>
+                    </li>
+                    <li class="active">
+                        <a href="social-user-messages-compose.html">Compose</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nk-social-container">
+                <!-- START: Message Compose -->
+                <form action="#">
+                    <input type="text" name="to" class="form-control" placeholder="Send To">
+                    <div class="nk-gap"></div>
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="notice_all">
+                        Notice to all users
+                    </label>
+                    <div class="nk-gap"></div>
+                    <input type="text" name="subject" class="form-control" placeholder="Subject">
+                    <div class="nk-gap"></div>
+                    <textarea class="form-control" placeholder="Message" name="message" rows="6"></textarea>
+                    <div class="nk-gap"></div>
+                    <button class="nk-btn link-effect-4 float-right">Send Message</button>
+                </form>
+                <!-- END: Message Compose -->
+            </div>
+            <div class="nk-gap-4"></div>
+        </div>
+    </div>
+    <div class="nk-gap-4"></div>
+    <div class="nk-gap-3"></div>
+</div>
+{% endblock %}

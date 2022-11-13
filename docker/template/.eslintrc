@@ -1,0 +1,50 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "func-names": 0,
+        "indent": [2,4],
+        "no-mixed-operators": 0,
+        "no-plusplus": 0,
+        "no-underscore-dangle": 0,
+        "no-param-reassign": 0,
+        "no-continue": 0,
+        "no-script-url": 0,
+        "no-control-regex": 0,
+        "max-len": [2, 300],
+        "prefer-rest-params": 0,
+        "prefer-destructuring": 0,
+        "linebreak-style": 0,
+        "import/no-mutable-exports": 0,
+        "import/no-extraneous-dependencies": 0,
+        "import/prefer-default-export": 0,
+        "jsx-a11y/href-no-hash": "off",
+        "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true
+    },
+    "globals": {
+        "Godlike": true,
+        "DocumentTouch": true,
+        "moment": true,
+        "FastClick": true,
+        "Flickity": true,
+        "imagesLoaded": true,
+        "objectFitImages": true,
+        "Hammer": true,
+        "soundManager": true,
+        "PhotoSwipe": true,
+        "PhotoSwipeUI_Default": true,
+        "Typed": true,
+        "VideoWorker": true,
+        "Linear": true,
+        "Power1": true,
+        "Power2": true,
+        "Circ": true,
+        "SteppedEase": true,
+        "define": true,
+        "require": true
+    }
+}

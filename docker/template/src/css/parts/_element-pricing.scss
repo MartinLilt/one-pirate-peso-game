@@ -1,0 +1,73 @@
+
+.nk-pricing {
+    position: relative;
+    height: 100%;
+    padding: 0 30px;
+    overflow: hidden;
+    color: $color_dark_1;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba($color_dark_1, .05);
+
+    .nk-pricing-title {
+        margin: 0;
+        font-family: inherit;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .nk-pricing-price {
+        font-family: $font_headings;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .nk-pricing-currency,
+    .nk-pricing-period {
+        font-family: $font_body;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .nk-pricing-currency {
+        vertical-align: top;
+    }
+
+    .nk-pricing-features {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        > li + li {
+            margin-top: 20px;
+        }
+    }
+
+    .nk-pricing-button {
+        width: 100%;
+        max-width: 220px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    // padding and separator for all blocks
+    .nk-pricing-title,
+    .nk-pricing-price,
+    .nk-pricing-features,
+    .nk-pricing-button {
+        position: relative;
+        padding: 40px 0;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0;
+            width: 100%;
+            border-bottom: 1px solid;
+            opacity: .1;
+        }
+    }
+    .nk-pricing-button::after {
+        content: none;
+    }
+}

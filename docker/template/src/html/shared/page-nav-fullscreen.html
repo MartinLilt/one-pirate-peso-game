@@ -1,0 +1,61 @@
+{% macro submenu(nav) -%}
+    {% for file, item in nav -%}
+        <li class="{{ 'active' if isActiveMenuItem(file, item, filename) }} {{ 'nk-drop-item' if item.sub }}">
+            <a href="{{file | safe}}">
+                {{item.name | safe}}
+                {%- if item.description -%}
+                    <span class="nk-item-descr">{{item.description | safe}}</span>
+                {%- endif -%}
+            </a>
+            {%- if item.sub -%}
+                <ul class="dropdown">
+                    {{ submenu(item.sub) }}
+                </ul>
+            {%- endif %}
+        </li>
+    {%- endfor %}
+{%- endmacro %}
+
+{% if navigation_side == 'from navigation' %}
+    {% set navigation_full = navigation %}
+{% endif %}
+<!--
+    START: Fullscreen Navbar
+
+    Additional Classes:
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+        .nk-navbar-light
+        .nk-navbar-no-link-effect
+-->
+<nav class="nk-navbar nk-navbar-full nk-navbar-align-center{{ ' nk-navbar-light' if nav_full_light }}" id="nk-full">
+    <div class="nk-nav-table">
+        <div class="nk-nav-row-full nk-nav-row">
+            <div class="nano">
+                <div class="nano-content">
+                    <div class="nk-nav-table">
+                        <div class="nk-nav-row nk-nav-row-full nk-nav-row-center">
+                            <ul class="nk-nav">
+                                {{ submenu(navigation_full) }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-nav-row">
+            <div class="nk-nav-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9 text-sm-left">
+                            <div class="nk-nav-footer">
+                                &copy; 2020 nK Group Inc. Developed in association with LoremInc. IpsumCompany, SitAmmetGroup, CumSit and related logos are registered trademarks. All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END: Fullscreen Navbar -->

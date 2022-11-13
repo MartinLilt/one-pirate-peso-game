@@ -1,0 +1,671 @@
+
+/* Menu */
+.nk-social-menu,
+.nk-social-menu-inline {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        > li > a {
+            display: block;
+            padding: 6.5px 0;
+            margin: 10px 0;
+            transition: .2s color;
+
+            &,
+            &:hover,
+            &:active,
+            &:focus {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: darken($color_gray_4, 35%);
+            }
+        }
+        > li.active > a {
+            color: $color_main_1;
+        }
+    }
+
+    .nk-badge {
+        float: right;
+        margin-top: 6px;
+        color: #fff;
+    }
+}
+.nk-social-menu-inline ul {
+    margin-right: -16.5px;
+    margin-bottom: 16.5px;
+    margin-left: -16.5px;
+
+    > li {
+        display: inline-block;
+
+        > a {
+            padding: 6.5px;
+            margin: 10px;
+        }
+    }
+}
+
+/* Profile Info */
+.nk-social-profile {
+    position: relative;
+    z-index: 1;
+
+    &.nk-social-profile-container-offset {
+        margin-top: -100px;
+    }
+
+    .nk-social-profile-avatar {
+        padding-right: 40px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .nk-social-profile-info-last-seen {
+        float: right;
+        margin-top: 18px;
+        font-size: .9rem;
+        opacity: .6;
+    }
+
+    .nk-social-profile-info-admins {
+        float: right;
+        max-width: 50%;
+        padding-top: 15px;
+        text-align: right;
+
+        > h2 {
+            margin-bottom: 0;
+            font-family: inherit;
+            font-size: .9rem;
+            font-weight: inherit;
+            opacity: .6;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-top: 15px;
+            margin-right: -8px;
+            margin-left: -8px;
+            list-style-type: none;
+
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            > li {
+                float: right;
+                margin: 8px;
+            }
+
+            img {
+                width: 40px;
+                height: auto;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .nk-social-profile-info-username {
+        padding-top: 15px;
+        font-size: .9rem;
+        opacity: .6;
+    }
+
+    .nk-social-profile-info-actions {
+        margin-top: 15px;
+    }
+
+    .nk-social-profile-info-description {
+        margin-top: 15px;
+    }
+}
+
+@media #{$media_smaller_sm} {
+    .nk-social-profile {
+        .nk-social-profile-avatar {
+            padding-right: 0;
+
+            img {
+                max-width: 220px;
+                height: auto;
+            }
+        }
+    }
+}
+@media #{$media_smaller_xs} {
+    .nk-social-profile {
+        .nk-social-profile-info-last-seen {
+            display: none;
+        }
+        .nk-social-profile-info-admins {
+            float: none;
+            max-width: 100%;
+            text-align: left;
+
+            ul > li {
+                float: left;
+            }
+        }
+    }
+}
+
+/* Content */
+.nk-social-container {
+    padding: 70px;
+    background-color: $color_dark_1;
+
+    @media #{$media_smaller_xs} {
+        padding: 30px;
+    }
+}
+
+/* Sort */
+.nk-social-sort {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    label {
+        margin-right: 10px;
+        margin-bottom: 0;
+        white-space: nowrap;
+    }
+
+    @media #{$media_smaller_sm} {
+        width: 100%;
+    }
+}
+
+/* Activity */
+.nk-social-activity {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    > li {
+        display: flex;
+    }
+
+    > li + li {
+        margin-top: 45px;
+    }
+
+    .nk-social-activity-avatar img {
+        width: 60px;
+        height: auto;
+        margin-right: 25px;
+        border-radius: 30px;
+    }
+
+    .nk-social-activity-content {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .nk-social-activity-meta {
+        padding: 5px 15px;
+        margin-bottom: 15px;
+        font-size: .9em;
+        background-color: $color_dark_2;
+
+        .nk-social-activity-meta-time {
+            color: inherit;
+        }
+
+        img {
+            width: 20px;
+            height: auto;
+            margin-left: 2px;
+            border-radius: 10px;
+        }
+    }
+    .nk-social-activity-mention {
+        font-weight: 600;
+        color: inherit;
+    }
+
+    .nk-social-activity-actions {
+        margin-top: 15px;
+        font-size: .9em;
+        text-align: right;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: .2s color;
+        }
+        a:hover {
+            color: darken($color_gray_4, 35%);
+        }
+        > * + * {
+            margin-left: 12px;
+        }
+
+        .nk-badge {
+            color: #fff;
+            vertical-align: top;
+        }
+
+        .nk-action-heart > span {
+            margin-right: 2px;
+            font-size: .9rem;
+        }
+    }
+
+    // comments
+    .nk-social-activity-comments,
+    .nk-social-activity-replies {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        > li {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .nk-social-activity-avatar img {
+            width: 30px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 15px;
+        }
+    }
+    .nk-social-activity-comments-show-all a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        font-style: italic;
+        color: inherit;
+        text-align: center;
+        text-decoration: none;
+    }
+    .nk-social-activity-load-more {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Notifications */
+.nk-social-notifications {
+
+    table {
+        margin-bottom: 0;
+    }
+
+    .nk-social-notifications-bulk-select {
+        width: 10px;
+    }
+
+    .nk-social-notifications-description {
+        width: 55%;
+    }
+
+    .nk-social-notifications-description a,
+    .nk-social-notifications-actions a {
+        color: inherit;
+        text-decoration: none;
+        transition: .3s color;
+
+        &:hover {
+            color: darken($color_gray_4, 35%);
+        }
+    }
+
+    .nk-social-notifications-actions {
+        margin-right: -5px;
+        margin-left: -5px;
+        font-size: .9em;
+
+        a {
+            margin-right: 5px;
+            margin-left: 5px;
+            white-space: nowrap;
+        }
+    }
+}
+.nk-social-notifications-options,
+.nk-social-messages-options {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    select {
+        margin-right: 10px;
+    }
+
+    @media #{$media_smaller_sm} {
+        width: 100%;
+    }
+}
+
+
+/* Messages */
+.nk-social-messages {
+    .nk-social-messages-description {
+        position: relative;
+        padding: 20px;
+        padding-left: 80px;
+    }
+
+    .nk-social-messages-unread {
+        background-color: rgba(255, 255, 255, .03);
+    }
+
+    .nk-social-messages-since {
+        float: right;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        font-size: .9rem;
+        font-style: italic;
+        line-height: 1.2;
+        color: inherit;
+        opacity: .3;
+        transition: .3s opacity, .3s visiblity;
+    }
+    .nk-social-messages-remove,
+    .nk-social-messages-favorite {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 1.1rem;
+        color: inherit;
+        text-decoration: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s opacity, .3s visiblity;
+    }
+    .nk-social-messages-favorite {
+        right: 45px;
+    }
+    tr:hover .nk-social-messages-since {
+        visibility: hidden;
+        opacity: 0;
+    }
+    tr:hover .nk-social-messages-remove,
+    tr:hover .nk-social-messages-favorite {
+        visibility: visible;
+        opacity: .3;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    .nk-social-messages-from {
+        float: left;
+        margin-left: -60px;
+
+        img {
+            width: 40px;
+            height: auto;
+            border-radius: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .nk-social-messages-subject {
+        margin-bottom: 10px;
+        line-height: 1;
+
+        a {
+            font-weight: 600;
+            color: inherit;
+            text-decoration: none;
+            transition: .3s color;
+
+            &:hover {
+                color: darken($color_gray_4, 35%);
+            }
+        }
+    }
+    .nk-social-messages-excerpt {
+        a {
+            color: darken($color_gray_4, 35%);
+            text-decoration: none;
+            transition: .3s color;
+
+            &:hover {
+                color: darken($color_gray_4, 50%);
+            }
+        }
+    }
+
+
+    @media #{$media_smaller_xs} {
+        .nk-social-messages-description {
+            padding-left: 20px;
+        }
+        .nk-social-messages-from {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+    }
+}
+
+/* Single Message */
+.nk-social-messages-single {
+    display: flex;
+    margin-top: 45px;
+
+    .nk-social-messages-single-avatar img {
+        width: 60px;
+        height: auto;
+        margin-right: 25px;
+        border-radius: 30px;
+    }
+
+    .nk-social-messages-single-content {
+        flex: 1;
+    }
+
+    .nk-social-messages-single-meta {
+        padding: 5px 15px;
+        margin-bottom: 15px;
+        font-size: .9em;
+        background-color: $color_dark_2;
+
+        .nk-social-messages-single-meta-name {
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+
+        .nk-social-messages-single-meta-favorite {
+            float: right;
+            font-size: 1.1rem;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .nk-social-messages-single-meta-time {
+            color: inherit;
+        }
+
+        img {
+            width: 20px;
+            height: auto;
+            margin-left: 2px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+/* Firends */
+.nk-social-friends {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    > li {
+        position: relative;
+        display: flex;
+    }
+
+    > li + li {
+        padding-top: 30px;
+        margin-top: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 100%;
+            border-bottom: 1px solid;
+            opacity: .1;
+        }
+    }
+
+    .nk-social-friends-avatar img {
+        width: 60px;
+        height: auto;
+        margin-right: 25px;
+        border-radius: 30px;
+    }
+
+    .nk-social-friends-content {
+        flex: 1;
+    }
+
+    .nk-social-friends-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: .3s color;
+
+            &:hover {
+                color: darken($color_gray_4, 35%);
+            }
+        }
+    }
+
+    .nk-social-friends-meta {
+        font-size: .9em;
+        opacity: .6;
+    }
+
+    .nk-social-friends-info {
+        float: left;
+        width: 60%;
+    }
+
+    .nk-social-friends-actions {
+        float: right;
+        text-align: right;
+    }
+}
+
+
+/* User Groups */
+.nk-social-groups {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    > li {
+        position: relative;
+        display: flex;
+    }
+
+    > li + li {
+        padding-top: 30px;
+        margin-top: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 100%;
+            border-bottom: 1px solid;
+            opacity: .1;
+        }
+    }
+
+    .nk-social-groups-avatar img {
+        width: 60px;
+        height: auto;
+        margin-right: 25px;
+        border-radius: 30px;
+    }
+
+    .nk-social-groups-content {
+        flex: 1;
+    }
+
+    .nk-social-groups-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: .3s color;
+
+            &:hover {
+                color: darken($color_gray_4, 35%);
+            }
+        }
+    }
+
+    .nk-social-groups-meta,
+    .nk-social-groups-actions-meta {
+        font-size: .9em;
+        opacity: .6;
+    }
+
+    .nk-social-groups-description {
+        margin-top: 15px;
+        font-size: .9em;
+    }
+
+    .nk-social-groups-info {
+        float: left;
+        width: 60%;
+    }
+
+    .nk-social-groups-actions {
+        float: right;
+        text-align: right;
+    }
+}
+
+/* Settings */
+.nk-social-settings-table {
+    .nk-social-settings-table-title {
+        width: 75%;
+    }
+    .nk-social-settings-table-check {
+        width: 40px;
+        text-align: center;
+    }
+}

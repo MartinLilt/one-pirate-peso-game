@@ -1,0 +1,48 @@
+{% set header_title = 'Videos 2 Columns' %}
+{% set header_show = false %}
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="nk-gap-4"></div>
+
+        <!-- START: Videos List -->
+        <div class="nk-video-gallery nk-video-gallery-2-col nk-isotope">
+
+            <div class="nk-gallery-item-box nk-isotope-item" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+                <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=3XP0nyLz6Y8" data-video-thumb="assets/images/video-1-thumb.jpg"></div>
+            </div>
+
+            <div class="nk-gallery-item-box nk-isotope-item" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+                <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=bNcXRUzYS1o" data-video-thumb="assets/images/video-2-thumb.jpg"></div>
+            </div>
+
+            <div class="nk-gallery-item-box nk-isotope-item" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+                <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=1gMUv2P9-ME" data-video-thumb="assets/images/video-3-thumb.jpg"></div>
+            </div>
+
+            <div class="nk-gallery-item-box nk-isotope-item" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+                <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=7OtAVElUljE" data-video-thumb="assets/images/video-4-thumb.jpg"></div>
+            </div>
+
+            <div class="nk-gallery-item-box nk-isotope-item" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+                <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=-NHG1-wlUh4" data-video-thumb="assets/images/video-5-thumb.jpg"></div>
+            </div>
+
+            <div class="nk-gallery-item-box nk-isotope-item" data-mouse-parallax-z="5" data-mouse-parallax-speed="1">
+                <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=Wb2qjfpOeMo" data-video-thumb="assets/images/video-6-thumb.jpg"></div>
+            </div>
+        </div>
+        <!-- END: Videos List -->
+
+        <!-- START: Pagination -->
+        <div class="nk-pagination nk-pagination-center" data-mouse-parallax-z="3">
+            <a href="#" class="nk-btn nk-btn-lg nk-btn-circle">Load More ...</a>
+        </div>
+        <!-- END: Pagination -->
+
+        <div class="nk-gap-4"></div>
+        <div class="nk-gap-3"></div>
+
+    </div>
+{% endblock %}

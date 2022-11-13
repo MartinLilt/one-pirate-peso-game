@@ -1,0 +1,304 @@
+{
+  "name": "godlike",
+  "title": "Godlike",
+  "version": "2.4.4",
+  "description": "Gaming HTML Template",
+  "author": "nK",
+  "website": "https://nkdev.info/",
+  "purchase": "https://1.envato.market/godlike-html-info",
+  "support": "https://nk.ticksy.com/",
+  "license": "You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.",
+  "scripts": {
+    "dev": "gulp",
+    "build:envato": "gulp deploy",
+    "build:site": "gulp production",
+    "css-lint": "stylelint --syntax scss \"src/css/**/*.scss\"",
+    "css-lint-fix": "stylelint --fix --syntax scss \"src/css/**/*.scss\"",
+    "js-lint": "eslint src/js/",
+    "js-lint-fix": "eslint --fix src/js/",
+    "lint": "npm-run-all css-lint js-lint",
+    "lint-fix": "npm-run-all css-lint-fix js-lint-fix",
+    "update-git-hooks": "npx simple-git-hooks"
+  },
+  "gulp_config": {
+    "variables": {
+      "template_name": "godlike",
+      "src": "./src",
+      "dist": "./dist",
+      "deploy": "./deploy"
+    },
+    "browserSync": {
+      "proxy": "127.0.0.1:8000",
+      "open": true,
+      "notify": false
+    },
+    "php": {
+      "base": "{dist}",
+      "port": 8000,
+      "keepalive": true,
+      "stdio": "ignore"
+    },
+    "static": [
+      {
+        "from": "{src}/static/**",
+        "to": "{dist}"
+      },
+      {
+        "from": [
+          "node_modules/*jquery/dist/jquery.min.js",
+          "node_modules/*jquery/dist/jquery.min.map",
+          "node_modules/*object-fit-images/dist/ofi.min.js",
+          "node_modules/*imagesloaded/imagesloaded.pkgd.min.js",
+          "node_modules/*gsap/dist/gsap.min.js",
+          "node_modules/*gsap/dist/gsap.min.js.map",
+          "node_modules/*gsap/dist/ScrollToPlugin.min.js",
+          "node_modules/*gsap/dist/ScrollToPlugin.min.js.map",
+          "node_modules/*popper.js/dist/umd/popper.min.js",
+          "node_modules/*popper.js/dist/umd/popper.min.js.map",
+          "node_modules/*bootstrap/dist/js/bootstrap.min.js",
+          "node_modules/*bootstrap/dist/js/bootstrap.min.js.map",
+          "node_modules/*bootstrap/dist/css/bootstrap.min.css",
+          "node_modules/*bootstrap/dist/css/bootstrap.min.css.map",
+          "node_modules/*ionicons/css/ionicons.min.css",
+          "node_modules/*ionicons/css/ionicons.min.css.map",
+          "node_modules/*ionicons/fonts/ionicons.eot",
+          "node_modules/*ionicons/fonts/ionicons.woff",
+          "node_modules/*ionicons/fonts/ionicons.ttf",
+          "node_modules/*ionicons/fonts/ionicons.svg",
+          "node_modules/*pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css",
+          "node_modules/*pixeden-stroke-7-icon/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot",
+          "node_modules/*pixeden-stroke-7-icon/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff",
+          "node_modules/*pixeden-stroke-7-icon/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf",
+          "node_modules/*pixeden-stroke-7-icon/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg",
+          "node_modules/*sticky-kit/dist/sticky-kit.min.js",
+          "node_modules/*jarallax/dist/jarallax.min.js",
+          "node_modules/*jarallax/dist/jarallax.min.js.map",
+          "node_modules/*jarallax/dist/jarallax-video.min.js",
+          "node_modules/*jarallax/dist/jarallax-video.min.js.map",
+          "node_modules/@fortawesome/*fontawesome-free/js/all.js",
+          "node_modules/@fortawesome/*fontawesome-free/js/v4-shims.js",
+          "node_modules/*flickity/dist/flickity.pkgd.min.js",
+          "node_modules/*flickity/dist/flickity.min.css",
+          "node_modules/*isotope-layout/dist/isotope.pkgd.min.js",
+          "node_modules/*photoswipe/dist/photoswipe.min.js",
+          "node_modules/*photoswipe/dist/photoswipe-ui-default.min.js",
+          "node_modules/*photoswipe/dist/photoswipe.css",
+          "node_modules/*photoswipe/dist/default-skin/default-skin.css",
+          "node_modules/*photoswipe/dist/default-skin/default-skin.png",
+          "node_modules/*photoswipe/dist/default-skin/default-skin.svg",
+          "node_modules/*photoswipe/dist/default-skin/preloader.gif",
+          "node_modules/*jquery-validation/dist/jquery.validate.min.js",
+          "node_modules/*jquery-datetimepicker/build/jquery.datetimepicker.min.css",
+          "node_modules/*jquery-datetimepicker/build/jquery.datetimepicker.full.min.js",
+          "node_modules/*jquery-countdown/dist/jquery.countdown.min.js",
+          "node_modules/*moment/min/moment.min.js",
+          "node_modules/*moment-timezone/builds/moment-timezone-with-data.min.js",
+          "node_modules/*hammerjs/hammer.min.js",
+          "node_modules/*hammerjs/hammer.min.js.map",
+          "node_modules/*typed.js/lib/typed.min.js",
+          "node_modules/*typed.js/lib/typed.min.js.map",
+          "node_modules/*nanoscroller/bin/javascripts/jquery.nanoscroller.js",
+          "node_modules/*soundmanager2/script/soundmanager2-jsmin.js",
+          "node_modules/*soundmanager2/script/soundmanager2-nodebug-jsmin.js",
+          "node_modules/*summernote/dist/summernote-bs4.css",
+          "node_modules/*summernote/dist/summernote-bs4.min.js",
+          "node_modules/*summernote/dist/summernote-bs4.js.map",
+          "node_modules/*summernote/dist/font/summernote.eot",
+          "node_modules/*summernote/dist/font/summernote.ttf",
+          "node_modules/*summernote/dist/font/summernote.woff",
+          "node_modules/*keymaster/keymaster.js"
+        ],
+        "to": "{dist}/assets/vendor"
+      }
+    ],
+    "js": {
+      "from": "{src}/js/*.js",
+      "to": "{dist}/assets/js"
+    },
+    "css": {
+      "from": "{src}/css/**/*.{sass,scss,css}",
+      "to": "{dist}/assets/css",
+      "sass": {
+        "indentedSyntax": true,
+        "indentWidth": 4,
+        "outputStyle": "expanded"
+      }
+    },
+    "html": {
+      "from": "{src}/html/*.html",
+      "to": "{dist}",
+      "dataFile": "{src}/html/data/global.json",
+      "renderPath": "{src}/html",
+      "htmltidy": {
+        "doctype": "html5",
+        "hideComments": false,
+        "indent": true
+      }
+    },
+    "images": {
+      "from": "{src}/images/**/*.{jpg,jpeg,png,gif,svg}",
+      "to": "{dist}/assets/images"
+    },
+    "watch": [
+      {
+        "task": "static",
+        "from": "{src}/static/**/*"
+      },
+      {
+        "task": "images",
+        "from": "{src}/images/**/*.{jpg,jpeg,png,gif,svg}"
+      },
+      {
+        "task": "html",
+        "from": "{src}/html/**/*.{html,json}"
+      },
+      {
+        "task": "css",
+        "from": "{src}/css/**/*.{sass,scss,css}"
+      },
+      {
+        "task": "js",
+        "from": "{src}/js/**/*.js"
+      }
+    ],
+    "production": {
+      "google_analytics": "UA-48958097-5",
+      "protect": [
+        "html.nkdev.info",
+        "You are not permitted to use template without license!",
+        "https://nkdev.info/"
+      ]
+    },
+    "deploy": {
+      "zip": {
+        "from": "{deploy}/{template_name}",
+        "to": "{deploy}/{template_name}.zip"
+      },
+      "static": [
+        {
+          "from": [
+            "{src}/*README.html"
+          ],
+          "to": "{deploy}"
+        },
+        {
+          "from": [
+            "gulpfile.babel.js",
+            "babel.config.js",
+            ".editorconfig",
+            ".eslintrc",
+            ".eslintignore",
+            ".gitignore",
+            ".stylelintrc",
+            "package.json"
+          ],
+          "to": "{deploy}/{template_name}"
+        },
+        {
+          "from": [
+            "{src}/*css/**/*",
+            "{src}/*js/**/*",
+            "{src}/*html/**/*",
+            "{src}/*static/**/*",
+            "{src}/*images/**/*"
+          ],
+          "to": "{deploy}/{template_name}/src"
+        }
+      ],
+      "imagePlaceholders": {
+        "from": "{{deploy}/{template_name}/src/images/**/*.{jpg,jpeg,png,gif},{deploy}/{template_name}/dist/assets/images/**/*.{jpg,jpeg,png,gif}}",
+        "ignore": [
+          "{deploy}/**/border-top.png",
+          "{deploy}/**/border-right.png",
+          "{deploy}/**/border-bottom.png",
+          "{deploy}/**/border-left.png",
+          "{deploy}/**/favicon.png",
+          "{deploy}/**/footer-corner.png",
+          "{deploy}/**/marker.png",
+          "{deploy}/**/page-background.jpg",
+          "{deploy}/**/preloader-bg.png",
+          "{deploy}/**/preloader-bg-bw.png"
+        ],
+        "background": "#232323",
+        "isBackgroundDark": true
+      }
+    }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^4.6.0",
+    "flickity": "^2.2.2",
+    "gsap": "^3.6.0",
+    "hammerjs": "^2.0.8",
+    "has-localstorage": "^1.0.1",
+    "imagesloaded": "^4.1.4",
+    "ionicons": "^2.0.1",
+    "isotope-layout": "^3.0.6",
+    "jarallax": "^1.12.5",
+    "jquery": "^3.5.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-datetimepicker": "^2.5.21",
+    "jquery-validation": "^1.19.3",
+    "keymaster": "^1.6.2",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "nanoscroller": "^0.8.7",
+    "object-fit-images": "^3.2.4",
+    "photoswipe": "^4.1.3",
+    "popper.js": "^1.16.1",
+    "soundmanager2": "^2.97.20170602",
+    "sticky-kit": "git://github.com/leafo/sticky-kit.git#master",
+    "summernote": "^0.8.18",
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/register": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "glob": "^7.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cdnizer": "^2.2.0",
+    "gulp-change": "^1.0.2",
+    "gulp-changed": "^4.0.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-data": "^1.3.1",
+    "gulp-header": "^2.0.9",
+    "gulp-htmltidy": "^0.2.4",
+    "gulp-if": "^3.0.0",
+    "gulp-javascript-obfuscator": "^1.1.6",
+    "gulp-load-plugins": "^2.0.7",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettify": "^0.5.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-vinyl-zip": "^2.5.0",
+    "gulp-watch": "^5.0.1",
+    "jimp": "^0.10.3",
+    "lint-staged": "^12.1.5",
+    "micromatch": "^4.0.4",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "simple-git-hooks": "^2.7.0",
+    "string-template": "^1.0.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

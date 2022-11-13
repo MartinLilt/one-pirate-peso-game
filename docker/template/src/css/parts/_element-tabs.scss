@@ -1,0 +1,37 @@
+.nk-tabs {
+    .nav-tabs {
+        border-bottom: none;
+
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid;
+            opacity: .2;
+        }
+
+        .nav-item,
+        .nav-link,
+        .nav-item.open .nav-link,
+        .nav-link.active {
+            &,
+            &:focus,
+            &:hover {
+                color: inherit;
+                background-color: transparent;
+            }
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            border: none;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-link.active {
+            &,
+            &:focus,
+            &:hover {
+                border-bottom: 2px solid;
+            }
+        }
+    }
+}
