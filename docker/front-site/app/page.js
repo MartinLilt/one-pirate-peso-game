@@ -18,20 +18,25 @@ const Home = () => {
         />
       </Head>
       {/* Hero section below this */}
-      <section className="layout">
+      <section className="layout default">
+        fpfpfp
         <HomeHeroContent />
       </section>
       {/* Wiki-preview section below this */}
-      <section className="layout">
-        <HomeWikiContent />
+      <section className="background">
+        <div className="layout default">
+          <HomeWikiContent />
+        </div>
       </section>
       {/* New-preview section below this */}
-      <section className="layout">
+      <section className="layout default">
         <HomeNewContent />
       </section>
       {/* FeedBack-from section below this */}
-      <section className="layout">
-        <HomeFormContent />
+      <section className="background">
+        <div className="layout default">
+          <HomeFormContent />
+        </div>
       </section>
     </>
   );

@@ -1,11 +1,15 @@
 import * as s from "./footer.module.scss";
 import Link from "next/link";
-import React from "react";
+import "../../styles/globals.scss";
 
 const Footer = () => {
   return (
-    <footer className={s.container}>
-      <Link href="/">Back to the HomePage</Link>
+    <footer className={s.background}>
+      <div className="layout default">
+        <div className={s.container}>
+          <Link href="/">Back to the HomePage</Link>
+        </div>
+      </div>
     </footer>
   );
 };
