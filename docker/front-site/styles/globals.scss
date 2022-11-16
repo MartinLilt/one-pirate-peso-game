@@ -39,13 +39,14 @@ a {
   font-size: 16px;
   font-style: normal;
   letter-spacing: 0.01em;
-
+  color: var(--main-font-color);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
   border: 0;
-  list-style: none;
+  list-style: none;  
+  cursor: url("../assets/icon/cursor1.png"), auto;
 }
 
 body {
