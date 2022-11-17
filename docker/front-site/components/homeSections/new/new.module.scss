@@ -1,13 +1,50 @@
 .new {
-  background-image: linear-gradient(
-      var(--shadow-background),
-      var(--shadow-background)
-    ),
-    // box-shadow(var(--inner-shadow)),
-    url(../../../assets/img/home/desktop/bg-desk-1x.jpg);
-  background-repeat: no-repeat;
-  box-shadow: var(--inner-shadow);
-  background-position: center;
+  width: 100%;
+  position: relative;
+
+  .bgshadow {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: var(--inner-shadow);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-image: linear-gradient(
+        var(--shadow-background),
+        var(--shadow-background)
+      ),
+      url(../../../assets/img/home/modile/bg-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 129px;
+    z-index: -2;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../../assets/img/home/modile/bg-mob-2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: 171px;
+      background-image: url(../../../assets/img/home/tablet/bg-tab-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../../assets/img/home/tablet/bg-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      top: 200px;
+      background-image: url(../../../assets/img/home/desktop/bg-desk-1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../../../assets/img/home/desktop/bg-desk-2x.jpg);
+      }
+    }
+  }
 }
 
 .newupdate {
@@ -28,7 +65,7 @@
   &__title_large {
     line-height: 1;
     font-size: 18px;
-    font-family: var(--accen t-font);
+    font-family: var(--accent-font);
     margin-bottom: 5px;
 
     @media screen and (min-width: 768px) {
@@ -52,11 +89,15 @@
 
   &__text {
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.3;
     margin-bottom: 115px;
+    display: flex;
+    text-align: center;
+
     @media screen and (min-width: 768px) {
       font-size: 16px;
       margin-bottom: 145px;
+      line-height: 1;
     }
     @media screen and (min-width: 1200px) {
       font-size: 18px;
@@ -70,7 +111,6 @@
     align-items: center;
     text-align: center;
     margin-bottom: 130px;
-
     &__all {
       display: flex;
     }
@@ -81,16 +121,24 @@
     }
 
     &__value {
-      font-size: 96px;
+      font-size: 48px;
       color: var(--opacity-font-4);
       line-height: 1;
       display: flex;
+      margin-bottom: 5px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 96px;
+      }
     }
 
     &__label {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 1.35;
       font-family: var(--accent-font);
+      @media screen and (min-width: 768px) {
+        font-size: 18 px;
+      }
     }
 
     &__threedot {
@@ -114,8 +162,11 @@
   }
 
   &__link {
-    font-size: 24px;
+    font-size: 18px;
     font-family: var(--accent-font);
     text-decoration: underline;
+    @media screen and (min-width: 768px) {
+      font-size: 24 px;
+    }
   }
 }
