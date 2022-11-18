@@ -154,7 +154,10 @@
       flex-direction: column;
       justify-content: center;
       line-height: 1;
-      height: 96px;
+      height: 48px;
+      @media screen and (min-width: 768px) {
+        height: 96px;
+      }
     }
 
     &__dot {
@@ -162,9 +165,13 @@
       height: 4px;
       border-radius: 50%;
       background-color: var(--opacity-font-4);
-      margin: 0 15px;
+      margin: 0 10px;
       &:not(:last-child) {
         margin-bottom: 4px;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin: 0 15px;
       }
     }
   }

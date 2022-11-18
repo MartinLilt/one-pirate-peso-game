@@ -32,7 +32,7 @@ export const HomeNewContent = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const updateDate = Date.parse("May 5, 2023");
+  const updateDate = Date.parse("Feb 24, 2023");
 
   const updateTimer = () => {
     setInterval(() => {
