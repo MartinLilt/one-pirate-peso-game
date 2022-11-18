@@ -37,6 +37,7 @@ a {
 * {
   font-family: var(--main-font);
   line-height: 1.7;
+  font-weight: 400;
   font-size: 16px;
   font-style: normal;
   letter-spacing: 0.01em;
@@ -47,7 +48,7 @@ a {
   list-style: none;
   border: 0;
   list-style: none;
-  cursor: url("../assets/icon/cursor1.png"), auto;
+  cursor: url("../assets/icon/cursor.png"), auto;
 }
 
 body {
