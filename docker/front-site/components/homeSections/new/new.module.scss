@@ -76,7 +76,7 @@
 
   &__title_large {
     font-size: 32px;
-    margin-bottom: 73 px;
+    margin-bottom: 73px;
     @media screen and (min-width: 768px) {
       font-size: 48px;
       margin-bottom: 80px;
@@ -113,6 +113,14 @@
     margin-bottom: 130px;
     &__all {
       display: flex;
+
+      @media screen and (min-width: 768px) {
+        transform: translateY(25%);
+      }
+
+      @media screen and (min-width: 1200px) {
+        transform: unset;
+      }
     }
 
     &__field {
@@ -176,4 +184,8 @@
       font-size: 24 px;
     }
   }
+}
+
+.newupdate__text {
+  color: var(--opacity-font-2);
 }
