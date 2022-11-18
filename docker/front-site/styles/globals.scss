@@ -4,6 +4,7 @@
 
   --main-background: #1a1a1a;
   --accent-background: #0e0e0e;
+  --shadow-background: rgb(26, 26, 26, 0.45);
 
   --main-font-color: #fff;
   --opacity-font-1: rgba(255, 255, 255, 0.7);
@@ -39,13 +40,14 @@ a {
   font-size: 16px;
   font-style: normal;
   letter-spacing: 0.01em;
-
+  color: var(--main-font-color);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
   border: 0;
   list-style: none;
+  cursor: url("../assets/icon/cursor1.png"), auto;
 }
 
 body {
