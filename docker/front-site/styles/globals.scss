@@ -71,17 +71,17 @@ body {
 }
 
 .layout {
-  width: 320px;
+  min-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .layout {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .layout {
-    width: 1200px;
+    min-width: 1200px;
   }
 }
