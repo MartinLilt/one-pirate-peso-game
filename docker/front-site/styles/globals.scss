@@ -74,8 +74,10 @@ body {
   padding: 0 20px;
 
   @media screen and (min-width: 768px) {
-    margin: 0 auto;
-    padding: 0 25px;
+    .default {
+      margin: 0 auto;
+      padding: 0 25px;
+    }
   }
 }
 
@@ -83,10 +85,14 @@ body {
   width: 320px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    .layout {
+      width: 768px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    .layout {
+      width: 1200px;
+    }
   }
 }

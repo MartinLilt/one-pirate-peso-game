@@ -32,8 +32,8 @@ const Home = () => {
         <HomeNewContent />
       </section>
       {/* FeedBack-from section below this */}
-      <section className="background">
-        <div className="layout default">
+      <section >
+        <div className="layout">
           <HomeFormContent />
         </div>
       </section>
