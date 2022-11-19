@@ -27,11 +27,19 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  cursor: url("../assets/icon/cursor.png"), auto;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  cursor: url("../assets/icon/cursor_hover.png"), auto;
 }
 
 * {
@@ -48,7 +56,7 @@ a {
   list-style: none;
   border: 0;
   list-style: none;
-  cursor: url("../assets/icon/cursor1.png"), auto;
+  // cursor: url("../assets/icon/cursor1.png"), auto;
 }
 
 body {
@@ -64,10 +72,8 @@ body {
 .default {
   margin: 0 auto;
   padding: 0 20px;
-}
 
-@media screen and (min-width: 768px) {
-  .default {
+  @media screen and (min-width: 768px) {
     margin: 0 auto;
     padding: 0 25px;
   }
@@ -75,16 +81,12 @@ body {
 
 .layout {
   width: 320px;
-}
 
-@media screen and (min-width: 768px) {
-  .layout {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .layout {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
