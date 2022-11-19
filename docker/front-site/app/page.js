@@ -28,7 +28,7 @@ const Home = () => {
         </div>
       </section>
       {/* New-preview section below this */}
-      <section className="layout default">
+      <section className="">
         <HomeNewContent />
       </section>
       {/* FeedBack-from section below this */}
