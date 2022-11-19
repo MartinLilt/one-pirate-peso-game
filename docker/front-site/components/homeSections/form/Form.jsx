@@ -11,6 +11,7 @@ export const HomeFormContent = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  
   const handleChange = (event) => {
     const { name, value } = event.currentTarget;
     if (name === "name") {

@@ -33,7 +33,7 @@ const Home = () => {
       </section>
       {/* FeedBack-from section below this */}
       <section >
-        <div className="layout">
+        <div >
           <HomeFormContent />
         </div>
       </section>
