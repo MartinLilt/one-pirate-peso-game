@@ -27,11 +27,19 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  cursor: url("../assets/icon/cursor.png"), auto;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  cursor: url("../assets/icon/cursor_hover.png"), auto;
 }
 
 * {
@@ -48,7 +56,7 @@ a {
   list-style: none;
   border: 0;
   list-style: none;
-  cursor: url("../assets/icon/cursor1.png"), auto;
+  // cursor: url("../assets/icon/cursor1.png"), auto;
 }
 
 body {
