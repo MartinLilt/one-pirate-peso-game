@@ -1,0 +1,11 @@
+&__btn{
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+}
+&__btn_text{
+   font-size: 40px;
+   line-height: 1;
+   font-family: var(--accent-font);
+   margin-right: 25px;
+}
