@@ -196,15 +196,12 @@
     }
 
     &__threedot {
-      display: flex;
-      flex-direction: column;
       justify-content: center;
-      line-height: 1;
       height: 48px;
       @media screen and (min-width: 768px) {
         height: 96px;
       }
-    }
+    }  
   }
 
   &__link {

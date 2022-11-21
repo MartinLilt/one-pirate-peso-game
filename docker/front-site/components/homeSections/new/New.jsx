@@ -88,7 +88,6 @@ export const HomeNewContent = () => {
             <span className={s.newupdate__timer__label}>Hours</span>
           </div>
           <ThreeDots
-            className={s.newupdate__threedot}
             ulClassName={s.newupdate__timer__threedot}
             liClassName={s.newupdate__timer__dot}
           />

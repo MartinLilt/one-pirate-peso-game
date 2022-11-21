@@ -1,0 +1,30 @@
+.threedot {
+  display: flex;
+  flex-direction: column;
+  &__dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--opacity-font-4);
+    margin: 0 10px;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: 0 15px;
+    }
+  }
+}
+
+// -----------for vertical three dots in you component-------
+// &__threedot_vert {
+//   flex-direction: row;//
+// }
+
+// &__dot_vert {
+//   margin: 0;
+//   &:not(:last-child) {
+//     margin-right: 4px;
+//   }
+// }

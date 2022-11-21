@@ -76,12 +76,13 @@
 }
 
 .input {
+  outline:none;
   width: 100%;
   padding-bottom: 5px;
   margin-top: 52px;
   border-bottom: 1px solid var(--accent-element-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 100%;
   color: var(--opacity-font-2);
   background-color: var(--accent-background);
