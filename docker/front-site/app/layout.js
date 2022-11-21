@@ -1,9 +1,13 @@
+"use client";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import React from "react";
+import React, { useState } from "react";
 import "../styles/globals.scss";
+import Modal from "../components/shared/modal/Modal";
+import AuthForm from "../components/homeSections/AuthForm/AuthForm";
 
 export default function RootLayout({ children }) {
+  const [activeAuth, setActiveAuth] = useState(true);
   return (
     <html>
       <head>
@@ -36,6 +40,10 @@ export default function RootLayout({ children }) {
         <div></div>
         <main>{children}</main>
         <Footer />
+        <Modal active={activeAuth} setActive={setActiveAuth}>
+          <Header />
+          <AuthForm active={activeAuth} setActive={setActiveAuth} />
+        </Modal>
       </body>
     </html>
   );

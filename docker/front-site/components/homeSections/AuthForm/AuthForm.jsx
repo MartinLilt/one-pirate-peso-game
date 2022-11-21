@@ -2,6 +2,8 @@ import { useState } from "react";
 import s from "./AuthForm.module.scss";
 import Image from "next/image";
 import noAvatar from "../../../assets/img/home/desktop/noavatar-desk-1x.png";
+import Close from "../../../assets/icon/close.svg";
+import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 
 const initialState = {
   name: "",
@@ -10,7 +12,7 @@ const initialState = {
   repeatPassword: "",
 };
 
-const AuthForm = () => {
+const AuthForm = ({ active, setActive }) => {
   const [form, setForm] = useState(initialState);
 
   const handleChange = (event) => {
@@ -39,8 +41,9 @@ const AuthForm = () => {
 
   return (
     <div className={`layout default ${s.authform}`}>
+      <h2 className="visually-hidden"> Sign Up One Pirate Peso</h2>
       <form className={s.authform__form}>
-        <h2 className={s.authform__title}>Sign Up Form</h2>
+        <legend className={s.authform__title}>Sign Up Form</legend>
         <div className={s.authform__input_fields}>
           <input
             className={s.authform__input}
@@ -87,16 +90,46 @@ const AuthForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="">
-          <p>Please, select your game avatar..</p>
-          <div className="">
-            <button>Choose an avatar:</button>
-            <div className="">
-              <Image src={noAvatar} width={30} height={30} alt="X" />
+        <div className={s.authform__avatar}>
+          <p className={s.authform__avatar_text}>
+            Please, select your game avatar..
+          </p>
+          <div className={s.authform__avatar_choose}>
+            <button type="button" className={s.authform__avatar_btn}>
+              Choose an avatar:
+            </button>
+            <div className={s.authform__avatar_img}>
+              <Image src={noAvatar} width={68} height={68} alt="X" />
             </div>
+            <ThreeDots />
           </div>
         </div>
+        <div cclassName={s.authform__checkbox}>
+          <input
+            type="checkbox"
+            id="agreePriv"
+            name="agreePriv"
+            className={s.authform__check}
+          />
+          <label htmlFor="agreePriv" className={s.authform__checklabel}>
+            By using our service you fully agree with our&nbsp;
+            <a href="#" className={s.authform__labeltext}>
+              Privacy Policy
+            </a>
+            ..
+          </label>
+        </div>
       </form>
+      <div className={s.authform__bottom}>
+        <button
+          type="button"
+          onClick={() => setActive(false)}
+          className={s.authform__btn}
+        >
+          <p className={s.authform__btn_text}> Close</p>
+          <Image src={Close} width={30} height={30} alt="X" />
+        </button>
+      </div>
     </div>
   );
 };
