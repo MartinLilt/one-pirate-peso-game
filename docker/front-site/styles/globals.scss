@@ -56,7 +56,6 @@ button:focus {
   list-style: none;
   border: 0;
   list-style: none;
-  // cursor: url("../assets/icon/cursor1.png"), auto;
 }
 
 body {
@@ -70,29 +69,27 @@ body {
 }
 
 .default {
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-@media screen and (min-width: 768px) {
-  .default {
-    margin: 0 auto;
-    padding: 0 25px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
 .layout {
   width: 320px;
-}
 
-@media screen and (min-width: 768px) {
-  .layout {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .layout {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }

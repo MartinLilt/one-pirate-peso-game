@@ -1,11 +1,87 @@
-&__btn{
-    background-color:transparent;
-    display: flex;
-    align-items: center;
-}
-&__btn_text{
-   font-size: 40px;
-   line-height: 1;
-   font-family: var(--accent-font);
-   margin-right: 25px;
+.privpollic {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 9px;
+    &__item {
+      height: 50px;
+      background-color: var(--accent-background);
+      display: flex;
+      align-items: center;
+      padding-left: 45px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 1;
+      font-family: var(--accent-font);
+
+      &_description {
+        font-size: 18px;
+        background-color: var(--accent-background);
+        color: var(--opacity-font-2);
+        padding: 6px 45px;
+        line-height: 1.5;
+
+        &_underline {
+            font-size: 18px;
+            color: var(--opacity-font-2);
+            text-decoration: underline;
+            line-height: 1.5;
+          }
+      }
+      &_underline {
+        font-size: 18px;
+        line-height: 1;
+        font-family: var(--accent-font);
+        text-decoration: underline;
+      }
+    }
+
+    &__btn {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+    }
+    &__btn_text {
+      font-size: 40px;
+      line-height: 1;
+      font-family: var(--accent-font);
+      margin-right: 25px;
+    }
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+
+    &__link {
+      font-size: 40px;
+      line-height: 1;
+      font-family: var(--accent-font);
+
+      &_active {
+        font-size: 40px;
+        line-height: 1;
+        font-family: var(--accent-font);
+        text-decoration: underline;
+      }
+    }
+
+    &__links_bottom {
+      display: flex;
+    }
+
+    &__line {
+      width: 1px;
+      height: 40px;
+      background-color: #fff;
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+  }
 }

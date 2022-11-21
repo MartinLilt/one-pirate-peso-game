@@ -1,0 +1,28 @@
+.authform {
+  padding-top: 50px;
+  background-color: var(--accent-background);
+
+  &__title {
+    font-size: 32px;
+    line-height: 1;
+    font-family: var(--accent-font);
+    margin-bottom: 50px;
+  }
+
+  &__input_fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 610px;
+    margin-bottom: 50px;
+  }
+
+  &__input {
+    border-bottom: 1px solid var(--accent-element-color);
+    width: 280px;
+    background-color: transparent;
+    color: var(--opacity-font-2);
+    font-size: 18px;
+    line-height: 1;
+  }
+}
