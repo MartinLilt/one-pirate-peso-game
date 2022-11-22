@@ -1,9 +1,14 @@
 .authform {
   padding-bottom: 50px;
 
-  &__form {
-    padding: 50px;
+  &__signup {
+    display: flex;
     background-color: var(--accent-background);
+    padding: 50px;
+  }
+
+  &__form {
+    margin-right: 64px;
   }
 
   &__title {
@@ -58,7 +63,11 @@
     line-height: 1;
   }
 
-  &__check{
+  &__checkbox {
+    margin-bottom: 50px;
+  }
+
+  &__check {
     background-color: var(--accent-background);
     color: var(--accent-background);
     margin-right: 24px;
@@ -66,12 +75,12 @@
     height: 15px;
   }
 
-  &__checklabel{
+  &__checklabel {
     color: var(--opacity-font-2);
     font-size: 18px;
     line-height: 1;
   }
-  &__labeltext{
+  &__labeltext {
     color: var(--main-font-color);
     font-size: 18px;
     line-height: 1;
@@ -96,5 +105,76 @@
     align-items: center;
     justify-content: flex-end;
     padding-top: 20px;
+  }
+
+  &__btn_submit {
+    background-color: transparent;
+    width: 610px;
+    border: 1px solid var(--accent-element-color);
+    padding: 4px 6px;
+  }
+
+  &__btn_account {
+    background-color: transparent;
+    width: 362px;
+    border: 1px solid var(--accent-element-color);
+    padding: 4px 6px;
+    margin-bottom: 25px;
+  }
+  &__text_error {
+    margin-bottom: 25px;
+    // margin: 0;
+  }
+
+  &__text_submit {
+    background-color: var(--accent-element-color);
+    color: var(--main-element-color);
+    font-size: 24px;
+    line-height: 1;
+    font-family: var(--accent-font);
+    padding: 11.5px 20px;
+    display: flex;
+    text-align: start;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin-right: 15px;
+  }
+
+  &__account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text_reg {
+    margin-bottom: 56px;
+    font-size: 18px;
+    color: var(--opacity-font-2);
+  }
+
+  &__error {
+    width: 362px;
+    background-color: transparent;
+    border: 1px solid var(--error-color);
+    padding: 4px 6px;
+  }
+  &__error_text {
+    padding: 21px;
+    background-color: var(--error-color);
+  }
+
+  &__title_error {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-family: var(--accent-font);
+  }
+
+  &__text_err {
+    color: var(--opacity-font-2);
+    font-size: 18px;
+    line-height: 1.5;
   }
 }
