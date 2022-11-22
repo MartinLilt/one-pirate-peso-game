@@ -13,7 +13,6 @@
 
   &__title {
     font-size: 32px;
-    line-height: 1;
     font-family: var(--accent-font);
     margin-bottom: 50px;
   }
@@ -31,8 +30,6 @@
     width: 280px;
     background-color: transparent;
     color: var(--opacity-font-2);
-    font-size: 18px;
-    line-height: 1;
   }
 
   &__avatar {
@@ -41,9 +38,7 @@
   }
 
   &__avatar_text {
-    line-height: 1;
     color: var(--opacity-font-2);
-    font-size: 18px;
     margin-bottom: 25px;
   }
 
@@ -60,7 +55,6 @@
     border: 1px solid var(--accent-element-color);
     padding: 22px 36px;
     margin-right: 50px;
-    line-height: 1;
   }
 
   &__checkbox {
@@ -77,13 +71,9 @@
 
   &__checklabel {
     color: var(--opacity-font-2);
-    font-size: 18px;
-    line-height: 1;
   }
   &__labeltext {
     color: var(--main-font-color);
-    font-size: 18px;
-    line-height: 1;
     text-decoration: underline;
   }
 
@@ -95,7 +85,6 @@
 
   &__btn_text {
     font-size: 40px;
-    line-height: 1;
     font-family: var(--accent-font);
     margin-right: 25px;
   }
@@ -123,14 +112,12 @@
   }
   &__text_error {
     margin-bottom: 25px;
-    // margin: 0;
   }
 
   &__text_submit {
     background-color: var(--accent-element-color);
     color: var(--main-element-color);
     font-size: 24px;
-    line-height: 1;
     font-family: var(--accent-font);
     padding: 11.5px 20px;
     display: flex;
@@ -151,7 +138,6 @@
 
   &__text_reg {
     margin-bottom: 56px;
-    font-size: 18px;
     color: var(--opacity-font-2);
   }
 
@@ -174,7 +160,6 @@
 
   &__text_err {
     color: var(--opacity-font-2);
-    font-size: 18px;
     line-height: 1.5;
   }
 }

@@ -5,9 +5,11 @@ import React, { useState } from "react";
 import "../styles/globals.scss";
 import Modal from "../components/shared/modal/Modal";
 import AuthForm from "../components/homeSections/AuthForm/AuthForm";
+import PrivPolLic from "../components/homeSections/PrivPolLic/PrivPolLic";
 
 export default function RootLayout({ children }) {
   const [activeAuth, setActiveAuth] = useState(true);
+  const [activePriv, setActivePriv] = useState(false);
   return (
     <html>
       <head>
@@ -43,6 +45,10 @@ export default function RootLayout({ children }) {
         <Modal active={activeAuth} setActive={setActiveAuth}>
           <Header />
           <AuthForm active={activeAuth} setActive={setActiveAuth} />
+        </Modal>
+        <Modal active={activePriv} setActive={setActivePriv}>
+          <Header />
+          <PrivPolLic active={activePriv} setActive={setActivePriv} />
         </Modal>
       </body>
     </html>

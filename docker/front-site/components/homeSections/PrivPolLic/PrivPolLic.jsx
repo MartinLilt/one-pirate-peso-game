@@ -18,7 +18,7 @@ const PrivPolLic = ({ active, setActive, license }) => {
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>
                   forestay
-                </span>{" "}
+                </span>
                 (on which the headsail is carried) attaches at the top of the
                 mast.
               </p>
@@ -33,7 +33,7 @@ const PrivPolLic = ({ active, setActive, license }) => {
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>
                   forestay
-                </span>{" "}
+                </span>
                 (on which the headsail is carried) attaches at the top of the
                 mast.
               </p>

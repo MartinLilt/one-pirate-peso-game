@@ -16,27 +16,21 @@
     }
 
     &__text {
-      font-size: 18px;
-      line-height: 1;
       font-family: var(--accent-font);
 
       &_description {
-        font-size: 18px;
         background-color: var(--accent-background);
         color: var(--opacity-font-2);
         padding: 6px 45px;
         line-height: 1.5;
 
         &_underline {
-            font-size: 18px;
             color: var(--opacity-font-2);
             text-decoration: underline;
             line-height: 1.5;
           }
       }
       &_underline {
-        font-size: 18px;
-        line-height: 1;
         font-family: var(--accent-font);
         text-decoration: underline;
       }
@@ -49,7 +43,6 @@
     }
     &__btn_text {
       font-size: 40px;
-      line-height: 1;
       font-family: var(--accent-font);
       margin-right: 25px;
     }
@@ -62,12 +55,10 @@
 
     &__link {
       font-size: 40px;
-      line-height: 1;
       font-family: var(--accent-font);
 
       &_active {
         font-size: 40px;
-        line-height: 1;
         font-family: var(--accent-font);
         text-decoration: underline;
       }

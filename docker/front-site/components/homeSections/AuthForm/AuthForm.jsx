@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styled from 'styled-components';
 import s from "./AuthForm.module.scss";
 import Image from "next/image";
 import noAvatar from "../../../assets/img/home/desktop/noavatar-desk-1x.png";
@@ -6,6 +7,7 @@ import Close from "../../../assets/icon/close.svg";
 import Google from "../../../assets/icon/google-svgrepo-com 1.svg";
 import Steam from "../../../assets/icon/steam.svg";
 import ThreeDots from "../../shared/ThreeDots/ThreeDots";
+const Input = styled.input.attrs({ type: "checkbox" })``;
 
 const initialState = {
   name: "",
@@ -108,7 +110,7 @@ const AuthForm = ({ active, setActive }) => {
             </div>
           </div>
           <div className={s.authform__checkbox}>
-            <input
+            <Input
               type="checkbox"
               id="agreePriv"
               name="agreePriv"
