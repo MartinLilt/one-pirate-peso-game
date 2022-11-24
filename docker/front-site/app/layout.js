@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <Modal active={activeAuth} setActive={setActiveAuth}>
-          <Header />
+          {/* <Header /> */}
           <AuthForm active={activeAuth} setActive={setActiveAuth} />
         </Modal>
         <Modal active={activePriv} setActive={setActivePriv}>

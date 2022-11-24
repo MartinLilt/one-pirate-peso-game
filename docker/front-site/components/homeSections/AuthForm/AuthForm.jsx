@@ -1,5 +1,4 @@
 import { useState } from "react";
-import styled from 'styled-components';
 import s from "./AuthForm.module.scss";
 import Image from "next/image";
 import noAvatar from "../../../assets/img/home/desktop/noavatar-desk-1x.png";
@@ -7,7 +6,6 @@ import Close from "../../../assets/icon/close.svg";
 import Google from "../../../assets/icon/google-svgrepo-com 1.svg";
 import Steam from "../../../assets/icon/steam.svg";
 import ThreeDots from "../../shared/ThreeDots/ThreeDots";
-const Input = styled.input.attrs({ type: "checkbox" })``;
 
 const initialState = {
   name: "",
@@ -110,13 +108,15 @@ const AuthForm = ({ active, setActive }) => {
             </div>
           </div>
           <div className={s.authform__checkbox}>
-            <Input
-              type="checkbox"
-              id="agreePriv"
-              name="agreePriv"
-              className={s.authform__check}
-            />
             <label htmlFor="agreePriv" className={s.authform__checklabel}>
+              <input
+                type="checkbox"
+                id="agreePriv"
+                name="agreePriv"
+                className={s.authform__check}
+              />
+              <span className={s.authform__checkbox_sqcheck}>&#10004;</span>
+              <span className={s.authform__checkbox_sq}></span>
               By using our service you fully agree with our&nbsp;
               <a href="#" className={s.authform__labeltext}>
                 Privacy Policy
@@ -133,7 +133,7 @@ const AuthForm = ({ active, setActive }) => {
             Or, register using your account:
           </p>
           <button className={s.authform__btn_account}>
-            <p className={s.authform__text_submit}>
+            <p className={s.authform__text_auth}>
               <Image
                 src={Google}
                 width={35}
@@ -145,7 +145,7 @@ const AuthForm = ({ active, setActive }) => {
             </p>
           </button>
           <button className={s.authform__btn_account}>
-            <p className={s.authform__text_submit}>
+            <p className={s.authform__text_auth}>
               <Image
                 src={Steam}
                 width={35}

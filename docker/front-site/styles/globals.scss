@@ -39,7 +39,8 @@ a {
 a:hover,
 a:focus,
 button:hover,
-button:focus {
+button:focus,
+label:hover {
   cursor: url("../assets/icon/cursor_hover.png"), auto;
 }
 
