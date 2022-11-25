@@ -1,6 +1,7 @@
 import s from "./PrivPolLic.module.scss";
 import Image from "next/image";
 import Close from "../../../assets/icon/close.svg";
+import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 
 const PrivPolLic = ({ active, setActive, license }) => {
   return (
@@ -9,11 +10,13 @@ const PrivPolLic = ({ active, setActive, license }) => {
         <div className={s.privpollic__license}>
           <ul className={s.privpollic__list}>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ The headsail can be masthead-rigged or fractional-rigged.
               </p>
             </li>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>forestay</span>
@@ -22,11 +25,13 @@ const PrivPolLic = ({ active, setActive, license }) => {
               </p>
             </li>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ The headsail can be masthead-rigged or fractional-rigged.
               </p>
             </li>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>forestay</span>
@@ -65,11 +70,13 @@ const PrivPolLic = ({ active, setActive, license }) => {
         <div className={s.privpollic__privpol}>
           <ul className={s.privpollic__list}>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ The headsail can be masthead-rigged or fractional-rigged.
               </p>
             </li>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>
@@ -80,11 +87,13 @@ const PrivPolLic = ({ active, setActive, license }) => {
               </p>
             </li>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ The headsail can be masthead-rigged or fractional-rigged.
               </p>
             </li>
             <li className={s.privpollic__item}>
+              <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>

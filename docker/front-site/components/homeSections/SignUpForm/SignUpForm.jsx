@@ -134,9 +134,7 @@ const SignUpForm = ({ active, setActive }) => {
           </button>
         </form>
         <div className={s.signup__account}>
-          <p className={s.signup__text_reg}>
-            Or, register using your account:
-          </p>
+          <p className={s.signup__text_reg}>Or, register using your account:</p>
           <button className={s.signup__btn_account}>
             <p className={s.signup__text_auth}>
               <Image

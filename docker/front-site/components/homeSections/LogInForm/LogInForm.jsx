@@ -1,11 +1,9 @@
 import { useState } from "react";
 import s from "./LogInForm.module.scss";
 import Image from "next/image";
-import noAvatar from "../../../assets/img/home/desktop/noavatar-desk-1x.png";
 import Close from "../../../assets/icon/close.svg";
 import Google from "../../../assets/icon/google-svgrepo-com 1.svg";
 import Steam from "../../../assets/icon/steam.svg";
-import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 
 const initialState = {
   email: "",
@@ -93,18 +91,19 @@ const LogInForm = ({ active, setActive }) => {
               Continue with Steam
             </p>
           </button>
-        </div><div className={s.login__error}>
-        <div className={s.login__error_text}>
-          <p className={s.login__title_error}>Error!</p>
-          <p className={s.login__text_err}>
-            @ The headsail can be masthead-rigged or fractional-rigged. On a
-            masthead-rigged sloop, the forestay (on which the headsail is
-            carried) attaches at the top of the mast.
-          </p>
+        </div>
+        <div className={s.login__error}>
+          <div className={s.login__error_text}>
+            <p className={s.login__title_error}>Error!</p>
+            <p className={s.login__text_err}>
+              @ The headsail can be masthead-rigged or fractional-rigged. On a
+              masthead-rigged sloop, the forestay (on which the headsail is
+              carried) attaches at the top of the mast.
+            </p>
+          </div>
         </div>
       </div>
-      </div>
-      
+
       <div className={s.login__bottom}>
         <button
           type="button"
