@@ -111,7 +111,7 @@ export const HomeNewContent = () => {
         <a href="#" className={`layout default ${s.newupdate__link}`}>
           View the latest update here
         </a>
-      </div>
+      </div>    
     </div>
   );
 };
