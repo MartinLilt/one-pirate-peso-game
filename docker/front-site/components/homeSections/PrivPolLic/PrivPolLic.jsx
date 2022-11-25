@@ -136,7 +136,7 @@ const PrivPolLic = ({ active, setActive, license }) => {
             href=""
             className={license ? s.privpollic__link : s.privpollic__link_active}
           >
-            Privancy Policy
+            Privacy Policy
           </a>
           <div className={s.privpollic__line}></div>
           <a
