@@ -1,5 +1,5 @@
 import { useState } from "react";
-import s from "./AuthForm.module.scss";
+import s from "./SignUpForm.module.scss";
 import Image from "next/image";
 import noAvatar from "../../../assets/img/home/desktop/noavatar-desk-1x.png";
 import Close from "../../../assets/icon/close.svg";
@@ -12,9 +12,10 @@ const initialState = {
   email: "",
   password: "",
   repeatPassword: "",
+  checkPriv: false,
 };
 
-const AuthForm = ({ active, setActive }) => {
+const SignUpForm = ({ active, setActive }) => {
   const [form, setForm] = useState(initialState);
 
   const handleChange = (event) => {
@@ -42,14 +43,14 @@ const AuthForm = ({ active, setActive }) => {
   };
 
   return (
-    <div className={`layout default ${s.authform}`}>
+    <div className={`layout default ${s.signup}`}>
       <h2 className="visually-hidden"> Sign Up One Pirate Peso</h2>
-      <div className={s.authform__signup}>
-        <form className={s.authform__form}>
-          <legend className={s.authform__title}>Sign Up Form</legend>
-          <div className={s.authform__input_fields}>
+      <div className={s.signup__signup}>
+        <form className={s.signup__form}>
+          <legend className={s.signup__title}>Sign Up Form</legend>
+          <div className={s.signup__input_fields}>
             <input
-              className={s.authform__input}
+              className={s.signup__input}
               type="text"
               placeholder="Your public name.."
               name="name"
@@ -60,7 +61,7 @@ const AuthForm = ({ active, setActive }) => {
               onChange={handleChange}
             />
             <input
-              className={s.authform__input}
+              className={s.signup__input}
               type="email"
               placeholder="Your email.."
               name="email"
@@ -71,7 +72,7 @@ const AuthForm = ({ active, setActive }) => {
               onChange={handleChange}
             />
             <input
-              className={s.authform__input}
+              className={s.signup__input}
               type="password"
               placeholder="Your password.."
               name="password"
@@ -82,7 +83,7 @@ const AuthForm = ({ active, setActive }) => {
               onChange={handleChange}
             />
             <input
-              className={s.authform__input}
+              className={s.signup__input}
               type="repeatPassword"
               placeholder="Reapeat your password.."
               name="repeatPassword"
@@ -93,73 +94,77 @@ const AuthForm = ({ active, setActive }) => {
               onChange={handleChange}
             />
           </div>
-          <div className={s.authform__avatar}>
-            <p className={s.authform__avatar_text}>
+          <div className={s.signup__avatar}>
+            <p className={s.signup__avatar_text}>
               Please, select your game avatar..
             </p>
-            <div className={s.authform__avatar_choose}>
-              <button type="button" className={s.authform__avatar_btn}>
+            <div className={s.signup__avatar_choose}>
+              <button type="button" className={s.signup__avatar_btn}>
                 Choose an avatar:
               </button>
-              <div className={s.authform__avatar_img}>
+              <div className={s.signup__avatar_img}>
                 <Image src={noAvatar} width={68} height={68} alt="X" />
               </div>
               <ThreeDots />
             </div>
           </div>
-          <div className={s.authform__checkbox}>
-            <label htmlFor="agreePriv" className={s.authform__checklabel}>
+          <div className={s.signup__checkbox}>
+            <label htmlFor="agreePriv" className={s.signup__checklabel}>
               <input
                 type="checkbox"
                 id="agreePriv"
                 name="agreePriv"
-                className={s.authform__check}
+                onChange={() => {
+                  setForm({ ...form, checkPriv: !form.checkPriv });
+                }}
+                checked={form.checkPriv}
+                className={s.signup__check}
               />
-              <span className={s.authform__checkbox_sqcheck}>&#10004;</span>
-              <span className={s.authform__checkbox_sq}></span>
+              <span className={s.signup__checkbox_sqcheck}>&#10004;</span>
+              <span className={s.signup__checkbox_sq}></span>
               By using our service you fully agree with our&nbsp;
-              <a href="#" className={s.authform__labeltext}>
+              <a href="#" className={s.signup__labeltext}>
                 Privacy Policy
               </a>
               ..
             </label>
           </div>
-          <button className={s.authform__btn_submit}>
-            <p className={s.authform__text_submit}>Create My Account</p>
+          <button className={s.signup__btn_submit}>
+            <p className={s.signup__text_submit}>Create My Account</p>
           </button>
         </form>
-        <div className={s.authform__account}>
-          <p className={s.authform__text_reg}>
+        <div className={s.signup__account}>
+          <p className={s.signup__text_reg}>
             Or, register using your account:
           </p>
-          <button className={s.authform__btn_account}>
-            <p className={s.authform__text_auth}>
+          <button className={s.signup__btn_account}>
+            <p className={s.signup__text_auth}>
               <Image
                 src={Google}
                 width={35}
                 height={35}
                 alt="Google"
-                className={s.authform__img}
+                className={s.signup__img}
               />
               Continue with Google
             </p>
           </button>
-          <button className={s.authform__btn_account}>
-            <p className={s.authform__text_auth}>
+          <button className={s.signup__btn_account}>
+            <p className={s.signup__text_auth}>
               <Image
                 src={Steam}
                 width={35}
                 height={35}
                 alt="Steam"
-                className={s.authform__img}
+                className={s.signup__img}
               />
               Continue with Steam
             </p>
           </button>
-          <div className={s.authform__error}>
-            <div className={s.authform__error_text}>
-              <p className={s.authform__title_error}>Error!</p>
-              <p className={s.authform__text_err}>
+          <div className={s.signup__error}>
+            <div className={s.signup__error_text}>
+              <p className={s.signup__title_error}>Error!</p>
+              <p className={s.signup__text_err}>
                 @ The headsail can be masthead-rigged or fractional-rigged. On a
                 masthead-rigged sloop, the forestay (on which the headsail is
                 carried) attaches at the top of the mast.
@@ -168,13 +173,13 @@ const AuthForm = ({ active, setActive }) => {
           </div>
         </div>
       </div>
-      <div className={s.authform__bottom}>
+      <div className={s.signup__bottom}>
         <button
           type="button"
           onClick={() => setActive(false)}
-          className={s.authform__btn}
+          className={s.signup__btn}
         >
-          <p className={s.authform__btn_text}> Close</p>
+          <p className={s.signup__btn_text}> Close</p>
           <Image src={Close} width={30} height={30} alt="X" />
         </button>
       </div>
@@ -182,4 +187,4 @@ const AuthForm = ({ active, setActive }) => {
   );
 };
 
-export default AuthForm;
+export default SignUpForm;

@@ -4,11 +4,13 @@ import Footer from "../components/footer";
 import React, { useState } from "react";
 import "../styles/globals.scss";
 import Modal from "../components/shared/modal/Modal";
-import AuthForm from "../components/homeSections/AuthForm/AuthForm";
+import SignUpForm from "../components/homeSections/SignUpForm/SignUpForm";
 import PrivPolLic from "../components/homeSections/PrivPolLic/PrivPolLic";
+import LogInForm from "../components/homeSections/LogInForm/LogInForm";
 
 export default function RootLayout({ children }) {
-  const [activeAuth, setActiveAuth] = useState(true);
+  const [activeSignUp, setActiveSignUp] = useState(false);
+  const [activeLogIn, setActiveLogIn] = useState(false);
   const [activePriv, setActivePriv] = useState(false);
   return (
     <html>
@@ -42,9 +44,13 @@ export default function RootLayout({ children }) {
         <div></div>
         <main>{children}</main>
         <Footer />
-        <Modal active={activeAuth} setActive={setActiveAuth}>
-          {/* <Header /> */}
-          <AuthForm active={activeAuth} setActive={setActiveAuth} />
+        <Modal active={activeSignUp} setActive={setActiveSignUp}>
+          <Header />
+          <SignUpForm active={activeSignUp} setActive={setActiveSignUp} />
+        </Modal>
+        <Modal active={activeLogIn} setActive={setActiveLogIn}>
+          <Header />
+          <LogInForm active={activeLogIn} setActive={setActiveLogIn} />
         </Modal>
         <Modal active={activePriv} setActive={setActivePriv}>
           <Header />

@@ -2,9 +2,6 @@
 import * as s from "./header.module.scss";
 import Link from "next/link";
 import "../../styles/globals.scss";
-import Modal from "../shared/modal/Modal";
-import { useState } from "react";
-import AuthForm from "../homeSections/AuthForm/AuthForm";
 
 const Header = () => {
   return (
