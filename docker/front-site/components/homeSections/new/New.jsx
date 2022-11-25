@@ -1,6 +1,7 @@
 "use client";
 import * as s from "./new.module.scss";
 import React, { useEffect, useState } from "react";
+import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 
 const convertMs = (ms) => {
   // Number of milliseconds per unit of time
@@ -76,33 +77,30 @@ export const HomeNewContent = () => {
             </span>
             <span className={s.newupdate__timer__label}>Days</span>
           </div>
-          <ul className={s.newupdate__timer__threedot}>
-            <li className={s.newupdate__timer__dot}></li>
-            <li className={s.newupdate__timer__dot}></li>
-            <li className={s.newupdate__timer__dot}></li>
-          </ul>
+          <ThreeDots
+            ulClassName={s.newupdate__timer__threedot}
+            liClassName={s.newupdate__timer__dot}
+          />
           <div className={s.newupdate__timer__field}>
             <span className={s.newupdate__timer__value} data-hours>
               {difference.hours}
             </span>
             <span className={s.newupdate__timer__label}>Hours</span>
           </div>
-          <ul className={s.newupdate__timer__threedot}>
-            <li className={s.newupdate__timer__dot}></li>
-            <li className={s.newupdate__timer__dot}></li>
-            <li className={s.newupdate__timer__dot}></li>
-          </ul>
+          <ThreeDots
+            ulClassName={s.newupdate__timer__threedot}
+            liClassName={s.newupdate__timer__dot}
+          />
           <div className={s.newupdate__timer__field}>
             <span className={s.newupdate__timer__value} data-minutes>
               {difference.minutes}
             </span>
             <span className={s.newupdate__timer__label}>Minutes</span>
           </div>
-          <ul className={s.newupdate__timer__threedot}>
-            <li className={s.newupdate__timer__dot}></li>
-            <li className={s.newupdate__timer__dot}></li>
-            <li className={s.newupdate__timer__dot}></li>
-          </ul>
+          <ThreeDots
+            ulClassName={s.newupdate__timer__threedot}
+            liClassName={s.newupdate__timer__dot}
+          />
           <div className={s.newupdate__timer__field}>
             <span className={s.newupdate__timer__value} data-seconds>
               {difference.seconds}
@@ -113,7 +111,7 @@ export const HomeNewContent = () => {
         <a href="#" className={`layout default ${s.newupdate__link}`}>
           View the latest update here
         </a>
-      </div>
+      </div>    
     </div>
   );
 };

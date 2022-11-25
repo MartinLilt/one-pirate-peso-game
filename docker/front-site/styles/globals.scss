@@ -3,7 +3,7 @@
   --accent-font: "Marcellus SC", serif;
 
   --main-background: #1a1a1a;
-  --accent-background: #0e0e0e;
+  --accent-background: #0e0e0e;  
   --shadow-background: rgb(26, 26, 26, 0.45);
 
   --main-font-color: #fff;
@@ -11,8 +11,10 @@
   --opacity-font-2: rgba(255, 255, 255, 0.5);
   --opacity-font-3: rgba(255, 255, 255, 0.35);
   --opacity-font-4: rgba(255, 255, 255, 0.25);
+  --opacity-font-5: rgba(255, 255, 255, 0.05);
 
   --accent-color: #ff0000;
+  --error-color: rgba(255, 0, 0, 0.5);
 
   --main-element-color: #060606;
   --accent-element-color: #fff;
@@ -38,25 +40,24 @@ a {
 a:hover,
 a:focus,
 button:hover,
-button:focus {
+button:focus,
+label:hover {
   cursor: url("../assets/icon/cursor_hover.png"), auto;
 }
 
 * {
   font-family: var(--main-font);
-  line-height: 1.7;
+  line-height: 1;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   letter-spacing: 0.01em;
   color: var(--main-font-color);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  list-style: none;
   border: 0;
   list-style: none;
-  // cursor: url("../assets/icon/cursor1.png"), auto;
 }
 
 body {
@@ -70,29 +71,40 @@ body {
 }
 
 .default {
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-@media screen and (min-width: 768px) {
-  .default {
-    margin: 0 auto;
-    padding: 0 25px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
 .layout {
   width: 320px;
-}
 
-@media screen and (min-width: 768px) {
-  .layout {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .layout {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

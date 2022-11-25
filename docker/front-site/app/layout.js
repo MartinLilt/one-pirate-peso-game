@@ -1,9 +1,17 @@
+"use client";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import React from "react";
+import React, { useState } from "react";
 import "../styles/globals.scss";
+import Modal from "../components/shared/modal/Modal";
+import SignUpForm from "../components/homeSections/SignUpForm/SignUpForm";
+import PrivPolLic from "../components/homeSections/PrivPolLic/PrivPolLic";
+import LogInForm from "../components/homeSections/LogInForm/LogInForm";
 
 export default function RootLayout({ children }) {
+  const [activeSignUp, setActiveSignUp] = useState(false);
+  const [activeLogIn, setActiveLogIn] = useState(false);
+  const [activePriv, setActivePriv] = useState(false);
   return (
     <html>
       <head>
@@ -36,6 +44,18 @@ export default function RootLayout({ children }) {
         <div></div>
         <main>{children}</main>
         <Footer />
+        <Modal active={activeSignUp} setActive={setActiveSignUp}>
+          <Header />
+          <SignUpForm active={activeSignUp} setActive={setActiveSignUp} />
+        </Modal>
+        <Modal active={activeLogIn} setActive={setActiveLogIn}>
+          <Header />
+          <LogInForm active={activeLogIn} setActive={setActiveLogIn} />
+        </Modal>
+        <Modal active={activePriv} setActive={setActivePriv}>
+          <Header />
+          <PrivPolLic active={activePriv} setActive={setActivePriv} />
+        </Modal>
       </body>
     </html>
   );
