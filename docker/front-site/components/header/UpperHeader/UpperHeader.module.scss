@@ -1,0 +1,27 @@
+.background_color {
+  background-color: var(--accent-background);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border: aqua 1px solid;
+}
+
+.isTabletContainer {
+  display: flex;
+  align-items: center;
+  > *:not(:last-child) {
+      margin-right: 25px;
+    }
+}
+
+
+
+.title {
+    font-family: var(--accent-font);
+    font-size: 12px;
+}
+

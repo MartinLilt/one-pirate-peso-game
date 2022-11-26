@@ -1,0 +1,11 @@
+.nav_header {
+  background-color: var(--main-background);
+}
+
+.nav_container {
+  border: orange 1px solid;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
