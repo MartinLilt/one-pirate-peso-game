@@ -2,11 +2,13 @@
 import * as s from "./form.module.scss";
 import React from "react";
 import { useState } from "react";
+// import { useTranslation } from 'react-i18next';
 import Image from "next/image";
 import profilePic from "../../../assets/img/home/desktop/enquete-captcha-voorbeeld.jpg";
 import axios from "axios";
 
 export const HomeFormContent = () => {
+  // const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
