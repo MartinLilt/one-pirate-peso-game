@@ -104,8 +104,8 @@ const SignUpForm = ({ active, setActive }) => {
               </button>
               <div className={s.signup__avatar_img}>
                 <Image src={noAvatar} width={68} height={68} alt="X" />
+                <ThreeDots />
               </div>
-              <ThreeDots />
             </div>
           </div>
           <div className={s.signup__checkbox}>
@@ -122,11 +122,13 @@ const SignUpForm = ({ active, setActive }) => {
               />
               <span className={s.signup__checkbox_sqcheck}>&#10004;</span>
               <span className={s.signup__checkbox_sq}></span>
-              By using our service you fully agree with our&nbsp;
-              <a href="#" className={s.signup__labeltext}>
-                Privacy Policy
-              </a>
-              ..
+              <p>
+                By using our service you fully agree with our&nbsp;
+                <a href="#" className={s.signup__labeltext}>
+                  Privacy Policy
+                </a>
+                ..
+              </p>
             </label>
           </div>
           <button className={s.signup__btn_submit}>
