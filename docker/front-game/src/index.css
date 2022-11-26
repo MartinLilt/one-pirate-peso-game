@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+#canvas-container {
+  height: inherit;
+}
