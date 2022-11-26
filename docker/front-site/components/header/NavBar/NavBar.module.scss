@@ -5,7 +5,39 @@
 .nav_container {
   border: orange 1px solid;
   height: 80px;
+  @media screen and (min-width: 768px) {
+    height: 130px;
+  }
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex_container {
+  display: flex;
+  align-items: center;
+    &_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.text {
+  font-family: var(--accent-font);
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+
+ul.ulThreeDots {
+  flex-direction: row;
+}
+
+li.liThreeDots {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
 }

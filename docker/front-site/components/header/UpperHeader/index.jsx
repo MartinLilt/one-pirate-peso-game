@@ -1,4 +1,3 @@
-import MediaQuery from "react-responsive";
 import { useMediaQuery } from "react-responsive";
 import * as s from "./UpperHeader.module.scss";
 import "../../../styles/globals.scss";
