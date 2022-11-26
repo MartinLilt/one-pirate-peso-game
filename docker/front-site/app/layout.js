@@ -9,7 +9,7 @@ import PrivPolLic from "../components/homeSections/PrivPolLic/PrivPolLic";
 import LogInForm from "../components/homeSections/LogInForm/LogInForm";
 
 export default function RootLayout({ children }) {
-  const [activeSignUp, setActiveSignUp] = useState(true);
+  const [activeSignUp, setActiveSignUp] = useState(false);
   const [activeLogIn, setActiveLogIn] = useState(false);
   const [activePriv, setActivePriv] = useState(false);
   return (

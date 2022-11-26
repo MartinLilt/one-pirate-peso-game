@@ -241,10 +241,7 @@
     width: 240px;
     border: 1px solid var(--accent-element-color);
     padding: 4px 6px;
-    margin-bottom: 25px;
-    &:last-child{
-      margin-bottom: 50px;
-    }
+    margin-bottom: 25px;   
     @media screen and (min-width: 768px) {
       width: 100%;
     }
@@ -264,7 +261,6 @@
     padding: 17px 20px;
     display: flex;
     text-align: start;
-    display: flex;
     align-items: center;
     @media screen and (min-width: 768px) {
       font-size: 24px;
