@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  align-items: center;
+
+  & span {
+    font-family: var(--accent-font);
+    font-size: 12px;
+    padding: 0px 3px;
+  }
+
+  & button {
+    font-family: var(--accent-font);
+    font-size: 12px;
+    background-color: transparent;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+
+    &.is_active {
+      background-color: var(--accent-color);
+    }
+  }
+
+
+}

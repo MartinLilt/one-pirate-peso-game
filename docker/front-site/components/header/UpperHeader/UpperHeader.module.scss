@@ -1,0 +1,33 @@
+.background_color {
+  background-color: var(--accent-background);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.isTabletContainer {
+  display: flex;
+  align-items: center;
+  > *:not(:last-child) {
+      margin-right: 25px;
+    }
+}
+
+.title {
+  padding: 15px 0px;
+  font-family: var(--accent-font);
+  font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
+    transition: all 300ms;
+
+    &:hover, &:focus {
+        transform: scale(1.2);
+      }
+}
+
