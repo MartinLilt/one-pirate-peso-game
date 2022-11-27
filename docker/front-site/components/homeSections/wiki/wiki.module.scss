@@ -1,0 +1,157 @@
+.img_container {
+  position: relative;
+}
+
+.img_wiki {
+  margin: 50px 0 25px 0;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 402px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    width: 655px;
+  }
+}
+
+.logo {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.title_wiki {
+  font-family: var(--accent-font);
+  font-size: 32px;
+  line-height: 1;
+  color: var(--main-font-color);
+
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    padding-bottom: 15px;
+  }
+}
+
+.text_wiki {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--opacity-font-2);
+
+  padding-bottom: 50px;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 1.4;
+    padding-bottom: 83px;
+  }
+}
+
+.line_wiki {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.options_wiki {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 72px;
+
+  & li {
+    font-family: var(--accent-font);
+    font-size: 14px;
+    line-height: 1.35;
+    color: var(--main-font-color);
+    padding-bottom: 8px;
+    padding-right: 25px;
+
+    @media screen and (min-width: 768px) {
+      padding-right: 35px;
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+
+      padding-right: 45px;
+      padding-bottom: 10px;
+    }
+  }
+
+  & span {
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 1.35;
+    font-family: var(--main-font);
+    color: var(--opacity-font-2);
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    padding-bottom: 68px;
+  }
+}
+
+.link_wiki {
+  font-family: var(--accent-font);
+  font-size: 18px;
+  line-height: 1;
+
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+
+    padding-bottom: 0;
+    text-align: right;
+  }
+}
+
+.web_container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 0;
+
+    & .web_text {
+      padding-right: 75px;
+    }
+  }
+}
+
+.logo_wiki {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-bottom: 23px;
+  }
+}
