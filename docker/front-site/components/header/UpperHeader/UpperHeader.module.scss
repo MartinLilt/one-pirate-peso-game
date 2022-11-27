@@ -18,9 +18,12 @@
 }
 
 .title {
-  padding: 15px;
-    font-family: var(--accent-font);
-    font-size: 12px;
+  padding: 15px 0px;
+  font-family: var(--accent-font);
+  font-size: 12px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+      }
     transition: all 300ms;
 
     &:hover, &:focus {
