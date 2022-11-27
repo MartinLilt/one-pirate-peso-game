@@ -1,0 +1,25 @@
+.button {
+  background-color: transparent;
+  padding: 4px 5px;
+  border: 1px solid var(--accent-element-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  background-color:  var(--accent-color);
+}
+
+.text {
+  font-family: var(--accent-font);
+  font-size: 24px;
+}
+
+li.liThreeDots {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+
+

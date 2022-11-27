@@ -5,8 +5,8 @@ import Link from "next/link";
 import LanguageSection from "../LanguageSection";
 
 const UpperHeader = () => {
-  // const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
-  // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
     <>
@@ -34,7 +34,7 @@ const UpperHeader = () => {
                     Contact
                   </Link>
                 </div>
-                <div>
+                <div className={s.isTabletContainer}>
                   <Link href="" className={s.title}>
                     Donate to the project
                   </Link>

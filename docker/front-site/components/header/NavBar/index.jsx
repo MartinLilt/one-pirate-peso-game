@@ -1,11 +1,14 @@
 import { useMediaQuery } from "react-responsive";
 import { TfiMenu } from "react-icons/tfi";
+import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../../assets/icon/logo.svg";
 import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 
 import * as s from "./NavBar.module.scss";
 import "../../../styles/globals.scss";
+import ButtonMain from "../../shared/ButtonMain";
+import NavSection from "./NavSection";
 
 const NavBar = () => {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
@@ -15,21 +18,44 @@ const NavBar = () => {
     <>
       <div className={`layout default ${s.nav_header}`}>
         <div className={s.nav_container}>
-          <div>
+          <div className={s.image}>
             <Image src={Logo} alt="Logo" height={isMobile ? 44 : 68} />
           </div>
           {isMobile && <TfiMenu size="25" />}
           {isTablet && (
             <div className={s.flex_container}>
               <div className={s.flex_container_login}>
-                <p className={s.text}>Log In</p>
-                <ThreeDots
-                  ulClassName={s.ulThreeDots}
-                  liClassName={s.liThreeDots}
-                />
+                <Link href="" className={s.link}>
+                  <span className={s.text}>Log In</span>
+                  <span>
+                    <ThreeDots
+                      ulClassName={s.ulThreeDots}
+                      liClassName={s.liThreeDots}
+                    />
+                  </span>
+                </Link>
               </div>
-              <button>Кнопка</button>
+              <ButtonMain text="Menu" />
             </div>
+          )}
+          {isDesktopOrLaptop && (
+            <>
+              <NavSection />
+              <div className={s.flex_container}>
+                <div className={s.flex_container_login}>
+                  <Link href="" className={s.link}>
+                    <span className={s.text}>Log In</span>
+                    <span>
+                      <ThreeDots
+                        ulClassName={s.ulThreeDots}
+                        liClassName={s.liThreeDots}
+                      />
+                    </span>
+                  </Link>
+                </div>
+                <ButtonMain text="Play Now" />
+              </div>
+            </>
           )}
         </div>
       </div>
@@ -38,7 +64,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-{
-  /* <Link href="/">Back to the HomePage</Link>; */
-}
