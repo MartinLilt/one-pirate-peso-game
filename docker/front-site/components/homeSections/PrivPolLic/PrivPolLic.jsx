@@ -3,7 +3,7 @@ import Image from "next/image";
 import Close from "../../../assets/icon/close.svg";
 import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 
-const PrivPolLic = ({ active, setActive, license }) => {
+const PrivPolLic = ({ setActive, license, setLicense }) => {
   return (
     <div className={`layout default ${s.privpollic}`}>
       {license && (
@@ -36,7 +36,7 @@ const PrivPolLic = ({ active, setActive, license }) => {
                 @ On a masthead-rigged sloop, the &nbsp;
                 <span className={s.privpollic__text_underline}>forestay</span>
                 (on which the headsail is carried) attaches at the top of the
-                mast.
+                mast. License
               </p>
             </li>
           </ul>
@@ -79,9 +79,7 @@ const PrivPolLic = ({ active, setActive, license }) => {
               <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ On a masthead-rigged sloop, the &nbsp;
-                <span className={s.privpollic__text_underline}>
-                  forestay
-                </span>{" "}
+                <span className={s.privpollic__text_underline}>forestay</span>
                 (on which the headsail is carried) attaches at the top of the
                 mast.
               </p>
@@ -96,9 +94,7 @@ const PrivPolLic = ({ active, setActive, license }) => {
               <ThreeDots liClassName={s.privpollic__threedot} />
               <p className={s.privpollic__text}>
                 @ On a masthead-rigged sloop, the &nbsp;
-                <span className={s.privpollic__text_underline}>
-                  forestay
-                </span>{" "}
+                <span className={s.privpollic__text_underline}>forestay</span>
                 (on which the headsail is carried) attaches at the top of the
                 mast.
               </p>
@@ -132,19 +128,21 @@ const PrivPolLic = ({ active, setActive, license }) => {
       )}
       <div className={s.privpollic__bottom}>
         <div className={s.privpollic__links_bottom}>
-          <a
-            href=""
+          <button
+            type="button"
+            onClick={() => setLicense(false)}
             className={license ? s.privpollic__link : s.privpollic__link_active}
           >
             Privacy Policy
-          </a>
+          </button>
           <div className={s.privpollic__line}></div>
-          <a
-            href=""
+          <button
+            type="button"
+            onClick={() => setLicense(true)}
             className={license ? s.privpollic__link_active : s.privpollic__link}
           >
             License
-          </a>
+          </button>
         </div>
         <button
           type="button"

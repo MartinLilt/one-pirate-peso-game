@@ -1,15 +1,13 @@
 "use client";
 import UpperHeader from "./UpperHeader";
 import NavBar from "./NavBar";
-import * as s from "./header.module.scss";
-import Link from "next/link";
 import "../../styles/globals.scss";
 
-const Header = () => {
+const Header = ({ setActivePriv, setActiveLogIn }) => {
   return (
     <header>
-      <UpperHeader />
-      <NavBar />
+      <UpperHeader setActive={setActivePriv} />
+      <NavBar setActive={setActiveLogIn} />
     </header>
   );
 };
