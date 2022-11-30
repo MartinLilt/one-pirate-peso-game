@@ -7,13 +7,21 @@ import Image from "next/image";
 import profilePic from "../../../assets/img/home/desktop/enquete-captcha-voorbeeld.jpg";
 import axios from "axios";
 
+import { useRouter } from 'next/router';
+import { en } from '../../../locales/en';
+import { uk } from '../../../locales/uk';
+
 export const HomeFormContent = () => {
+  const router = useRouter();
+  const info = getCheckoutInfo(router);
+  console.log(info)
+  // const { locale } = router;
+  const t = router.locale === 'en' ? en : uk;
   // const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  
   const handleChange = (event) => {
     const { name, value } = event.currentTarget;
     if (name === "name") {
@@ -33,7 +41,6 @@ export const HomeFormContent = () => {
     const feedBackData = { name, email, message };
     console.log(feedBackData);
 
-
     // запрос для добавления отзыва в базу данных, адрес пока условный,
     //  так как бека еще нет, потом поменям в случае чего
     // пока закомментировала, чтоб ошибку в консоль не било
@@ -46,7 +53,7 @@ export const HomeFormContent = () => {
     //   }
     // }
     // addFeedback();
-   
+
     reset();
   };
 
@@ -58,11 +65,22 @@ export const HomeFormContent = () => {
 
   return (
     <div className={s.container}>
-      <h2 className={s.title}>FeedBack Form</h2>
+      <h2 className={s.title}> {t.feedBackTitle}</h2>
       <p className={s.text}>
-        The video shows one guild attacking another guild. Enjoy the gameplay
-        right now.
+        {t.feedBackText}
+        {/* The video shows one guild attacking another guild. Enjoy the gameplay
+        right now. */}
       </p>
+
+      <div>
+        <Link href="/" locale="en">
+          <a >En</a>
+        </Link>
+        <span>/</span>
+        <Link href="/" locale="uk">
+          <a >Uk</a>
+        </Link>
+      </div>
 
       <p className={s.text_form}>Drop Us a Line</p>
       <form onSubmit={handleSubmit}>
