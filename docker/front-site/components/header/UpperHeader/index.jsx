@@ -4,7 +4,7 @@ import "../../../styles/globals.scss";
 import Link from "next/link";
 import LanguageSection from "../LanguageSection";
 
-const UpperHeader = () => {
+const UpperHeader = ({ active, setActive }) => {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -27,9 +27,13 @@ const UpperHeader = () => {
               <div className={s.container}>
                 <div className={s.isTabletContainer}>
                   <LanguageSection />
-                  <Link href="" className={s.title}>
+                  <button
+                    type="button"
+                    onClick={() => setActive((prev) => !prev)}
+                    className={s.title}
+                  >
                     Privacy
-                  </Link>
+                  </button>
                   <Link href="" className={s.title}>
                     Contact
                   </Link>

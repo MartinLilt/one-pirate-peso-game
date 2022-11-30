@@ -17,10 +17,10 @@
 
     @media screen and (min-width: 768px) {
       padding: 25px;
+      height: calc(100vh - 180px);
     }
     @media screen and (min-width: 1200px) {
       flex-direction: row;
-      height: calc(100vh - 290px);
       padding: 50px;
     }
 

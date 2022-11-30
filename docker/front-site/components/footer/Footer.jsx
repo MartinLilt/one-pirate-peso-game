@@ -11,10 +11,19 @@ import { BsFacebook, BsReddit } from "react-icons/bs";
 import * as s from "./footer.module.scss";
 import "../../styles/globals.scss";
 
-const Footer = () => {
+const Footer = ({ setActivePriv, setLicense }) => {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  const openLisence = () => {
+    setActivePriv((prev) => !prev);
+    setLicense(true);
+  };
+  const openPrivPol = () => {
+    setActivePriv((prev) => !prev);
+    setLicense(false);
+  };
 
   return (
     <footer className={s.background}>
@@ -64,13 +73,13 @@ const Footer = () => {
           </div>
           <div className={s.link_social_container}>
             <div className={s.link_container}>
-              <Link href="" className={s.link}>
+              <button type="button" onClick={openLisence} className={s.link}>
                 License
-              </Link>
+              </button>
               <span className={s.vertical_line}>|</span>
-              <Link href="" className={s.link}>
+              <button type="button" onClick={openPrivPol} className={s.link}>
                 Privacy Policy
-              </Link>
+              </button>
             </div>
             <div className={s.social_container}>
               <div className={s.social_item}>

@@ -1,7 +1,4 @@
 .login {
-  // display: none;
-  // @media screen and (min-width: 1200px) {
-  // display: block;
   padding-bottom: 50px;
 
   &__login {
@@ -18,12 +15,12 @@
 
     @media screen and (min-width: 768px) {
       padding: 25px;
+      height: calc(100vh - 230px);
     }
     @media screen and (min-width: 1200px) {
-      grid-template-columns: repeat(2, 1fr);
       height: calc(100vh - 290px);
+      grid-template-columns: repeat(2, 1fr);
       padding: 50px;
-      max-height: 610px;
     }
 
     &::-webkit-scrollbar {
@@ -45,7 +42,8 @@
 
   &__form {
     @media screen and (min-width: 1200px) {
-    margin-right: 64px;}
+      margin-right: 64px;
+    }
   }
 
   &__title {

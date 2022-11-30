@@ -23,6 +23,7 @@
 
     background-color: var(--main-background);
     @media screen and (min-width: 768px) {
+      height: calc(100vh - 230px);
     }
     @media screen and (min-width: 1200px) {
       height: calc(100vh - 290px);
@@ -137,6 +138,7 @@
   &__link {
     font-size: 24px;
     font-family: var(--accent-font);
+    background-color: transparent;
     @media screen and (min-width: 768px) {
       font-size: 36px;
     }
@@ -148,6 +150,8 @@
       font-size: 24px;
       font-family: var(--accent-font);
       text-decoration: underline;
+      
+    background-color: transparent;
       @media screen and (min-width: 768px) {
         font-size: 36px;
       }

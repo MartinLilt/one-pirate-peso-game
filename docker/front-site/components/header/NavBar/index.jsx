@@ -10,7 +10,7 @@ import "../../../styles/globals.scss";
 import ButtonMain from "../../shared/ButtonMain";
 import NavSection from "./NavSection";
 
-const NavBar = () => {
+const NavBar = ({ setActive }) => {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -43,7 +43,11 @@ const NavBar = () => {
               <NavSection />
               <div className={s.flex_container}>
                 <div className={s.flex_container_login}>
-                  <Link href="" className={s.link}>
+                  <button
+                    type="button"
+                    onClick={() => setActive((prev) => !prev)}
+                    className={s.link}
+                  >
                     <span className={s.text}>Log In</span>
                     <span>
                       <ThreeDots
@@ -51,7 +55,7 @@ const NavBar = () => {
                         liClassName={s.liThreeDots}
                       />
                     </span>
-                  </Link>
+                  </button>
                 </div>
                 <ButtonMain text="Play Now" />
               </div>
