@@ -7,6 +7,7 @@ import Modal from "../components/shared/modal/Modal";
 import SignUpForm from "../components/homeSections/SignUpForm/SignUpForm";
 import PrivPolLic from "../components/homeSections/PrivPolLic/PrivPolLic";
 import LogInForm from "../components/homeSections/LogInForm/LogInForm";
+// import {Loading} from "./loading"
 
 export default function RootLayout({ children }) {
   const [activeSignUp, setActiveSignUp] = useState(false);

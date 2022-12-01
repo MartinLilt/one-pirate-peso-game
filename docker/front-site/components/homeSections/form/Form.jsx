@@ -5,7 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import profilePic from "../../../assets/img/home/desktop/enquete-captcha-voorbeeld.jpg";
 import axios from "axios";
-import { PreloaderSite } from "../../shared/preloader/preloader-site/PreloaderSite";
+// import { PreloaderGame } from "../../shared/preloader/preloader-game/PreloaderGame";
 
 export const HomeFormContent = () => {
   const [name, setName] = useState("");
@@ -57,7 +57,7 @@ export const HomeFormContent = () => {
 
   return (
     <div className={s.container}>
-      <PreloaderSite/>
+      {/* <PreloaderGame/> */}
       <h2 className={s.title}>FeedBack Form</h2>
       <p className={s.text}>
         The video shows one guild attacking another guild. Enjoy the gameplay

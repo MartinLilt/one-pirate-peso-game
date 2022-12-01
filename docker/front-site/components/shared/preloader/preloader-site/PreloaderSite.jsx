@@ -5,7 +5,7 @@ import imgDesktop from "../../../../assets/img/home/desktop/preloader-site.png";
 import imgMobile from "../../../../assets/img/home/modile/preloader-site.png";
 
 export const PreloaderSite = () => {
-  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1200 });
+  const isDesktop = useMediaQuery({ minWidth: 1200 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1199 });
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -14,7 +14,7 @@ export const PreloaderSite = () => {
       {isMobile && (
         <Image src={imgMobile} alt="One Peso Pirate" className={s.img} />
       )}
-      {(isTablet || isDesktopOrLaptop) && (
+      {(isTablet || isDesktop) && (
         <Image src={imgDesktop} alt="One Peso Pirate" className={s.img} />
       )}
       <div className={s.loader}>
