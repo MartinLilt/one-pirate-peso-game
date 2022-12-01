@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import profilePic from "../../../assets/img/home/desktop/enquete-captcha-voorbeeld.jpg";
 import axios from "axios";
+import ButtonMain from "../../shared/ButtonMain";
 
 export const HomeFormContent = () => {
   const [name, setName] = useState("");
@@ -103,16 +104,7 @@ export const HomeFormContent = () => {
         <div className={s.btn_container}>
           <Image src={profilePic} alt="Capcha" className={s.capcha} />
 
-          <button type="submit" className={s.btn_form}>
-            <div className={s.btn_background}>
-              <p className={s.btn_text}>Send Message</p>
-              <ul className={s.ellipsis}>
-                <li className={s.point}></li>
-                <li className={s.point}></li>
-                <li className={s.point}></li>
-              </ul>
-            </div>
-          </button>
+          <ButtonMain type="submit" text="Send Message" />
         </div>
       </form>
     </div>
