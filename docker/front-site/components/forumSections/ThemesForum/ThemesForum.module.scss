@@ -1,0 +1,71 @@
+.forum__themes {
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  &__line {
+    width: 1px;
+    height: 40px;
+    background-color: var(--accent-element-color);
+    margin-right: 25px;
+  }
+
+  &__title {
+    background-color: transparent;
+    font-size: 32px;
+    font-family: var(--accent-font);
+  }
+
+  &__item_subtitle:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__item_subtitle {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: var(--accent-background);
+    }
+  }
+
+  &__subtitle {
+    background-color: var(--accent-background);
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    font-size: 18px;
+    font-family: var(--accent-font);
+    @media screen and (min-width: 768px) {
+      margin-right: 25px;
+    }
+  }
+
+  &__update {
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (min-width: 768px) {
+      background-color: var(--accent-background);
+    }
+
+    &_text {
+      font-size: 14px;
+      color: var(--opacity-font-2);
+      @media screen and (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

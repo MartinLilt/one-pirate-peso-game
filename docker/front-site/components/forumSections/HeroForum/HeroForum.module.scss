@@ -1,0 +1,57 @@
+.forum__hero {
+  background: linear-gradient(
+    0deg,
+    var(--second-background) 0%,
+    var(--second-background) 21%,
+    var(--accent-background) 21%,
+    var(--accent-background) 79%,
+    var(--second-background) 79%,
+    var(--second-background) 100%
+  );
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      0deg,
+      var(--second-background) 0%,
+      var(--second-background) 20%,
+      var(--accent-background) 20%,
+      var(--accent-background) 61%,
+      var(--second-background) 61%,
+      var(--second-background) 100%
+    );
+  }
+
+  &__container {
+    padding: 103px 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding: 150px 223px 87px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__svg {
+    width: 145px;
+    height: 96px;
+    @media screen and (min-width: 768px) {
+      width: 280px;
+      height: 185px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-family: var(--accent-font);
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+  }
+}
