@@ -57,6 +57,7 @@ export const HomeFormContent = () => {
 
   return (
     <div className={s.container}>
+      {/* <PreloaderGame/> */}
       <h2 className={s.title}>FeedBack Form</h2>
       <p className={s.text}>
         The video shows one guild attacking another guild. Enjoy the gameplay
