@@ -1,0 +1,21 @@
+.forum__topic {
+  width: calc( 100% - 90px);
+  &_item {
+    display: flex;
+    border: 1px solid var(--accent-element-color);
+    padding: 13px 45px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  &_number {
+    font-size: 14px;
+    color: var(--opacity-font-2);
+  }
+  &_text {
+    font-size: 14px;
+    color: var(--opacity-font-2);
+    text-decoration-line: underline;
+  }
+}

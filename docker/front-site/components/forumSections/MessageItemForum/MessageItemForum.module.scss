@@ -1,0 +1,15 @@
+.forum__messageitem {
+  &_avatar {
+    padding: 7.5px;
+  }
+
+  &_line {
+    width: 1px;
+    height: 16px;
+    background-color: var(--opacity-font-2);
+  }
+
+  &_text {
+    color: var(--opacity-font-2);
+  }
+}

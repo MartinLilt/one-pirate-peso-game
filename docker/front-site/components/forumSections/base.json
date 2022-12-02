@@ -11,6 +11,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -20,21 +21,46 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": [
+                  {
+                    "_id": "9ca7fa2c-627f-d4c-9f06-5081d96d56bc",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  },
+                  {
+                    "_id": "9ca7fa2c-627f-44c-9f06-5081d96d57b1",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  },
+                  {
+                    "_id": "9ca7fa2c-627f-4dc-9f06-5081d96d58bd",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  }
+                ]
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d57b1",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d58bd",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -54,6 +80,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -63,21 +90,24 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5811",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d582d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -91,6 +121,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-621f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -100,26 +131,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d1c-9106-5081d96d5811",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d1c-9f16-5081d96d582d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-621f-114c-9f06-5081d96d58bc",
+            "number": 2,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -129,26 +164,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d1c-9106-5081d96d5811",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d1c-9f16-5081d96d582d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-621f-4d4c-9106-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -158,21 +197,46 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": [
+                  {
+                    "_id": "9ca7fa2c-627f-d4c-9f06-5081d96d56bc",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  },
+                  {
+                    "_id": "9ca7fa2c-627f-44c-9f06-5081d96d57b1",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  },
+                  {
+                    "_id": "9ca7fa2c-627f-4dc-9f06-5081d96d58bd",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  }
+                ]
               },
               {
                 "_id": "9ca7fa2c-627f-4d1c-9106-5081d96d5811",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d1c-9f16-5081d96d582d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -192,6 +256,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -201,26 +266,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 2,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -230,26 +299,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -259,26 +332,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -288,26 +365,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 5,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -317,26 +398,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -346,21 +431,24 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -374,6 +462,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -383,26 +472,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 2,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -412,26 +505,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -441,26 +538,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -470,26 +571,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 5,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -499,26 +604,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -528,22 +637,17 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
+              }              
             ]
           }
         ]
@@ -555,7 +659,8 @@
         "lastDate": "26.11.2022",
         "topicDiscussions": [
           {
-            "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -565,55 +670,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 5,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -623,26 +703,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -652,79 +736,24 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -738,6 +767,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -747,26 +777,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 2,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -776,26 +810,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -805,26 +843,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -834,26 +876,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 5,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -863,26 +909,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -892,21 +942,24 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -920,6 +973,7 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 1,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -929,26 +983,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 2,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -958,26 +1016,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -987,26 +1049,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1016,26 +1082,63 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
+              }
+            ]
+          },
+          {
+            "_id": "457fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 5,
+            "topicTitle": "Announcements",
+            "date": "26.11.2022",
+            "lastDate": "26.11.2022",
+            "topicAnswer": [
+              {
+                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
+                "user": "Moder",
+                "nameUser": "John Mensony",
+                "date": "26.11.2022",
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
+              },
+              {
+                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
+                "user": "Moder",
+                "nameUser": "John Mensony",
+                "date": "26.11.2022",
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
+              },
+              {
+                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
+                "user": "Moder",
+                "nameUser": "John Mensony",
+                "date": "26.11.2022",
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1045,50 +1148,24 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -1105,9 +1182,10 @@
         "subTitle": "Headquarters Archive",
         "date": "26.11.2022",
         "lastDate": "26.11.2022",
-        "topicDiscussions": [
+        "topicDiscussions": [          
           {
-            "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1117,55 +1195,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1175,26 +1228,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 5,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1204,26 +1261,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1233,50 +1294,24 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -1290,7 +1325,8 @@
         "topicDiscussions": [
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
+            "number": 1,
+            "topicTitle": " - Finding a team for 2 on 2 arena fights..",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
             "topicAnswer": [
@@ -1299,26 +1335,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "3ca7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 2,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1328,55 +1368,30 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 3,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
+            "topicAnswer": []
           },
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 4,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1386,26 +1401,14 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
-          },
+          },          
           {
             "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
+            "number": 6,
             "topicTitle": "Announcements",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
@@ -1415,50 +1418,46 @@
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               },
               {
                 "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
                 "user": "Moder",
                 "nameUser": "John Mensony",
                 "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              }
-            ]
-          },
-          {
-            "_id": "45a7fa2c-611f-4d4c-9f06-5081d96d58bc",
-            "topicTitle": "Announcements",
-            "date": "26.11.2022",
-            "lastDate": "26.11.2022",
-            "topicAnswer": [
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d583c",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d5841",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
-              },
-              {
-                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d585d",
-                "user": "Moder",
-                "nameUser": "John Mensony",
-                "date": "26.11.2022",
-                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": [
+                  {
+                    "_id": "9ca7fa2c-627f-d4c-9f06-5081d96d56bc",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  },
+                  {
+                    "_id": "9ca7fa2c-627f-44c-9f06-5081d96d57b1",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  },
+                  {
+                    "_id": "9ca7fa2c-627f-4dc-9f06-5081d96d58bd",
+                    "user": "Moder",
+                    "nameUser": "John Mensony",
+                    "date": "26.11.2022",
+                    "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!"
+                  }
+                ]
               }
             ]
           }
