@@ -1,13 +1,13 @@
 "use client";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import "../styles/globals.scss";
 import Modal from "../components/shared/modal/Modal";
 import SignUpForm from "../components/homeSections/SignUpForm/SignUpForm";
 import PrivPolLic from "../components/homeSections/PrivPolLic/PrivPolLic";
 import LogInForm from "../components/homeSections/LogInForm/LogInForm";
-// import {Loading} from "./loading"
+import Loading from "./loading";
 
 export default function RootLayout({ children }) {
   const [activeSignUp, setActiveSignUp] = useState(false);
@@ -45,8 +45,12 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header setActivePriv={setActivePriv} setActiveLogIn={setActiveLogIn} />
-        <div></div>
-        <main>{children}</main>
+
+        <Suspense fallback={<Loading />}>
+          <div></div>
+          <main> {children} </main>
+        </Suspense>
+
         <Footer setActivePriv={setActivePriv} setLicense={setLicense} />
         <Modal active={activeModal}>
           <Header
