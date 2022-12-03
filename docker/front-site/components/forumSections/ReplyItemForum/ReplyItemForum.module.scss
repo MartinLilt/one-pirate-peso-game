@@ -1,19 +1,12 @@
-.forum__messageitem {
-  margin-top: 50px;
-  flex-direction: column;
-  // &_details{
+.forum__replyitem {
+    margin-left: 45px;
 
-  // }
+    &_item{
+        margin-bottom: 50px;
+    }
 
-  &_summary {
+  &_infotitle {
     display: flex;
-    margin-bottom: 50px;
-  }
-  &_item {
-    // width: 100%;
-    display: flex;
-    flex-direction: row;
-    // margin-bottom: 50px;
   }
   &_avatar {
     padding: 7.5px;
