@@ -5,6 +5,7 @@ const uuid = require("uuid");
 const TopicItemForum = ({ array }) => {
   return (
     <div className={s.forum__topic}>
+        <p className={s.forum__topic_text_fordics}>- Topics for Discussion:</p>
       <ul>
         {array.map((el) => (
           <li className={s.forum__topic_item} key={uuid.v4()}>

@@ -3,36 +3,43 @@ import Image from "next/image";
 import User from "../../../assets/icon/user.png";
 const uuid = require("uuid");
 
-const ReplyItemForum = ({array}) => {
-    return ( <ul className={s.forum__replyitem}>
-        {array.map((el) => (
-          <li key={uuid.v4()} className={s.forum__replyitem_item}>
+const ReplyItemForum = ({ array }) => {
+  return (
+    // <div className={s.forum__replyitem_main}>
+
+    <ul className={s.forum__replyitem}>
+      {array.map((el) => (
+        <li key={uuid.v4()} className={s.forum__replyitem_item}>
+          <div className={s.forum__replyitem_lineanswer}></div>
           <div className={s.forum__replyitem_infotitle}>
-          <div className={s.forum__replyitem_avatar}>
+            <div className={s.forum__replyitem_avatar}>
+                <div className={s.forum__replyitem_line_horiz}></div>
               <Image
                 src={User}
-                width={37.5}
-                height={37.5}
+                width={45}
+                height={45}
                 alt="user"
                 className={s.forum__replyitem_svg}
               />
             </div>
-           <div className="">
-           <div className={s.forum__replyitem_message}>
-              <div className={s.forum__replyitem_info}>
-                <p className={s.forum__replyitem__text}>{el.user}</p>
-                <div className={s.forum__replyitem_line}></div>
-                <p className={s.forum__replyitem__text}>{el.nameUser}</p>
-                <div className={s.forum__replyitem_line}></div>
-                <p className={s.forum__replyitem__text}>{el.date}</p>
+            <div className="">
+              <div className={s.forum__replyitem_message}>
+                <div className={s.forum__replyitem_info}>
+                  <p className={s.forum__replyitem__text}>{el.user}</p>
+                  <div className={s.forum__replyitem_line}></div>
+                  <p className={s.forum__replyitem__text}>{el.nameUser}</p>
+                  <div className={s.forum__replyitem_line}></div>
+                  <p className={s.forum__replyitem__text}>{el.date}</p>
+                </div>
               </div>
-          </div>
               <p className={s.forum__replyitem__text_answer}> {el.text}</p>
             </div>
-           </div>
-          </li>
-        ))}
-      </ul> );
-}
- 
+          </div>
+        </li>
+      ))}
+    </ul>
+    // </div>
+  );
+};
+
 export default ReplyItemForum;

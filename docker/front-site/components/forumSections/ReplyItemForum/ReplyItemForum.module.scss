@@ -1,15 +1,37 @@
 .forum__replyitem {
-    margin-left: 45px;
+  &_main {
+    display: flex;
+    height: auto;
+  }
+  &_lineanswer {
+    margin-left: 25.6px;
+    width: 1px;
+    height: 100px;
+    // height: 100%;
+    background-color: var(--accent-element-color);
+  }
 
-    &_item{
-        margin-bottom: 50px;
-    }
+  &_line_horiz {
+    height: 1px;
+    width: 22.5px;
+    background-color: var(--accent-element-color);
+  }
 
-  &_infotitle {
+  &_item {
     display: flex;
   }
+
+  &_infotitle {
+    //   margin-bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+  }
   &_avatar {
-    padding: 7.5px;
+    display: flex;
+    align-items: center;
+  }
+  &_svg {
+    padding: 3.75px;
   }
 
   &_info {
@@ -32,5 +54,6 @@
   }
   &__text_answer {
     line-height: 1.4;
+    margin-bottom: 50px;
   }
 }

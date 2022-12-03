@@ -1,5 +1,15 @@
 .forum__topic {
+  
+  padding-top: 40px;
   width: calc(100% - 90px);
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+  }
+
+  &_text_fordics {
+    color: var(--opacity-font-2);
+    margin-left: 15px;
+  }
   &_item {
     // border: 1px solid var(--accent-element-color);
     padding: 13px 45px;

@@ -36,7 +36,7 @@ const ThemesForum = () => {
               {theme.topicTheme.map((topic) => (
                 <li key={uuid.v4()} className={s.forum__themes__item_subtitle}>
                   <details className={s.forum__themes__item_details}>                    
-                    <summary>                      
+                    <summary className={s.forum__themes__summary}>                      
                       <div className={s.forum__themes__subtitle}>
                         <ThreeDots />
                         <div  className={s.forum__themes__btn}>
@@ -54,12 +54,18 @@ const ThemesForum = () => {
                                 {count(topic.topicDiscussions)}
                                 &nbsp;
                               </p>
-                            </div>
-                            <p className={s.forum__themes__update_text}>
+                              <p className={s.forum__themes__update_text_tab}>
                               - Last Update: {topic.lastDate}
                             </p>
+                            </div>
+                            
                           </div>
                         </div>
+                      </div>
+                      <div className={s.forum__themes_mob}>
+                      <p className={s.forum__themes__update_text_mob}>
+                              - Last Update: {topic.lastDate}
+                            </p>
                       </div>
                     </summary>
                     <TopicItemForum array={topic.topicDiscussions} />
