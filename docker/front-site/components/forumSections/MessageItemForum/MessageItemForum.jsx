@@ -19,7 +19,7 @@ const MessageItemForum = ({ array }) => {
                   alt="user"
                   className={s.forum__messageitem_svg}
                 />
-              <div className={s.forum__messageitem__line_answer_vert}></div>
+                <div className={s.forum__messageitem__line_answer_vert}></div>
               </div>
               <div className={s.forum__messageitem_message}>
                 <div className={s.forum__messageitem_info}>

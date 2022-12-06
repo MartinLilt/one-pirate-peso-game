@@ -35,11 +35,11 @@ const ThemesForum = () => {
             <ul>
               {theme.topicTheme.map((topic) => (
                 <li key={uuid.v4()} className={s.forum__themes__item_subtitle}>
-                  <details className={s.forum__themes__item_details}>                    
-                    <summary className={s.forum__themes__summary}>                      
+                  <details className={s.forum__themes__item_details}>
+                    <summary className={s.forum__themes__summary}>
                       <div className={s.forum__themes__subtitle}>
                         <ThreeDots />
-                        <div  className={s.forum__themes__btn}>
+                        <div className={s.forum__themes__btn}>
                           <p className={s.forum__themes__btn_text}>
                             {topic.subTitle}
                           </p>
@@ -55,17 +55,16 @@ const ThemesForum = () => {
                                 &nbsp;
                               </p>
                               <p className={s.forum__themes__update_text_tab}>
-                              - Last Update: {topic.lastDate}
-                            </p>
+                                - Last Update: {topic.lastDate}
+                              </p>
                             </div>
-                            
                           </div>
                         </div>
                       </div>
                       <div className={s.forum__themes_mob}>
-                      <p className={s.forum__themes__update_text_mob}>
-                              - Last Update: {topic.lastDate}
-                            </p>
+                        <p className={s.forum__themes__update_text_mob}>
+                          - Last Update: {topic.lastDate}
+                        </p>
                       </div>
                     </summary>
                     <TopicItemForum array={topic.topicDiscussions} />

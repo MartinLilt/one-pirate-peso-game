@@ -13,7 +13,7 @@ const ReplyItemForum = ({ array }) => {
           <div className={s.forum__replyitem_lineanswer}></div>
           <div className={s.forum__replyitem_infotitle}>
             <div className={s.forum__replyitem_avatar}>
-                <div className={s.forum__replyitem_line_horiz}></div>
+              <div className={s.forum__replyitem_line_horiz}></div>
               <Image
                 src={User}
                 width={45}

@@ -1,5 +1,4 @@
 .forum__topic {
-  
   padding-top: 40px;
   width: calc(100% - 90px);
   @media screen and (min-width: 768px) {
@@ -9,25 +8,47 @@
   &_text_fordics {
     color: var(--opacity-font-2);
     margin-left: 15px;
+    margin-bottom: 68px;
   }
   &_item {
-    // border: 1px solid var(--accent-element-color);
-    padding: 13px 45px;
-    // margin-bottom: 20px;
     margin-left: 45px;
     margin-right: 45px;
+    margin-bottom: 20px;
+  }
+
+  &_summary:hover,
+  &_summary:focus {
+    background-color: var(--accent-element-color);
+    p {
+      color: var(--second-font-color);
+    }
+  }
+
+  &_border {
+    border: 1px solid var(--accent-element-color);
   }
   &_summary {
+    padding: 13px 45px;
     display: flex;
   }
   &_number {
     font-size: 14px;
     color: var(--opacity-font-2);
+    line-height: 1.4;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
   }
   &_text {
     font-size: 14px;
-    color: var(--opacity-font-2);
     text-decoration-line: underline;
+    line-height: 1.4;
+    height: 20px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     @media screen and (min-width: 768px) {
       font-size: 18px;
     }
