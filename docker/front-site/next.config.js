@@ -7,6 +7,13 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+
+  i18n: {
+    locales: ['uk', 'en'],
+    defaultLocale: "en",
+    localeDetection: false,
+  },
+  
 };
 
 module.exports = nextConfig;
