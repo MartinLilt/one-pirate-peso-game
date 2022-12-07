@@ -10,7 +10,7 @@
   }
 
   & button {
-    z-index: 100;
+    margin-right: 10px;
     font-family: var(--accent-font);
     font-size: 12px;
     background-color: transparent;
@@ -31,16 +31,13 @@
     &.is_active {
       background-color: var(--accent-color);
     }
+    
   }
 
 
 }
 
-.active_language{
-  z-index: 1;
+.sign{
   position: absolute;
-width: 14px;
-height: 14px;
-border-radius: 50%;
-background: #FF0000;
+  left:13px;
 }

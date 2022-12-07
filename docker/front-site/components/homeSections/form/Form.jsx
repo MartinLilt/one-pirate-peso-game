@@ -10,6 +10,7 @@ import { en } from '../../../locales/en';
 import  {uk}  from '../../../locales/uk';
 
 export const HomeFormContent = () => {
+  
   const locale = "uk";
   const t = locale === 'en' ? en : uk;
   

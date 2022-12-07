@@ -1,45 +1,58 @@
-"use client"
+"use client";
 import * as s from "./LanguageSection.module.scss";
 import { useState } from "react";
 
-const languages = [{
-  locale: "en",
-  name: "En",
-},
-{
-  locale: "uk",
-  name: "uk",
-},];
+const languages = [
+  {
+    locale: "en",
+    name: "En",
+  },
+  {
+    locale: "uk",
+    name: "Uk",
+  },
+];
 
 export default function LanguageSection() {
-  
-  const locale = 'uk'
+  const locale = "en";
   const [selectedLang, setSelectedLang] = useState(locale);
 
   const handleClick = (languageLocale) => {
-    setSelectedLang(languageLocale)
-    // setIsPopoverOpen(false)
-  }
+    setSelectedLang(languageLocale);
+  };
+
   return (
     <div className={s.section}>
-          {languages.map((language) => {
-            const isActive = language.locale === locale
-            return (
-              <button key={language.name } onClick={() => handleClick(language.locale)} className={s.switchBtn}>
+      {languages.map((language) => {
+        const isActive = language.locale === locale;
+        return (
+          <>
+            {!isActive && (
+              <button
+                key={language.name}
+                onClick={() => handleClick(language.locale)}
+              >
                 {language.name}
-                {isActive && <div className={s.active_language}></div>}
-                
               </button>
-              
-            )
-          })}
-          
-        </div>
+            )}
+            {isActive && (
+              <button
+                key={language.name}
+                onClick={() => handleClick(language.locale)}
+                className={s.is_active}
+              >
+                {language.name}
+              </button>
+            )}
+            
+          </>
+        );
+      })}
+      <span className={s.sign}>/</span>
+    </div>
 
-    // <div className={s.section}>
-    //   <button type="button">En</button>
-    //   <span>/</span>
-    //   <button type="button">Ua</button>
-    // </div>
   );
+  
+    
+
 }
