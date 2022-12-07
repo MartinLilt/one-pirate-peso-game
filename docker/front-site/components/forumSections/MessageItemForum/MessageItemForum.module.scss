@@ -1,21 +1,57 @@
 .forum__messageitem {
-  margin-top: 50px;
   flex-direction: column;
-  // &_details{
 
-  // }
+  &__all{
 
-  &__line_answer_vert{
+    padding-left: 45px;
+  }
+
+  &_topic {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  &__line_answer_vert {
     width: 1px;
-    height: calc( 100% - 37.5px);
+    height: calc(100% - 37.5px);
     background-color: var(--accent-element-color);
   }
 
- 
+  &__horiz {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_lineanswer {
+    margin-left: 25.6px;
+    height: 100%;
+  }
+  &_lineanswer_first {
+    width: 1px;
+    height: 23px;
+    background-color: var(--accent-element-color);
+  }
+  &_lineanswer_second {
+    display: block;
+    width: 1px;
+    height: 75px;
+    background-color: var(--accent-element-color);
+  }
+
+  &_item:last-child &_lineanswer_second{
+    display: none;
+  }
+
+  &_line_horiz {
+    height: 1px;
+    width: 22.5px;
+    background-color: var(--accent-element-color);
+    margin-top: 22.5px;
+  }
 
   &_summary {
     display: flex;
-    
+    align-items: flex-start;
   }
   &_item {
     display: flex;
@@ -24,7 +60,7 @@
 
   &_item:last-child &__line_answer_vert {
     display: none;
-}
+  }
   &_avatar {
     padding: 7.5px;
     padding-bottom: 0;
@@ -33,7 +69,7 @@
     align-items: center;
   }
 
-  &_svg{
+  &_svg {
     margin-bottom: 7.5px;
   }
 

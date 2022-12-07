@@ -62,6 +62,14 @@
                 "date": "26.11.2022",
                 "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
                 "topicReply": []
+              },
+              {
+                "_id": "9ca7fa2c-627f-4d4c-9f06-5081d96d58bd",
+                "user": "Moder",
+                "nameUser": "John Mensony",
+                "date": "26.11.2022",
+                "text": "Hi all! I'm looking for active players to develop my new guild together. I invite you to join me dear friend!",
+                "topicReply": []
               }
             ]
           }
@@ -1362,6 +1370,8 @@
             "topicTitle": " - Finding a team for 2 on 2 arena fights..",
             "topicText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quidem?",
             "date": "26.11.2022",
+            "user": "Moder",
+            "nameUser": "John Mensony",
             "lastDate": "26.11.2022",
             "topicAnswer": [
               {
@@ -1430,6 +1440,8 @@
             "number": 4,
             "topicTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quidem?",
             "topicText": "Announcements",
+            "user": "Moder",
+            "nameUser": "John Mensony",
             "date": "26.11.2022",
             "lastDate": "26.11.2022",
             "topicAnswer": [
