@@ -14,7 +14,7 @@ const languages = [
 ];
 
 export default function LanguageSection() {
-  const locale = "en";
+  const locale = "uk";
   const [selectedLang, setSelectedLang] = useState(locale);
 
   const handleClick = (languageLocale) => {
