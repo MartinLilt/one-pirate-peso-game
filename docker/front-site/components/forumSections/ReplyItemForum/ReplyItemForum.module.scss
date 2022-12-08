@@ -1,26 +1,30 @@
 .forum__replyitem {
+  height: auto;
   &_main {
     display: flex;
     height: auto;
   }
   &_linetopic {
     margin-left: 25.6px;
-    width: 1px;
-    height: 98px;
+    width: 0.5px;
+    // border: 0.25px solid var(--accent-element-color);
+    min-height: 100%;
     background-color: var(--accent-element-color);
   }
   &_lineanswer {
     margin-left: 50px;
+    width: 0.5px;
+    border: 0.25px solid var(--accent-element-color);
   }
   &_lineanswer_first {
-    width: 1px;
+    width: 0.5px;
     height: 23px;
     background-color: var(--accent-element-color);
     margin-top: 0;
   }
   &_lineanswer_second {
     display: block;
-    width: 1px;
+    width: 0.5px;
     height: 76px;
     background-color: var(--accent-element-color);
   }
@@ -28,16 +32,20 @@
   &_item:last-child &_lineanswer_second {
     display: none;
   }
+  &_item:last-child &_lineanswer {
+    border: none;
+  }
   &_item:first-child &_lineanswer_second {
     height: 1px;
   }
   &_item:first-child &_lineanswer_first {
-    height: 150px;
-    margin-top: -50px;
+    // height: 150px;
+    // margin-top: -50px;
   }
 
   &_line_horiz {
-    height: 1px;
+    height: 0.5px;
+    border: 0.25px solid var(--accent-element-color);
     width: 22.5px;
     background-color: var(--accent-element-color);
   }

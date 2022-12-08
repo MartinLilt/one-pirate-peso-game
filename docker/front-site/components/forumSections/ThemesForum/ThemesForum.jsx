@@ -35,7 +35,7 @@ const ThemesForum = () => {
             <ul>
               {theme.topicTheme.map((topic) => (
                 <li key={uuid.v4()} className={s.forum__themes__item_subtitle}>
-                  <details className={s.forum__themes__item_details}>
+                  <details className={s.forum__themes__item_details} open>
                     <summary className={s.forum__themes__summary}>
                       <div className={s.forum__themes__subtitle}>
                         <ThreeDots />
