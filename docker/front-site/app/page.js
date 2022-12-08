@@ -8,6 +8,8 @@ import { HomeNewContent } from "../components/homeSections/new/New";
 import { HomeFormContent } from "../components/homeSections/form/Form";
 
 const Home = () => {
+  
+
   return (
     <>
       <Head>
