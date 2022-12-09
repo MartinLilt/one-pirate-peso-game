@@ -1,23 +1,17 @@
 .forum__replyitem {
   height: auto;
-// border-left: 1px solid var(--accent-element-color);
 
   &_main {
     display: flex;
     height: auto;
   }
-  &_linetopic {
-    margin-left: 25.6px;
-    width: 0.5px;
-    // border: 0.25px solid var(--accent-element-color);
-    min-height: 100%;
-    background-color: var(--accent-element-color);
-  }
+
   &_lineanswer {
     margin-left: 48px;
     width: 0.5px;
     border-right: 0.25px solid var(--accent-element-color);
   }
+
   &_lineanswer_first {
     width: 0.5px;
     height: 74px;
@@ -39,11 +33,7 @@
   }
   &_item:first-child &_lineanswer_second {
     height: 1px;
-  }
-  &_item:first-child &_lineanswer_first {
-    // height: 150px;
-    // margin-top: -50px;
-  }
+  }  
 
   &_line_horiz {
     height: 0.5px;

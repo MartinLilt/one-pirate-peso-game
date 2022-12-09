@@ -34,7 +34,7 @@ const MessageItemForum = ({ array, topicText }) => {
       <ul className={s.forum__messageitem}>
         {array.map((el) => (
           <li key={uuid.v4()} className={s.forum__messageitem_item}>
-            <details className={s.forum__messageitem_details} open>
+            <details className={s.forum__messageitem_details} >
               <summary className={s.forum__messageitem_summary}>
                 <div className={s.forum__messageitem_lineanswer}>
                   <div className={s.forum__messageitem_lineanswer_first}></div>

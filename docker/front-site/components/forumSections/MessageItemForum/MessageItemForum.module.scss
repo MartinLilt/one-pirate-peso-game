@@ -11,14 +11,12 @@
     display: flex;
     margin-top: 50px;
     height: 100%;
-    margin-left: -26px;
+    margin-left: -24.5px;
   }
 
   &__line_answer_vert {
-    width: 0.5px;
-    border-right: 1px solid var(--accent-element-color);
-    // min-height: calc(100% + 30px);
-    //  min-height: 100%;
+    width: 5px;
+    border-left: 1px solid var(--accent-element-color);
     background-color: var(--accent-element-color);
   }
 
@@ -30,10 +28,8 @@
 
   &_lineanswer {
     position: relative;
-    // margin-left: 25.6px;
     height: 100%;
     width: 0.5px;
-    // border-left: 0.1px solid var(--accent-element-color);
   }
   &_item &_lineanswer_first {
     display: none;
@@ -44,16 +40,21 @@
     width: 0.5px;
     height: 23px;
     background-color: var(--accent-element-color);
-    // border: 0.25px solid var(--accent-element-color);
+  }
+
+  &_item:first-child &_lineanswer_first {
+    display: block;
+    width: 0.1px;
+    height: 50px;
+    border-left: 1px solid var(--accent-element-color);
+    margin-top: -43px;
+    margin-left: -1px;
   }
   &_lineanswer_second {
-    // position: absolute;
     display: block;
     width: 0.5px;
-    // border: 0.25px solid var(--accent-element-color);
     min-height: 75px;
     height: 100%;
-    // min-height: calc(100% - 23px);
     background-color: var(--accent-element-color);
   }
 
@@ -72,14 +73,11 @@
   &_summary {
     display: flex;
     align-items: flex-start;
-
-    // border-left: 1px solid var(--accent-element-color);
-    // height: 100%;
   }
+
   &_item {
     display: flex;
     flex-direction: row;
-    // padding-left: 45px;
     border-left: 1px solid var(--accent-element-color);
   }
 
@@ -87,9 +85,11 @@
     display: none;
     border-left: none;
   }
+
   &_item:last-child {
     border-left: none;
   }
+  
   &_avatar {
     padding: 7.5px;
     padding-bottom: 0;

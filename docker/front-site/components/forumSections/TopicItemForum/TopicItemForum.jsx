@@ -12,7 +12,7 @@ const TopicItemForum = ({ array }) => {
             className={`${s.forum__topic_item} ${s.forum__topic_border}`}
             key={uuid.v4()}
           >
-            <details className={s.forum__topic_details} open>
+            <details className={s.forum__topic_details} >
               <summary className={s.forum__topic_summary}>
                 <p className={s.forum__topic_number}>{el.number}.&nbsp;</p>
                 <p className={s.forum__topic_text}>-&nbsp;{el.topicTitle}..</p>

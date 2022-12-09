@@ -10,8 +10,6 @@ const ReplyItemForum = ({ array }) => {
     <ul className={s.forum__replyitem}>
       {array.map((el) => (
         <li key={uuid.v4()} className={s.forum__replyitem_item}>
-          {/* <div className={s.forum__replyitem_linetopic}></div> */}
-          {/* <div className={s.forum__replyitem_lineanswer}></div> */}
           <div className={s.forum__replyitem_lineanswer}>
             <div className={s.forum__replyitem_lineanswer_first}></div>
             <div className={s.forum__replyitem_lineanswer_second}></div>
