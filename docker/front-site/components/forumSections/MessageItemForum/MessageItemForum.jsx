@@ -38,7 +38,7 @@ const MessageItemForum = ({ array, topicText }) => {
               <summary className={s.forum__messageitem_summary}>
                 <div className={s.forum__messageitem_lineanswer}>
                   <div className={s.forum__messageitem_lineanswer_first}></div>
-                  <div className={s.forum__messageitem_lineanswer_second}></div>
+                  {/* <div className={s.forum__messageitem_lineanswer_second}></div> */}
                 </div>
                 <div className={s.forum__messageitem__horiz}>
                   <div className={s.forum__messageitem_line_horiz}></div>

@@ -6,43 +6,18 @@
     height: 100%;
     padding-left: 45px;
   }
-  // &_item::before,
-  // &_item::after {
-  //   position: absolute;
-  //   content: "";
-  //   left: 50%;
-  //   margin-top: -0.5px;
-  //   border: 1px solid white;
-  // }
-
-  // &_item:before {
-  //   left: 0;
-  //   right: 50%;
-  //   /* This must be half of the size of the label*/
-  //   margin-right: 12.5px;
-  // }
-  // &_item:after {
-  //   right: 0;
-  //   left: 50%;
-  //   /* This must be half of the size of the label*/
-  //   margin-left: 12.5px;
-  // }
-
-  // &_item:first-of-type:before,
-  // &_item:last-of-type:after {
-  //   border: none;
-  // }
 
   &_topic {
     display: flex;
     margin-top: 50px;
     height: 100%;
+    margin-left: -26px;
   }
 
   &__line_answer_vert {
     width: 0.5px;
-    // border: 0.1px solid var(--accent-element-color);
-    // height: calc(100% - 25px);
+    border-right: 1px solid var(--accent-element-color);
+    // min-height: calc(100% + 30px);
     //  min-height: 100%;
     background-color: var(--accent-element-color);
   }
@@ -55,12 +30,17 @@
 
   &_lineanswer {
     position: relative;
-    margin-left: 25.6px;
+    // margin-left: 25.6px;
     height: 100%;
     width: 0.5px;
-    // border: 0.1px solid var(--accent-element-color);
+    // border-left: 0.1px solid var(--accent-element-color);
   }
-  &_lineanswer_first {
+  &_item &_lineanswer_first {
+    display: none;
+  }
+
+  &_item:last-child &_lineanswer_first {
+    display: block;
     width: 0.5px;
     height: 23px;
     background-color: var(--accent-element-color);
@@ -92,15 +72,23 @@
   &_summary {
     display: flex;
     align-items: flex-start;
+
+    // border-left: 1px solid var(--accent-element-color);
     // height: 100%;
   }
   &_item {
     display: flex;
     flex-direction: row;
+    // padding-left: 45px;
+    border-left: 1px solid var(--accent-element-color);
   }
 
   &_item:last-child &__line_answer_vert {
     display: none;
+    border-left: none;
+  }
+  &_item:last-child {
+    border-left: none;
   }
   &_avatar {
     padding: 7.5px;

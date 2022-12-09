@@ -1,5 +1,7 @@
 .forum__replyitem {
   height: auto;
+// border-left: 1px solid var(--accent-element-color);
+
   &_main {
     display: flex;
     height: auto;
@@ -12,15 +14,15 @@
     background-color: var(--accent-element-color);
   }
   &_lineanswer {
-    margin-left: 50px;
+    margin-left: 48px;
     width: 0.5px;
-    border: 0.25px solid var(--accent-element-color);
+    border-right: 0.25px solid var(--accent-element-color);
   }
   &_lineanswer_first {
     width: 0.5px;
-    height: 23px;
+    height: 74px;
     background-color: var(--accent-element-color);
-    margin-top: 0;
+    margin-top: -51px;
   }
   &_lineanswer_second {
     display: block;
