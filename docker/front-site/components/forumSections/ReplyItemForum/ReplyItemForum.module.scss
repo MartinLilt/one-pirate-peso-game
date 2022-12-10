@@ -1,11 +1,6 @@
 .forum__replyitem {
   height: auto;
 
-  &_main {
-    display: flex;
-    height: auto;
-  }
-
   &_lineanswer {
     margin-left: 48px;
     width: 0.5px;
@@ -18,6 +13,7 @@
     background-color: var(--accent-element-color);
     margin-top: -51px;
   }
+
   &_lineanswer_second {
     display: block;
     width: 0.5px;
@@ -33,7 +29,7 @@
   }
   &_item:first-child &_lineanswer_second {
     height: 1px;
-  }  
+  }
 
   &_line_horiz {
     height: 0.5px;
@@ -50,10 +46,12 @@
     display: flex;
     align-items: flex-start;
   }
+
   &_avatar {
     display: flex;
     align-items: center;
   }
+
   &_svg {
     padding: 3.75px;
   }
@@ -76,6 +74,7 @@
     color: var(--opacity-font-2);
     line-height: 1.4;
   }
+
   &__text_answer {
     line-height: 1.4;
     margin-bottom: 50px;

@@ -1,20 +1,22 @@
 .forum__themes {
-  height: auto;
-  
-  &__item {
-    margin-bottom: 50px;
-    
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    height: auto;
   }
 
-  &__item_details{
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__item_details {
     width: 100%;
   }
 
-  
   &__main {
     display: flex;
-    align-items: center;  
-    margin-bottom: 25px;  
+    align-items: center;
+    margin-bottom: 25px;
   }
 
   &__line {
@@ -67,7 +69,7 @@
     &_text {
       font-size: 18px;
       font-family: var(--accent-font);
-      
+
       @media screen and (min-width: 768px) {
         margin-right: 25px;
       }
@@ -98,21 +100,21 @@
         font-size: 18px;
       }
     }
-    &_text_mob{
+    &_text_mob {
       font-size: 14px;
       color: var(--opacity-font-2);
       @media screen and (min-width: 768px) {
-       display: none;
+        display: none;
       }
     }
   }
 
-  &_mob{
+  &_mob {
     display: flex;
     justify-content: flex-end;
     @media screen and (min-width: 768px) {
       display: none;
-     }
+    }
   }
 
   &_desk {

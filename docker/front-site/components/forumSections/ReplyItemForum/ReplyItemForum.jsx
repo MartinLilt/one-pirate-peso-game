@@ -5,8 +5,6 @@ const uuid = require("uuid");
 
 const ReplyItemForum = ({ array }) => {
   return (
-    // <div className={s.forum__replyitem_main}>
-
     <ul className={s.forum__replyitem}>
       {array.map((el) => (
         <li key={uuid.v4()} className={s.forum__replyitem_item}>
@@ -41,7 +39,6 @@ const ReplyItemForum = ({ array }) => {
         </li>
       ))}
     </ul>
-    // </div>
   );
 };
 

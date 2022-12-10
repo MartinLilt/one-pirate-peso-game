@@ -9,15 +9,19 @@ const TopicItemForum = ({ array }) => {
       <ul>
         {array.map((el) => (
           <li
-            className={`${s.forum__topic_item} ${s.forum__topic_border}`}
+            className={`${s.forum__topic__item} ${s.forum__topic_border}`}
             key={uuid.v4()}
+            onClick={(e) => console.log("e.target :>> ", e.currentTarget)}
           >
-            <details className={s.forum__topic_details} >
+            <details className={s.forum__topic_details}>
               <summary className={s.forum__topic_summary}>
                 <p className={s.forum__topic_number}>{el.number}.&nbsp;</p>
                 <p className={s.forum__topic_text}>-&nbsp;{el.topicTitle}..</p>
               </summary>
-              <MessageItemForum array={el.topicAnswer} topicText={el.topicText} />
+              <MessageItemForum
+                array={el.topicAnswer}
+                topicText={el.topicText}
+              />
             </details>
           </li>
         ))}

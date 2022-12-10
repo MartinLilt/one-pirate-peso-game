@@ -1,5 +1,6 @@
 .forum__topic {
   padding-top: 40px;
+  padding-bottom: 50px;
   // width: calc(100% - 90px);
   @media screen and (min-width: 768px) {
     padding-left: 30px;
@@ -10,11 +11,12 @@
     margin-left: 15px;
     margin-bottom: 68px;
   }
-  &_item {
+  &__item {
     margin-left: 45px;
-    margin-right: 45px;
+    margin-right: 50px;
     margin-bottom: 20px;
   }
+
 
   &_summary:hover,
   &_summary:focus {

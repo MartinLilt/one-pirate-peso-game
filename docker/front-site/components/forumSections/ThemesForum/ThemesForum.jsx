@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import s from "./ThemesForum.module.scss";
 import baseTheme from "../base.json";
 import ThreeDots from "../../shared/ThreeDots/ThreeDots";
@@ -35,7 +35,7 @@ const ThemesForum = () => {
             <ul>
               {theme.topicTheme.map((topic) => (
                 <li key={uuid.v4()} className={s.forum__themes__item_subtitle}>
-                  <details className={s.forum__themes__item_details} open>
+                  <details className={s.forum__themes__item_details}>
                     <summary className={s.forum__themes__summary}>
                       <div className={s.forum__themes__subtitle}>
                         <ThreeDots />
