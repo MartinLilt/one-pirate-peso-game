@@ -10,7 +10,6 @@ const ReplyItemForum = ({ array }) => {
         <li key={uuid.v4()} className={s.forum__replyitem_item}>
           <div className={s.forum__replyitem_lineanswer}>
             <div className={s.forum__replyitem_lineanswer_first}></div>
-            <div className={s.forum__replyitem_lineanswer_second}></div>
           </div>
           <div className={s.forum__replyitem_infotitle}>
             <div className={s.forum__replyitem_avatar}>

@@ -19,8 +19,8 @@ const TopicItemForum = ({ array }) => {
                 <p className={s.forum__topic_text}>-&nbsp;{el.topicTitle}..</p>
               </summary>
               <MessageItemForum
-                array={el.topicAnswer}
-                topicText={el.topicText}
+                array={el}
+                // topicText={el.topicText}
               />
             </details>
           </li>

@@ -4,7 +4,9 @@ import ReplyItemForum from "../ReplyItemForum/ReplyItemForum";
 import User from "../../../assets/icon/user.png";
 const uuid = require("uuid");
 
-const MessageItemForum = ({ array, topicText }) => {
+const MessageItemForum = ({ array }) => {
+  const { topicTitle, topicText, topicAnswer, date, user, nameUser, lastDate } =
+    array;
   return (
     <div className={s.forum__messageitem__all}>
       <div className={s.forum__messageitem_topic}>
@@ -20,25 +22,22 @@ const MessageItemForum = ({ array, topicText }) => {
         </div>
         <div className={s.forum__messageitem_message}>
           <div className={s.forum__messageitem_info}>
-            <p>ghgjghj</p>
-            {/* <p className={s.forum__messageitem__text}>{el.user}</p> */}
+            <p>{user}</p>
             <div className={s.forum__messageitem_line}></div>
-            {/* <p className={s.forum__messageitem__text}>{el.nameUser}</p> */}
+            <p>{nameUser}</p>
             <div className={s.forum__messageitem_line}></div>
-            {/* <p className={s.forum__messageitem__text}>{el.date}</p> */}
+            <p>{date}</p>
           </div>
           <p className={s.forum__messageitem__text_answer}>{topicText}</p>
         </div>
       </div>
-      {/* <p>{topicText}</p> */}
       <ul className={s.forum__messageitem}>
-        {array.map((el) => (
+        {topicAnswer.map((el) => (
           <li key={uuid.v4()} className={s.forum__messageitem_item}>
-            <details className={s.forum__messageitem_details} >
+            <details className={s.forum__messageitem_details}>
               <summary className={s.forum__messageitem_summary}>
                 <div className={s.forum__messageitem_lineanswer}>
                   <div className={s.forum__messageitem_lineanswer_first}></div>
-                  {/* <div className={s.forum__messageitem_lineanswer_second}></div> */}
                 </div>
                 <div className={s.forum__messageitem__horiz}>
                   <div className={s.forum__messageitem_line_horiz}></div>
