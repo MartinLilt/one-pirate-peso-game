@@ -15,8 +15,8 @@
     margin-left: 45px;
     margin-right: 50px;
     margin-bottom: 20px;
+    border: 1px solid var(--accent-element-color);
   }
-
 
   &_summary:hover,
   &_summary:focus {
@@ -26,8 +26,17 @@
     }
   }
 
-  &_border {
-    border: 1px solid var(--accent-element-color);
+  &_item_open {
+    border: none;
+
+    p.forum__topic_text {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: unset;
+      width: 100%;
+      height: auto;
+      color: var(--opacity-font-2);
+    }
   }
   &_summary {
     padding: 13px 45px;

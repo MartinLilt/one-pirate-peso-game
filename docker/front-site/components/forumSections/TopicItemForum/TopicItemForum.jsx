@@ -3,15 +3,20 @@ import s from "./TopicItemForum.module.scss";
 const uuid = require("uuid");
 
 const TopicItemForum = ({ array }) => {
+  const isOpen = false;
+
   return (
     <div className={s.forum__topic}>
       <p className={s.forum__topic_text_fordics}>- Topics for Discussion:</p>
       <ul>
         {array.map((el) => (
           <li
-            className={`${s.forum__topic__item} ${s.forum__topic_border}`}
+            id={el._id}
+            className={
+              isOpen ? `${s.forum__topic_item_open}` : `${s.forum__topic__item}`
+            }
             key={uuid.v4()}
-            onClick={(e) => console.log("e.target :>> ", e.currentTarget)}
+            onClick={(e) => console.log("e.target :>> ", e.currentTarget.id)}
           >
             <details className={s.forum__topic_details}>
               <summary className={s.forum__topic_summary}>
