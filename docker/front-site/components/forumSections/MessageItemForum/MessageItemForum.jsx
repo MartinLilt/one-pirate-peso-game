@@ -1,7 +1,7 @@
 import s from "./MessageItemForum.module.scss";
 import ReplyItemForum from "../ReplyItemForum/ReplyItemForum";
 import User from "../../../assets/icon/user.png";
-import OneMessageForum from "../../OneMessageForum/OneMessageForum";
+import OneMessageForum from "../OneMessageForum/OneMessageForum";
 const uuid = require("uuid");
 
 const MessageItemForum = ({ array }) => {

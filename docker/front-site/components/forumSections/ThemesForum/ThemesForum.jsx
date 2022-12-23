@@ -3,6 +3,7 @@ import s from "./ThemesForum.module.scss";
 import baseTheme from "../base.json";
 import ThreeDots from "../../shared/ThreeDots/ThreeDots";
 import TopicItemForum from "../TopicItemForum/TopicItemForum";
+import REDPanelForum from "../REDPanelForum/REDPanelForum";
 const uuid = require("uuid");
 
 const ThemesForum = () => {
@@ -24,6 +25,7 @@ const ThemesForum = () => {
 
   return (
     <div className={`layout default ${s.forum__themes}`}>
+      <REDPanelForum />
       <ul>
         {baseTheme.map((theme) => (
           <li key={uuid.v4()} className={s.forum__themes__item}>
