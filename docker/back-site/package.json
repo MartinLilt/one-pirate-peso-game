@@ -1,0 +1,52 @@
+{
+  "name": "one-pirate-peso-game",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./src/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinLilt/one-pirate-peso-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinLilt/one-pirate-peso-game/issues"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "4.17.1",
+    "http-errors": "^2.0.0",
+    "jimp": "^0.16.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mime-types": "^2.1.35",
+    "mongoose": "^6.3.2",
+    "morgan": "1.10.0",
+    "multer": "^1.4.4",
+    "swagger-ui-express": "^4.5.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "7.19.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "5.2.0",
+    "nodemon": "2.0.15"
+  }
+}
