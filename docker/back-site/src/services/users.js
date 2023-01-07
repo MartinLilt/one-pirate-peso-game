@@ -5,7 +5,6 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 const signupUser = async (body) => {
-  console.log("body :>> ", body);
   const { email, password, name, phone } = body;
   await Users.create({
     email,
@@ -66,7 +65,7 @@ const logoutUser = async (token) => {
 const currentUser = async (token) => {
   const user = await Users.findOne(
     { token },
-    { email: 1, name: 1, phoneNumber: 1, _id: 0 }
+    { email: 1, name: 1, phone: 1, _id: 0 }
   );
   return user;
 };

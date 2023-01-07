@@ -19,6 +19,7 @@ const signinUserController = async (req, res, next) => {
         name,
         email,
         phone,
+        avatarURL,
       },
       token,
       refreshToken,
@@ -32,12 +33,20 @@ const logoutUserController = async (req, res, next) => {
 };
 
 const signupUserController = async (req, res, next) => {
-  console.log('req.body contr:>> ', req.body);
-  const user = await signupUser(req.body);
-  console.log('user contr:>> ', user);
+  const { token, email, name, phone, avatarURL, refreshToken } =
+    await signupUser(req.body);
   res.status(201).json({
     contentType: "application/json",
-    ResponseBody: { user },
+    ResponseBody: {
+      user: {
+        name,
+        email,
+        phone,
+        avatarURL,
+      },
+      token,
+      refreshToken,
+    },
   });
 };
 
