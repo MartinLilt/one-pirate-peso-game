@@ -4,7 +4,6 @@ import NavBar from "./NavBar";
 import "../../styles/globals.scss";
 
 const Header = ({ setActivePriv, setActiveLogIn }) => {
-  
   return (
     <header>
       <UpperHeader setActive={setActivePriv} />
