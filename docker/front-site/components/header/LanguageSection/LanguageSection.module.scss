@@ -1,5 +1,4 @@
 .section {
-  position: relative;
   display: flex;
   align-items: center;
 
@@ -10,7 +9,6 @@
   }
 
   & button {
-    margin-right: 10px;
     font-family: var(--accent-font);
     font-size: 12px;
     background-color: transparent;
@@ -31,13 +29,7 @@
     &.is_active {
       background-color: var(--accent-color);
     }
-    
   }
 
 
-}
-
-.sign{
-  position: absolute;
-  left:13px;
 }
